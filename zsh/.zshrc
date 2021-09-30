@@ -83,6 +83,7 @@ alias gb='git checkout -b'
 alias gd='git checkout develop'
 alias gf='git add .'
 alias gg='git commit -m'
+alias gmm='git checkout main && git merge'
 alias ss='git status'
 
 # --------------------------------------------------------------

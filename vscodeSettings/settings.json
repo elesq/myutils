@@ -1,155 +1,191 @@
 {
-  "security.workspace.trust.untrustedFiles": "open",
+    "security.workspace.trust.untrustedFiles": "open",
 
-  // ***************************
-  // globals and basics
-  // ***************************
-  "window.zoomLevel": -1,
-  "window.titleBarStyle": "custom",
-  "workbench.colorTheme": "Monokai Pro",
-  "explorer.compactFolders": false,
-  "debug.allowBreakpointsEverywhere": true,
-  "editor.minimap.scale": 3,
-  // ***************************
-  // workbench
-  // ***************************
-  "workbench.tree.indent": 32,
-  "workbench.editor.wrapTabs": true,
-  "workbench.editor.decorations.badges": true,
-  "workbench.editor.decorations.colors": true,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorCustomizations": {
     // ***************************
-    // monokai pro palletes
+    // globals and basics
     // ***************************
-    "[Monokai Pro]": {
-      "editorSuggestWidget.selectedBackground": "#297fbc",
-      "separators.classes.borderColor": "#3f4148",
-      "separators.interfaces.borderColor": "#3f4148",
-      "separators.methods.borderColor": "#3f4148",
-      "separators.functions.borderColor": "#3f4148",
-      "separators.constructors.borderColor": "#3f4148",
-      "separators.namespaces.borderColor": "#3f4148",
-      //sidebar
-      "sideBar.background": "#262326",
-      "sideBar.border": "#242124",
-      "sideBarSectionHeader.background": "#262326",
-      // editor tab
-      "tab.activeBackground": "#403e41",
-      "editorCursor.foreground": "#ff6803",
-      "editorCursor.background": "#ffffff",
-      // panels and terminals
-      "terminalCursor.foreground": "#ffae00",
-      "terminal.foreground": "#8f9296",
-      "terminal.background": "#363437",
-      "terminal.border": "#2b2235",
-      "panel.border": "#2b2235",
-      "panel.background": "#363437"
-    }
-  },
-  // ***************************
-  // editor general settings
-  // ***************************
-  "editor.fontFamily": " 'Lekton Nerd Font Mono', 'InconsolataGo Nerd Font Mono', 'Operator Mono Lig', Menlo, Monaco",
-  "editor.tabSize": 4,
-  "editor.lineHeight": 22,
-  "editor.fontSize": 15,
-  "editor.cursorStyle": "line",
-  "editor.cursorWidth": 15,
-  "editor.cursorBlinking": "smooth",
-  "editor.formatOnSave": true,
-  "editor.tokenColorCustomizations": {
-    // **************************
-    // universal overrides
-    // **************************
-    "textMateRules": [
-      {
-        "scope": "string.interpolated, string.quoted.double.go",
-        "settings": {
-          "fontStyle": "italic"
-        }
-      }
-    ],
+    "window.zoomLevel": -1,
+    "window.titleBarStyle": "custom",
+    "explorer.compactFolders": false,
+    "debug.allowBreakpointsEverywhere": true,
+    "editor.minimap.scale": 3,
+    "gitlens.showWelcomeOnInstall": false,
+    "material-icon-theme.showWelcomeMessage": false,
     // ***************************
-    // monokai pro customisations.
+    // workbench
     // ***************************
-    "[Monokai Pro]": {
-      "textMateRules": [
-        {
-          "scope": "variable.other.readwrite.js, variable.other.property.js, variable.other.object.js",
-          "settings": {
-            "foreground": "#ced0d4"
-          }
+    "workbench.tree.indent": 32,
+    "workbench.editor.wrapTabs": true,
+    "workbench.editor.decorations.badges": true,
+    "workbench.editor.decorations.colors": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none",
+    "workbench.colorCustomizations": {
+        // ***************************
+        // monokai pro palletes
+        // ***************************
+        "[Monokai Pro]": {
+            "editorSuggestWidget.selectedBackground": "#297fbc",
+            "separators.classes.borderColor": "#3f4148",
+            "separators.interfaces.borderColor": "#3f4148",
+            "separators.methods.borderColor": "#3f4148",
+            "separators.functions.borderColor": "#3f4148",
+            "separators.constructors.borderColor": "#3f4148",
+            "separators.namespaces.borderColor": "#3f4148",
+            //sidebar
+            "sideBar.background": "#262326",
+            "sideBar.border": "#242124",
+            "sideBarSectionHeader.background": "#262326",
+            // editor tab
+            "tab.activeBackground": "#403e41",
+            "editorCursor.foreground": "#ff6803",
+            "editorCursor.background": "#ffffff",
+            // panels and terminals
+            "terminalCursor.foreground": "#ffae00",
+            "terminal.foreground": "#8f9296",
+            "terminal.background": "#363437",
+            "terminal.border": "#2b2235",
+            "panel.border": "#2b2235",
+            "panel.background": "#363437"
         },
-        {
-          "scope": "meta.object-literal.key.js",
-          "settings": {
-            "foreground": "#deaae6"
-          }
+        "[Monokai Pro (Filter Octagon)]": {
+            //"editorSuggestWidget.selectedBackground": "#297fbc",
+            "editorSuggestWidget.selectedBackground": "#0ba9c1",
+            "editorSuggestWidget.selectedForeground": "#000000",
+            "editorSuggestWidget.selectedIconForeground": "#000000",
+            "separators.classes.borderColor": "#373c4e",
+            "separators.interfaces.borderColor": "#373c4e",
+            "separators.methods.borderColor": "#373c4e",
+            "separators.functions.borderColor": "#373c4e",
+            "separators.constructors.borderColor": "#373c4e",
+            "separators.namespaces.borderColor": "#373c4e",
+            // editor tab
+            "tab.activeBackground": "#2a4360",
+            "editorCursor.foreground": "#ff6803",
+            "editorCursor.background": "#ffffff",
+            // panels and terminals
+            "terminalCursor.foreground": "#ffae00",
+            "terminal.foreground": "#75869b",
+            //"terminal.background": "#1c1e29",
+            "terminal.background": "#282a3a",
+            "terminal.border": "#3d3b4c",
+            "panel.border": "#3d3b4c",
+            //"panel.background": "#1c1e29"
+            "panel.background": "#282a3a",
+            "editorLineNumber.activeForeground": "#71fffa",
+            "gitDecoration.untrackedResourceForeground": "#489e9e"
         }
-      ]
-    }
-  },
-  // *****************************
-  // General app and editor code
-  // tidyness settings
-  // *****************************
-  "files.trimTrailingWhitespace": true,
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
-  "javascript.format.semicolons": "insert",
-  // *****************************
-  // terminal
-  // *****************************
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "terminal.integrated.defaultLocation": "editor",
-  // *****************************
-  // Settings for Go programming
-  // *****************************
-  "go.toolsManagement.autoUpdate": true,
-  "[go]": {
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
     },
-    "editor.formatOnSave": true
-  },
-  "gopls": {
-    "analyses": {
-      "composites": false
-    }
-  },
-  // *****************************
-  // Settings for html emmet css
-  // *****************************
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features",
-    "editor.formatOnSave": true,
-    "editor.tabSize": 4
-  },
-  "emmet.showSuggestionsAsSnippets": true,
-  "files.associations": {
-    "*tmpl": "html"
-  },
-  // *****************************
-  // javascript language support
-  // *****************************
-  "[javascript]": {
+    // ***************************
+    // editor general settings
+    // ***************************
+    "editor.fontFamily": " 'Lekton Nerd Font Mono', 'InconsolataGo Nerd Font Mono', 'Operator Mono Lig', Menlo, Monaco",
     "editor.tabSize": 4,
+    "editor.lineHeight": 22,
+    "editor.fontSize": 15,
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 15,
+    "editor.cursorBlinking": "smooth",
     "editor.formatOnSave": true,
-    "separators.enabledSymbols": ["Classes", "Functions", "Methods"],
-    "separators.maxDepth": 1
-  },
-  "[json]": {
-    "editor.quickSuggestions": {
-      "strings": true
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.linkedEditing": true,
+    "editor.tokenColorCustomizations": {
+        // **************************
+        // universal overrides
+        // **************************
+        "textMateRules": [
+            {
+                "scope": "string.interpolated, string.quoted.double.go",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ],
+        // ***************************
+        // monokai pro customisations.
+        // ***************************
+        "[Monokai Pro][Monokai Pro (Filter Octagon)]": {
+            "textMateRules": [
+                {
+                    "scope": "variable.other.readwrite.js, variable.other.property.js, variable.other.object.js",
+                    "settings": {
+                        "foreground": "#ced0d4"
+                    }
+                },
+                {
+                    "scope": "meta.object-literal.key.js",
+                    "settings": {
+                        "foreground": "#deaae6"
+                    }
+                }
+            ]
+        }
     },
-    "editor.tabSize": 4,
-    "editor.formatOnSave": true,
-    "editor.suggest.insertMode": "replace",
-    "gitlens.codeLens.scopes": ["document"]
-  },
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "javascript.preferences.quoteStyle": "single",
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // *****************************
+    // General app and editor code
+    // tidyness settings
+    // *****************************
+    "files.trimTrailingWhitespace": true,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+    "javascript.format.semicolons": "insert",
+    // *****************************
+    // terminal
+    // *****************************
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.defaultLocation": "editor",
+    // *****************************
+    // Settings for Go programming
+    // *****************************
+    "go.toolsManagement.autoUpdate": true,
+    "[go]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+        "editor.formatOnSave": true
+    },
+    "gopls": {
+        "analyses": {
+            "composites": false
+        }
+    },
+    // *****************************
+    // Settings for html emmet css
+    // *****************************
+    "[html]": {
+        //"editor.defaultFormatter": "vscode.html-language-features",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4
+    },
+    "emmet.showSuggestionsAsSnippets": true,
+    "files.associations": {
+        "*tmpl": "html"
+    },
+    // *****************************
+    // javascript language support
+    // *****************************
+    "[javascript]": {
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "separators.enabledSymbols": ["Classes", "Functions", "Methods"],
+        "separators.maxDepth": 1
+    },
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.suggest.insertMode": "replace",
+        "gitlens.codeLens.scopes": ["document"]
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.preferences.quoteStyle": "single",
+    "prettier.tabWidth": 4,
+    "editor.detectIndentation": false,
+    "workbench.colorTheme": "Monokai Pro (Filter Octagon)"
 }
 
 // // **********************
