@@ -31,7 +31,10 @@ COMPLETION_WAITING_DOTS="true"
 # --------------------------------------------------------------
 # Add wisely, as too many plugins slow down shell startup.
 # --------------------------------------------------------------
-plugins=(git)
+plugins=(
+    git
+    zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,13 +100,14 @@ alias cra='npx create-react-app'
 # --------------------------------------------------------------
 alias bb='~/.me/yootils/scripts/brewup.sh'
 alias cc='~/.me/yootils/scripts/copycat.sh'
+alias kk='~/.me/yootils/scripts/porter.sh'
 alias npl='~/.me/yootils/scripts/npl.sh'
 alias gupd='~/.me/yootils/scripts/gupd.sh'
 alias gout='~/.me/yootils/scripts/gout.sh'
 alias mgo='~/.me/yootils/scripts/shellmongo.sh'
 alias pgs='~/.me/yootils/scripts/shellpostgres.sh'
 
-alias vanapp='~/.me/yootils/scripts/vanilla-web-app.sh'
+alias wa='~/.me/yootils/scripts/vanilla-web-app.sh'
 # --------------------------------------------------------------
 # containerised services alias
 # --------------------------------------------------------------
@@ -122,7 +126,7 @@ alias docmongo='docker run -d --name mongodb -v ~/data/mongo:/data/db -e MONGO_I
 # DB shells
 alias mysqlroot="docker exec -it mysql mysql -u root -p"
 alias mysqluser="docker exec -it mysql mysql -u web -p"
-alias mongouser='docker exec -i mongodb bash'
+alias mongouser='docker exec -it mongodb bash'
 
 # --------------------------------------------------------------
 # development project settings in the environment
@@ -141,3 +145,11 @@ export PATH=./node_modules/.bin:$PATH
 export NVM_DIR=~/.nvm
 source ~/.nvm/nvm.sh
 #source $(brew --prefix nvm)/nvm.sh[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi

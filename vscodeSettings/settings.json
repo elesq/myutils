@@ -50,9 +50,9 @@
         },
         "[Monokai Pro (Filter Octagon)]": {
             //"editorSuggestWidget.selectedBackground": "#297fbc",
-            "editorSuggestWidget.selectedBackground": "#0ba9c1",
-            "editorSuggestWidget.selectedForeground": "#000000",
-            "editorSuggestWidget.selectedIconForeground": "#000000",
+            "editorSuggestWidget.selectedBackground": "#305183",
+            //"editorSuggestWidget.selectedForeground": "#000000",
+            //"editorSuggestWidget.selectedIconForeground": "#000000",
             "separators.classes.borderColor": "#373c4e",
             "separators.interfaces.borderColor": "#373c4e",
             "separators.methods.borderColor": "#373c4e",
@@ -91,6 +91,7 @@
     "editor.formatOnType": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.linkedEditing": true,
+    "editor.guides.bracketPairs": true,
     "editor.tokenColorCustomizations": {
         // **************************
         // universal overrides
@@ -185,7 +186,11 @@
     "javascript.preferences.quoteStyle": "single",
     "prettier.tabWidth": 4,
     "editor.detectIndentation": false,
-    "workbench.colorTheme": "Monokai Pro (Filter Octagon)"
+    "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "autoimport.filesToScan": "**/*.{ts,tsx,js,jsx}",
+    "emmet.triggerExpansionOnTab": true
 }
 
 // // **********************
