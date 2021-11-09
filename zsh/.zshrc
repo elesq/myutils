@@ -106,6 +106,8 @@ alias gupd='~/.me/yootils/scripts/gupd.sh'
 alias gout='~/.me/yootils/scripts/gout.sh'
 alias mgo='~/.me/yootils/scripts/shellmongo.sh'
 alias pgs='~/.me/yootils/scripts/shellpostgres.sh'
+alias csa='~/.me/yootils/scripts/create-svelte-app.sh'
+alias cwa='~/.me/yootils/scripts/webpack-app.sh'
 
 alias wa='~/.me/yootils/scripts/vanilla-web-app.sh'
 # --------------------------------------------------------------
