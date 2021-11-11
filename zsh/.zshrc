@@ -74,8 +74,10 @@ alias xx='clear'
 alias lrt='ls -lrt'
 alias www='cd ~/.me/code/elesq/web'
 alias scc='cd ~/.me/code/elesq/se-other'
+alias ttt='cd ~/.me/code/elesq/web/ts'
 alias yoo='cd ~/.me/yootils'
 alias zzz='source ~/.zshrc'
+
 
 # --------------------------------------------------------------
 # git aliases
@@ -94,6 +96,9 @@ alias ss='git status'
 # --------------------------------------------------------------
 alias testrep='go test -coverprofile=coverage.out && go tool cover -html=coverage.out'
 alias cra='npx create-react-app'
+alias csa='~/.me/yootils/scripts/create-svelte-app.sh'
+alias cwa='~/.me/yootils/scripts/webpack-app.sh'
+alias wa='~/.me/yootils/scripts/vanilla-web-app.sh'
 
 # --------------------------------------------------------------
 # utility script aliases
@@ -106,10 +111,8 @@ alias gupd='~/.me/yootils/scripts/gupd.sh'
 alias gout='~/.me/yootils/scripts/gout.sh'
 alias mgo='~/.me/yootils/scripts/shellmongo.sh'
 alias pgs='~/.me/yootils/scripts/shellpostgres.sh'
-alias csa='~/.me/yootils/scripts/create-svelte-app.sh'
-alias cwa='~/.me/yootils/scripts/webpack-app.sh'
+alias ppp='~/.me/yootils/scripts/add-prettier-config.sh'
 
-alias wa='~/.me/yootils/scripts/vanilla-web-app.sh'
 # --------------------------------------------------------------
 # containerised services alias
 # --------------------------------------------------------------
