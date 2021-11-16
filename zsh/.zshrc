@@ -97,8 +97,9 @@ alias ss='git status'
 alias testrep='go test -coverprofile=coverage.out && go tool cover -html=coverage.out'
 alias cra='npx create-react-app'
 alias csa='~/.me/yootils/scripts/create-svelte-app.sh'
-alias cwa='~/.me/yootils/scripts/webpack-app.sh'
-alias wa='~/.me/yootils/scripts/vanilla-web-app.sh'
+alias cwa='~/.me/yootils/scripts/create-webpack-app.sh'
+alias tsa='~/.me/yootils/scripts/create-typescript-cli.sh'
+alias wa='~/.me/yootils/scripts/create-vanilla-web-app.sh'
 
 # --------------------------------------------------------------
 # utility script aliases
@@ -111,7 +112,7 @@ alias gupd='~/.me/yootils/scripts/gupd.sh'
 alias gout='~/.me/yootils/scripts/gout.sh'
 alias mgo='~/.me/yootils/scripts/shellmongo.sh'
 alias pgs='~/.me/yootils/scripts/shellpostgres.sh'
-alias ppp='~/.me/yootils/scripts/add-prettier-config.sh'
+alias ppp='~/.me/yootils/scripts/add-prettier-config-file.sh'
 
 # --------------------------------------------------------------
 # containerised services alias
