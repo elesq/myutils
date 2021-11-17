@@ -38,7 +38,7 @@
             "sideBarSectionHeader.background": "#262326",
             // editor tab
             "tab.activeBackground": "#403e41",
-            "editorCursor.foreground": "#ff6803",
+            "editorCursor.foreground": "#d705d7",
             "editorCursor.background": "#ffffff",
             // panels and terminals
             "terminalCursor.foreground": "#ffae00",
@@ -59,19 +59,20 @@
             "separators.functions.borderColor": "#373c4e",
             "separators.constructors.borderColor": "#373c4e",
             "separators.namespaces.borderColor": "#373c4e",
+            "separators.enums.borderColor": "#373c4e",
             // editor tab
-            "tab.activeBackground": "#2a4360",
-            "editorCursor.foreground": "#ff6803",
+            "tab.activeBackground": "#2b5585",
+            "editorCursor.foreground": "#e787e7",
             "editorCursor.background": "#ffffff",
             // panels and terminals
             "terminalCursor.foreground": "#ffae00",
             "terminal.foreground": "#75869b",
             //"terminal.background": "#1c1e29",
-            "terminal.background": "#282a3a",
+            "terminal.background": "#21222e",
             "terminal.border": "#3d3b4c",
             "panel.border": "#3d3b4c",
             //"panel.background": "#1c1e29"
-            "panel.background": "#282a3a",
+            "panel.background": "#21222e",
             "editorLineNumber.activeForeground": "#71fffa",
             "gitDecoration.untrackedResourceForeground": "#489e9e"
         }
@@ -80,7 +81,6 @@
     // editor general settings
     // ***************************
     "editor.fontFamily": " 'Lekton Nerd Font Mono', 'InconsolataGo Nerd Font Mono', 'Operator Mono Lig', Menlo, Monaco",
-    "editor.tabSize": 4,
     "editor.lineHeight": 22,
     "editor.fontSize": 15,
     "editor.cursorStyle": "line",
@@ -124,11 +124,6 @@
             ]
         }
     },
-    // *****************************
-    // General app and editor code
-    // tidyness settings
-    // *****************************
-    "files.trimTrailingWhitespace": true,
     "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
     "javascript.format.semicolons": "insert",
     // *****************************
@@ -136,6 +131,7 @@
     // *****************************
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "terminal.integrated.defaultLocation": "editor",
+    "terminal.integrated.tabs.enabled": false,
     // *****************************
     // Settings for Go programming
     // *****************************
@@ -167,65 +163,39 @@
     // *****************************
     // javascript language support
     // *****************************
+    "[svelte]": {
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
     "[javascript]": {
         "editor.tabSize": 4,
         "editor.formatOnSave": true,
         "separators.enabledSymbols": ["Classes", "Functions", "Methods"],
-        "separators.maxDepth": 1
+        "separators.maxDepth": 1,
+        "editor.language.colorizedBracketPairs": [
+            ["[", "]"],
+            ["(", ")"]
+        ]
     },
     "[json]": {
         "editor.quickSuggestions": {
             "strings": true
         },
-        "editor.tabSize": 4,
+        "editor.tabSize": 2,
         "editor.formatOnSave": true,
         "editor.suggest.insertMode": "replace",
         "gitlens.codeLens.scopes": ["document"]
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
     "javascript.preferences.quoteStyle": "single",
-    "prettier.tabWidth": 4,
     "editor.detectIndentation": false,
     "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
     "prettier.jsxSingleQuote": true,
     "prettier.singleQuote": true,
     "autoimport.filesToScan": "**/*.{ts,tsx,js,jsx}",
-    "emmet.triggerExpansionOnTab": true
+    "emmet.triggerExpansionOnTab": true,
+    "svelte.enable-ts-plugin": true,
+    "files.trimTrailingWhitespace": true,
+    "prettier.tabWidth": 4
 }
-
-// // **********************
-//   // todo highlight ext
-//   // **********************
-//   "todohighlight.isCaseSensitive": true,
-//   "todohighlight.keywords": [
-//     {
-//       "text": "REFACTOR",
-//       "color": "#333",
-//       "backgroundColor": "#3498db"
-//     },
-//     {
-//       "text": "FIXME",
-//       "color": "#333",
-//       "backgroundColor": "#e67e22"
-//     },
-//     {
-//       "text": "BUG",
-//       "color": "#333",
-//       "backgroundColor": "#e73c3c"
-//     },
-//     {
-//       "text": " TODO ",
-//       "color": "#333",
-//       "backgroundColor": "#2ecc71"
-//     },
-//     {
-//       "text": "debugger",
-//       "color": "#fff",
-//       "backgroundColor": "#ef3c1c"
-//     },
-//     {
-//       "text": "REMOVE",
-//       "color": "#fff",
-//       "backgroundColor": "#ef3c1c"
-//     }
-//   ],

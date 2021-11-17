@@ -15,8 +15,9 @@ echo "...Creating " $1
 
 npx degit sveltejs/template $1
 
+echo -e "\xE2\x9C\x94 created project "
 echo ""
-echo "cd " $1
-echo "npm install"
-echo "npm run dev"
+echo "  cd " $1
+echo "  npm install"
+echo "  npm run dev"
 echo ""
