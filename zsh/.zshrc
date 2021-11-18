@@ -98,8 +98,10 @@ alias testrep='go test -coverprofile=coverage.out && go tool cover -html=coverag
 alias cra='npx create-react-app'
 alias csa='~/.me/yootils/scripts/create-svelte-app.sh'
 alias cwa='~/.me/yootils/scripts/create-webpack-app.sh'
+alias cpa='~/.me/yootils/scripts/create-parcel-app.sh'
 alias tsa='~/.me/yootils/scripts/create-typescript-cli.sh'
 alias wa='~/.me/yootils/scripts/create-vanilla-web-app.sh'
+
 
 # --------------------------------------------------------------
 # utility script aliases
