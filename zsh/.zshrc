@@ -95,13 +95,19 @@ alias ss='git status'
 # CLI tools
 # --------------------------------------------------------------
 alias testrep='go test -coverprofile=coverage.out && go tool cover -html=coverage.out'
+
+# javascript web apps
+alias vwa='~/.me/yootils/scripts/create-vanilla-web-app.sh'
+
 alias cra='npx create-react-app'
 alias csa='~/.me/yootils/scripts/create-svelte-app.sh'
 alias cwa='~/.me/yootils/scripts/create-webpack-app.sh'
 alias cpa='~/.me/yootils/scripts/create-parcel-app.sh'
-alias tsa='~/.me/yootils/scripts/create-typescript-cli.sh'
-alias wa='~/.me/yootils/scripts/create-vanilla-web-app.sh'
+alias cja='~/.me/yootils/scripts/create-react-jest-babel-app.sh'
 
+# typescript web apps
+alias tra='~/.me/yootils/scripts/create-typescript-react-app.sh'
+alias tsa='~/.me/yootils/scripts/create-typescript-cli.sh'
 
 # --------------------------------------------------------------
 # utility script aliases

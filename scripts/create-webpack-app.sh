@@ -1,15 +1,19 @@
 #!/bin/bash
 
-echo ""
-echo " ┬ ┬┌─┐┌┐ ┌─┐┌─┐┌─┐┬┌─   "
-echo " │││├┤ ├┴┐├─┘├─┤│  ├┴┐   "
-echo " └┴┘└─┘└─┘┴  ┴ ┴└─┘┴ ┴   "
-echo " ┌─┐┌─┐┌─┐                 "
-echo " ├─┤├─┘├─┘                 "
-echo " ┴ ┴┴  ┴                    "
-echo ""
-echo "webpack based app generator..."
-echo ""
+cat << endOfBanner
+
+           _               _
+ _ _ _ ___| |_ ___ ___ ___| |_
+| | | | -_| . | . | .'|  _| '_|
+|_____|___|___|  _|__,|___|_,_|
+              |_|
+
+ ___ ___ ___
+| .'| . | . |
+|__,|  _|  _|
+    |_| |_|
+
+endOfBanner
 echo "creating app directory" $1
 
 # output controllers

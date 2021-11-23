@@ -1,10 +1,12 @@
 #!/bin/bash
 
-echo "  "
-echo " ┌┐ ┬─┐┌─┐┬ ┬   ┬ ┬┌─┐ "
-echo " ├┴┐├┬┘├┤ │││───│ │├─┘ "
-echo " └─┘┴└─└─┘└┴┘   └─┘┴   "
-echo " "
+cat << endOfBanner
+  _
+ | |_ ___ ___ _ _ _    _ _ ___
+ | . |  _| -_| | | |  | | | . |
+ |___|_| |___|_____|  |___|  _|
+                          |_|
+endOfBanner
 echo "running brew services.... "
 
 brew outdated
