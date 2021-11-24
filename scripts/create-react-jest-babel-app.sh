@@ -45,8 +45,12 @@ npm i --save react react-dom
 # jest types
 npm install @types/jest
 
+# webpack related
+npm i --save-dev webpack webpack-cli babel-loader
+
 echo -e "\xE2\x9C\x94 added babel dev packages"
 echo -e "\xE2\x9C\x94 added babel runtime"
 echo -e "\xE2\x9C\x94 added jest"
 echo -e "\xE2\x9C\x94 added react & react-dom"
+echo -e "\xE2\x9C\x94 added webpack, webpack-cli & babel-loader"
 
