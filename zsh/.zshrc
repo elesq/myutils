@@ -98,12 +98,14 @@ alias testrep='go test -coverprofile=coverage.out && go tool cover -html=coverag
 
 # javascript web apps
 alias vwa='~/.me/yootils/scripts/create-vanilla-web-app.sh'
-
 alias cra='npx create-react-app'
 alias csa='~/.me/yootils/scripts/create-svelte-app.sh'
 alias cwa='~/.me/yootils/scripts/create-webpack-app.sh'
 alias cpa='~/.me/yootils/scripts/create-parcel-app.sh'
 alias cja='~/.me/yootils/scripts/create-react-jest-babel-app.sh'
+
+# testing / automation clis
+alias pup='~/.me/yootils/scripts/create-puppeteer-project-cli.sh'
 
 # typescript web apps
 alias tra='~/.me/yootils/scripts/create-typescript-react-app.sh'
@@ -121,6 +123,7 @@ alias gout='~/.me/yootils/scripts/gout.sh'
 alias mgo='~/.me/yootils/scripts/shellmongo.sh'
 alias pgs='~/.me/yootils/scripts/shellpostgres.sh'
 alias ppp='~/.me/yootils/scripts/add-prettier-config-file.sh'
+alias cli='~/.me/yootils/scripts/show-clis.sh'
 
 # --------------------------------------------------------------
 # containerised services alias
