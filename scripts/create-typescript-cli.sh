@@ -38,7 +38,7 @@ echo -e "${green}\xE2\x9C\x94 ${grey}created project" $1
 cd $1
 
 if test -f "./package.json"; then
-    echo -e "\xE2\x9C\x94 package.json exists. "
+    echo -e "${green}\xE2\x9C\x94 ${grey}package.json exists. "
 fi
 
 # add the npm packages
