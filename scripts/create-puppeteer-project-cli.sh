@@ -24,7 +24,12 @@ npm i puppeteer@10.1.0 mocha chai
 npm i @types/puppeteer
 
 
-echo -e "\xE2\x9C\x94 created project" $1
-echo -e "\xE2\x9C\x94 cloned starter repo"
-echo -e "\xE2\x9C\x94 added npm packages: puppeteer, mocha & chai" $1
-echo -e "\xE2\x9C\x94 added puppeteer types"
+e=$(printf "\e")
+red=`echo -e "$e[1;31m"`
+green=`echo -e "$e[1;32m"`
+grey=`echo -e "$e[1;90m"`
+
+echo -e "${green}\xE2\x9C\x94 ${grey}created project" $1
+echo -e "${green}\xE2\x9C\x94 ${grey}cloned starter repo"
+echo -e "${green}\xE2\x9C\x94 ${grey}added npm packages: puppeteer, mocha & chai" $1
+echo -e "${green}\xE2\x9C\x94 ${grey}added puppeteer types"

@@ -2,16 +2,15 @@
 
 cat << endOfBanner
 
-           _               _
- _ _ _ ___| |_ ___ ___ ___| |_
-| | | | -_| . | . | .'|  _| '_|
-|_____|___|___|  _|__,|___|_,_|
-              |_|
-
- ___ ___ ___
-| .'| . | . |
-|__,|  _|  _|
-    |_| |_|
+             _               _
+   _ _ _ ___| |_ ___ ___ ___| |_
+  | | | | -_| . | . | .'|  _| '_|
+  |_____|___|___|  _|__,|___|_,_|
+                |_|
+     ___ ___ ___
+    | .'| . | . |
+    |__,|  _|  _|
+        |_| |_|
 
 endOfBanner
 echo "creating app directory" $1
@@ -46,4 +45,10 @@ echo "    webpack"
 echo "    webpack-cli"
 
 echo ""
-echo -e "\xE2\x9C\x94 created"
+
+e=$(printf "\e")
+red=`echo -e "$e[1;31m"`
+green=`echo -e "$e[1;32m"`
+grey=`echo -e "$e[1;90m"`
+
+echo -e "${green}\xE2\x9C\x94 ${grey}created"

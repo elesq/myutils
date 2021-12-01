@@ -22,3 +22,10 @@ endOfBanner
 echo "creating typescript based react project" $1
 
 npx create-react-app $1 --template typescript
+
+e=$(printf "\e")
+red=`echo -e "$e[1;31m"`
+green=`echo -e "$e[1;32m"`
+grey=`echo -e "$e[1;90m"`
+
+echo -e "${green}\xE2\x9C\x94 ${grey}created typescript project"

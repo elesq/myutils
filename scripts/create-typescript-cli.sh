@@ -25,7 +25,14 @@ normal=$(tput sgr0)
 
 # pull the base repo
 git clone git@github.com:elesq/ts-app-starter.git $1
-echo -e "\xE2\x9C\x94 created project" $1
+
+
+e=$(printf "\e")
+red=`echo -e "$e[1;31m"`
+green=`echo -e "$e[1;32m"`
+grey=`echo -e "$e[1;90m"`
+
+echo -e "${green}\xE2\x9C\x94 ${grey}created project" $1
 
 # change into project directory
 cd $1
