@@ -8,7 +8,7 @@
     "window.titleBarStyle": "custom",
     "explorer.compactFolders": false,
     "debug.allowBreakpointsEverywhere": true,
-    "editor.minimap.scale": 3,
+    "editor.minimap.scale": 2,
     "gitlens.showWelcomeOnInstall": false,
     "material-icon-theme.showWelcomeMessage": false,
     // ***************************
@@ -75,13 +75,38 @@
             "panel.background": "#21222e",
             "editorLineNumber.activeForeground": "#71fffa",
             "gitDecoration.untrackedResourceForeground": "#489e9e"
+        },
+        "[Electronic Moonlight]": {
+            "editorSuggestWidget.selectedBackground": "#305183",
+            "separators.classes.borderColor": "#2b3867",
+            "separators.interfaces.borderColor": "#2b3867",
+            "separators.methods.borderColor": "#2b3867",
+            "separators.functions.borderColor": "#2b3867",
+            "separators.constructors.borderColor": "#2b3867",
+            "separators.namespaces.borderColor": "#2b3867",
+            "separators.enums.borderColor": "#2b3867",
+            "separators.structs.borderColor": "#2b3867",
+            "tab.activeBorder": "#594c86",
+            "tab.activeBackground": "#352c53",
+            "activityBar.background": "#181b2b",
+            "editor.background": "#232537",
+            "editorCursor.foreground": "#05cdcd",
+            "editorCursor.background": "#ffffff",
+            "editorLineNumber.activeForeground": "#00d5ff",
+            "sideBar.border": "#2b3b5d",
+            // panels
+            "panel.border": "#457292",
+            "panel.background": "#2e3042",
+            "terminal.border": "#457292",
+            "terminal.background": "#2e3042",
+            "terminalCursor.foreground": "#ffae00"
         }
     },
     // ***************************
     // editor general settings
     // ***************************
     "editor.fontFamily": " 'Lekton Nerd Font Mono', 'InconsolataGo Nerd Font Mono', 'Operator Mono Lig', Menlo, Monaco",
-    "editor.lineHeight": 22,
+    "editor.lineHeight": 23,
     "editor.fontSize": 15,
     "editor.cursorStyle": "line",
     "editor.cursorWidth": 15,
@@ -91,6 +116,7 @@
     "editor.formatOnType": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.linkedEditing": true,
+    "editor.bracketPairColorization.enabled": false,
     "editor.guides.bracketPairs": true,
     "editor.tokenColorCustomizations": {
         // **************************
@@ -119,6 +145,17 @@
                     "scope": "meta.object-literal.key.js",
                     "settings": {
                         "foreground": "#deaae6"
+                    }
+                }
+            ]
+        },
+
+        "[Electronic Moonlight]": {
+            "textMateRules": [
+                {
+                    "scope": "meta.brace.round.js, meta.function-call.without-arguments.js, meta.new-class.without-arguments.js",
+                    "settings": {
+                        //"foreground": "#ec97e3"
                     }
                 }
             ]
@@ -166,7 +203,9 @@
     "[svelte]": {
         "editor.tabSize": 4,
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "svelte.svelte-vscode"
+        "editor.defaultFormatter": "svelte.svelte-vscode",
+        "separators.enabledSymbols": ["Classes", "Functions", "Methods"],
+        "separators.maxDepth": 1
     },
     "[javascript]": {
         "editor.tabSize": 4,
@@ -190,12 +229,13 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "javascript.preferences.quoteStyle": "single",
     "editor.detectIndentation": false,
-    "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+    "workbench.colorTheme": "Electronic Moonlight",
     "prettier.jsxSingleQuote": true,
     "prettier.singleQuote": true,
     "autoimport.filesToScan": "**/*.{ts,tsx,js,jsx}",
     "emmet.triggerExpansionOnTab": true,
     "svelte.enable-ts-plugin": true,
     "files.trimTrailingWhitespace": true,
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+    "auto-close-tag.activationOnLanguage": ["html", "svelte"]
 }
