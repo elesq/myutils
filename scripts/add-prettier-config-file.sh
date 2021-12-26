@@ -26,6 +26,7 @@ cat > .prettierrc <<EOF
     "tabWidth": 4,
     "singleQuote": true,
     "jsxSingleQuote": true,
+    "arrowParens": "avoid",
     "overrides": [
         {
             "files": "*.json",

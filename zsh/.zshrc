@@ -11,8 +11,8 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ed/.oh-my-zsh"
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
-#ZSH_THEME="half-life"
+#ZSH_THEME="hyperzsh"
+ZSH_THEME="half-life"
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -63,6 +63,9 @@ export PATH=$HOME/go/bin:$PATH
 # protobuf settings
 export PATH=$PATH:/usr/local/protobuf/bin
 
+# local mongoDB installations
+export PATH=$PATH:/usr/local/Cellar/mongodb-community@4.2/4.2.17/bin
+
 # editor update
 export EDITOR=nvim
 alias vi=vim
@@ -72,10 +75,8 @@ alias vi=vim
 # --------------------------------------------------------------
 alias xx='clear'
 alias lrt='ls -lrt'
-alias www='cd ~/.me/code/elesq/web'
-alias scc='cd ~/.me/code/elesq/se-other'
-alias ttt='cd ~/.me/code/elesq/web/ts'
-alias yoo='cd ~/.me/yootils'
+alias www='cd ~/.elesq/code/js'
+alias yoo='cd ~/.elesq/yootils'
 alias zzz='source ~/.zshrc'
 
 
@@ -97,33 +98,33 @@ alias ss='git status'
 alias testrep='go test -coverprofile=coverage.out && go tool cover -html=coverage.out'
 
 # javascript web apps
-alias vwa='~/.me/yootils/scripts/create-vanilla-web-app.sh'
+alias vwa='~/.elesq/yootils/scripts/create-vanilla-web-app.sh'
 alias cra='npx create-react-app'
-alias csa='~/.me/yootils/scripts/create-svelte-app.sh'
-alias cwa='~/.me/yootils/scripts/create-webpack-app.sh'
-alias cpa='~/.me/yootils/scripts/create-parcel-app.sh'
-alias cja='~/.me/yootils/scripts/create-react-jest-babel-app.sh'
+alias csa='~/.elesq/yootils/scripts/create-svelte-app.sh'
+alias cwa='~/.elesq/yootils/scripts/create-webpack-app.sh'
+alias cpa='~/.elesq/yootils/scripts/create-parcel-app.sh'
+alias cja='~/.elesq/yootils/scripts/create-react-jest-babel-app.sh'
 
 # testing / automation clis
-alias pup='~/.me/yootils/scripts/create-puppeteer-project-cli.sh'
+alias pup='~/.elesq/yootils/scripts/create-puppeteer-project-cli.sh'
 
 # typescript web apps
-alias tra='~/.me/yootils/scripts/create-typescript-react-app.sh'
-alias tsa='~/.me/yootils/scripts/create-typescript-cli.sh'
+alias tra='~/.elesq/yootils/scripts/create-typescript-react-app.sh'
+alias tsa='~/.elesq/yootils/scripts/create-typescript-cli.sh'
 
 # --------------------------------------------------------------
 # utility script aliases
 # --------------------------------------------------------------
-alias bb='~/.me/yootils/scripts/brewup.sh'
-alias cc='~/.me/yootils/scripts/copycat.sh'
-alias kk='~/.me/yootils/scripts/porter.sh'
-alias npl='~/.me/yootils/scripts/npl.sh'
-alias gupd='~/.me/yootils/scripts/gupd.sh'
-alias gout='~/.me/yootils/scripts/gout.sh'
-alias mgo='~/.me/yootils/scripts/shellmongo.sh'
-alias pgs='~/.me/yootils/scripts/shellpostgres.sh'
-alias ppp='~/.me/yootils/scripts/add-prettier-config-file.sh'
-alias cli='~/.me/yootils/scripts/show-clis.sh'
+alias bb='~/.elesq/yootils/scripts/brewup.sh'
+alias cc='~/.elesq/yootils/scripts/copycat.sh'
+alias kk='~/.elesq/yootils/scripts/porter.sh'
+alias npl='~/.elesq/yootils/scripts/npl.sh'
+alias gupd='~/.elesq/yootils/scripts/gupd.sh'
+alias gout='~/.elesq/yootils/scripts/gout.sh'
+alias mgo='~/.elesq/yootils/scripts/shellmongo.sh'
+alias pgs='~/.elesq/yootils/scripts/shellpostgres.sh'
+alias ppp='~/.elesq/yootils/scripts/add-prettier-config-file.sh'
+alias cli='~/.elesq/yootils/scripts/show-clis.sh'
 
 # --------------------------------------------------------------
 # containerised services alias
@@ -138,7 +139,7 @@ alias docrabbit='docker run -d --hostname rabbitmq-host --name rabbitmq-server -
 alias docmysql="docker run --restart always --name mysql --net dev-net -v /Users/ed/data/mysql:/var/lib/mysql -p 3306:3306 -d -e MYSQL_USER=web@localhost -e MYSQL_PASSWORD=pass -e MYSQL_ROOT_PASSWORD=pass mysql"
 alias docpg10='docker run --name postgres-local -p 5432:5432 -v ~/data/postgres10:/var/lib/postgresql/data -e POSTGRES_USER=web -e POSTGRES_PASSWORD=pass -d postgres:10.8'
 alias docpg13='docker run --name pg13 -p 5432:5432 -v ~/data/postgres13:/var/lib/postgresql/data -e POSTGRES_USER=web -e POSTGRES_PASSWORD=pass -d postgres:13.4-alpine'
-alias docmongo='docker run -d --name mongodb -v ~/data/mongo:/data/db -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=pass -p 27017:27017 mongo:4.4.3'
+alias docmongo='docker run -d --name mongodb -v ~/data/mongo:/data/db -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=pass -p 27017:27017 mongo:4.2.0'
 
 # DB shells
 alias mysqlroot="docker exec -it mysql mysql -u root -p"
