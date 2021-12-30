@@ -11,8 +11,9 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ed/.oh-my-zsh"
 
-#ZSH_THEME="hyperzsh"
-ZSH_THEME="half-life"
+#ZSH_THEME="half-life"
+ZSH_THEME="hyperzsh"
+#ZSH_THEME="spaceship"
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -79,6 +80,10 @@ alias www='cd ~/.elesq/code/js'
 alias yoo='cd ~/.elesq/yootils'
 alias zzz='source ~/.zshrc'
 
+# --------------------------------------------------------------
+# node aliases
+# --------------------------------------------------------------
+alias ni='node inspect'
 
 # --------------------------------------------------------------
 # git aliases

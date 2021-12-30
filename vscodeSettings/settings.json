@@ -90,16 +90,22 @@
             "tab.activeBackground": "#352c53",
             "activityBar.background": "#181b2b",
             "editor.background": "#232537",
-            "editorCursor.foreground": "#05cdcd",
-            "editorCursor.background": "#ffffff",
-            "editorLineNumber.activeForeground": "#00d5ff",
+            //"editorCursor.foreground": "#05cdcd",
+            "editorCursor.foreground": "#00ffea",
+            "editorCursor.background": "#353755",
+            "editorLineNumber.activeForeground": "#00eaff",
             "sideBar.border": "#2b3b5d",
             // panels
             "panel.border": "#457292",
             "panel.background": "#2e3042",
             "terminal.border": "#457292",
             "terminal.background": "#2e3042",
-            "terminalCursor.foreground": "#ffae00"
+            "terminalCursor.foreground": "#ffae00",
+            // terminal color overrides
+            //"terminal.ansiCyan": "#ff757f"
+            "terminal.ansiCyan": "#56b6c2",
+            "terminal.ansiBrightCyan": "#ff757f",
+            "terminal.foreground": "#a7a7e5"
         }
     },
     // ***************************
@@ -194,9 +200,17 @@
         "editor.tabSize": 4
     },
     "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
     "files.associations": {
         "*tmpl": "html"
     },
+    // *****************************
+    // Settings for solidity
+    // *****************************
+    "[solidity]": {},
     // *****************************
     // javascript language support
     // *****************************
@@ -208,6 +222,8 @@
         "separators.maxDepth": 1
     },
     "[javascript]": {
+        "editor.quickSuggestions": true,
+        "editor.suggestOnTriggerCharacters": true,
         "editor.tabSize": 4,
         "editor.formatOnSave": true,
         "separators.enabledSymbols": ["Classes", "Functions", "Methods"],
@@ -233,9 +249,9 @@
     "prettier.jsxSingleQuote": true,
     "prettier.singleQuote": true,
     "autoimport.filesToScan": "**/*.{ts,tsx,js,jsx}",
-    "emmet.triggerExpansionOnTab": true,
     "svelte.enable-ts-plugin": true,
     "files.trimTrailingWhitespace": true,
     "prettier.tabWidth": 4,
-    "auto-close-tag.activationOnLanguage": ["html", "svelte"]
+    "auto-close-tag.activationOnLanguage": ["html", "svelte"],
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }
