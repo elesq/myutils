@@ -6,6 +6,10 @@ window:
     x: 10
     y: 30
 
+  position:
+    x: 1300
+    y: 150
+
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
 
