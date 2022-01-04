@@ -144,7 +144,7 @@ alias docrabbit='docker run -d --hostname rabbitmq-host --name rabbitmq-server -
 alias docmysql="docker run --restart always --name mysql --net dev-net -v /Users/ed/data/mysql:/var/lib/mysql -p 3306:3306 -d -e MYSQL_USER=web@localhost -e MYSQL_PASSWORD=pass -e MYSQL_ROOT_PASSWORD=pass mysql"
 alias docpg10='docker run --name postgres-local -p 5432:5432 -v ~/data/postgres10:/var/lib/postgresql/data -e POSTGRES_USER=web -e POSTGRES_PASSWORD=pass -d postgres:10.8'
 alias docpg13='docker run --name pg13 -p 5432:5432 -v ~/data/postgres13:/var/lib/postgresql/data -e POSTGRES_USER=web -e POSTGRES_PASSWORD=pass -d postgres:13.4-alpine'
-alias docmongo='docker run -d --name mongodb -v ~/data/mongo:/data/db -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=pass -p 27017:27017 mongo:4.2.0'
+alias docmongo='docker run -d --name mongodb -v ~/data/mongo:/data/db -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=pass -p 27017:27017 mongo:4.4.0'
 
 # DB shells
 alias mysqlroot="docker exec -it mysql mysql -u root -p"

@@ -21,60 +21,32 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
     "workbench.colorCustomizations": {
-        // ***************************
-        // monokai pro palletes
-        // ***************************
-        "[Monokai Pro]": {
-            "editorSuggestWidget.selectedBackground": "#297fbc",
-            "separators.classes.borderColor": "#3f4148",
-            "separators.interfaces.borderColor": "#3f4148",
-            "separators.methods.borderColor": "#3f4148",
-            "separators.functions.borderColor": "#3f4148",
-            "separators.constructors.borderColor": "#3f4148",
-            "separators.namespaces.borderColor": "#3f4148",
-            //sidebar
-            "sideBar.background": "#262326",
-            "sideBar.border": "#242124",
-            "sideBarSectionHeader.background": "#262326",
-            // editor tab
-            "tab.activeBackground": "#403e41",
-            "editorCursor.foreground": "#d705d7",
-            "editorCursor.background": "#ffffff",
-            // panels and terminals
-            "terminalCursor.foreground": "#ffae00",
-            "terminal.foreground": "#8f9296",
-            "terminal.background": "#363437",
-            "terminal.border": "#2b2235",
-            "panel.border": "#2b2235",
-            "panel.background": "#363437"
-        },
-        "[Monokai Pro (Filter Octagon)]": {
-            //"editorSuggestWidget.selectedBackground": "#297fbc",
-            "editorSuggestWidget.selectedBackground": "#305183",
-            //"editorSuggestWidget.selectedForeground": "#000000",
-            //"editorSuggestWidget.selectedIconForeground": "#000000",
-            "separators.classes.borderColor": "#373c4e",
-            "separators.interfaces.borderColor": "#373c4e",
-            "separators.methods.borderColor": "#373c4e",
-            "separators.functions.borderColor": "#373c4e",
-            "separators.constructors.borderColor": "#373c4e",
-            "separators.namespaces.borderColor": "#373c4e",
-            "separators.enums.borderColor": "#373c4e",
-            // editor tab
-            "tab.activeBackground": "#2b5585",
-            "editorCursor.foreground": "#e787e7",
-            "editorCursor.background": "#ffffff",
-            // panels and terminals
-            "terminalCursor.foreground": "#ffae00",
-            "terminal.foreground": "#75869b",
-            //"terminal.background": "#1c1e29",
-            "terminal.background": "#21222e",
-            "terminal.border": "#3d3b4c",
-            "panel.border": "#3d3b4c",
-            //"panel.background": "#1c1e29"
-            "panel.background": "#21222e",
-            "editorLineNumber.activeForeground": "#71fffa",
-            "gitDecoration.untrackedResourceForeground": "#489e9e"
+        "[Min Dark]": {
+            "sideBar.border": "#393737",
+            "activityBar.foreground": "#00ffea",
+            "activityBar.inactiveForeground": "#646363",
+            "activityBarBadge.background": "#ff0000",
+            "statusBar.foreground": "#9ccbd1",
+            // separators
+            "separators.interfaces.borderColor": "#373a47",
+            "separators.methods.borderColor": "#373a47",
+            "separators.functions.borderColor": "#373a47",
+            "separators.constructors.borderColor": "#373a47",
+            "separators.namespaces.borderColor": "#373a47",
+            "separators.enums.borderColor": "#373a47",
+            "separators.structs.borderColor": "#373a47",
+            // editor
+            "tab.activeBorder": "#00ffea",
+            "tab.activeBackground": "#292929",
+            "editorLineNumber.foreground": "#474444",
+            "editor.lineHighlightBackground": "#2d2b2b",
+            "editorCursor.foreground": "#00ffea",
+            "editorCursor.background": "#353755",
+            // panel
+            "panelTitle.activeForeground": "#00e5d2",
+            // terminal
+            "terminal.foreground": "#7e878b",
+            "terminalCursor.foreground": "#ffae00"
         },
         "[Electronic Moonlight]": {
             "editorSuggestWidget.selectedBackground": "#305183",
@@ -106,6 +78,9 @@
             "terminal.ansiCyan": "#56b6c2",
             "terminal.ansiBrightCyan": "#ff757f",
             "terminal.foreground": "#a7a7e5"
+        },
+        "[Electron]": {
+            "sideBar.border": "#253449"
         }
     },
     // ***************************
@@ -124,6 +99,11 @@
     "editor.linkedEditing": true,
     "editor.bracketPairColorization.enabled": false,
     "editor.guides.bracketPairs": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
     "editor.tokenColorCustomizations": {
         // **************************
         // universal overrides
@@ -136,6 +116,7 @@
                 }
             }
         ],
+
         // ***************************
         // monokai pro customisations.
         // ***************************
@@ -162,6 +143,25 @@
                     "scope": "meta.brace.round.js, meta.function-call.without-arguments.js, meta.new-class.without-arguments.js",
                     "settings": {
                         //"foreground": "#ec97e3"
+                    }
+                }
+            ]
+        },
+
+        "[Min Dark]": {
+            "textMateRules": [
+                {
+                    "scope": "string.quoted.single.js",
+                    "settings": {
+                        "foreground": "#59b2b2"
+                        //"foreground": "#91ba75"
+                    }
+                },
+                {
+                    "scope": "string.quoted.double.json",
+                    "settings": {
+                        "foreground": "#1cf4e2"
+                        //"foreground": "#91ba75"
                     }
                 }
             ]
@@ -245,7 +245,6 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "javascript.preferences.quoteStyle": "single",
     "editor.detectIndentation": false,
-    "workbench.colorTheme": "Electronic Moonlight",
     "prettier.jsxSingleQuote": true,
     "prettier.singleQuote": true,
     "autoimport.filesToScan": "**/*.{ts,tsx,js,jsx}",
@@ -253,5 +252,62 @@
     "files.trimTrailingWhitespace": true,
     "prettier.tabWidth": 4,
     "auto-close-tag.activationOnLanguage": ["html", "svelte"],
-    "typescript.updateImportsOnFileMove.enabled": "always"
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorTheme": "Min Dark"
 }
+
+// ***************************
+// monokai pro palletes
+// ***************************
+// "[Monokai Pro]": {
+//     "editorSuggestWidget.selectedBackground": "#297fbc",
+//     "separators.classes.borderColor": "#3f4148",
+//     "separators.interfaces.borderColor": "#3f4148",
+//     "separators.methods.borderColor": "#3f4148",
+//     "separators.functions.borderColor": "#3f4148",
+//     "separators.constructors.borderColor": "#3f4148",
+//     "separators.namespaces.borderColor": "#3f4148",
+//     //sidebar
+//     "sideBar.background": "#262326",
+//     "sideBar.border": "#242124",
+//     "sideBarSectionHeader.background": "#262326",
+//     // editor tab
+//     "tab.activeBackground": "#403e41",
+//     "editorCursor.foreground": "#d705d7",
+//     "editorCursor.background": "#ffffff",
+//     // panels and terminals
+//     "terminalCursor.foreground": "#ffae00",
+//     "terminal.foreground": "#8f9296",
+//     "terminal.background": "#363437",
+//     "terminal.border": "#2b2235",
+//     "panel.border": "#2b2235",
+//     "panel.background": "#363437"
+// },
+// "[Monokai Pro (Filter Octagon)]": {
+//     //"editorSuggestWidget.selectedBackground": "#297fbc",
+//     "editorSuggestWidget.selectedBackground": "#305183",
+//     //"editorSuggestWidget.selectedForeground": "#000000",
+//     //"editorSuggestWidget.selectedIconForeground": "#000000",
+//     "separators.classes.borderColor": "#373c4e",
+//     "separators.interfaces.borderColor": "#373c4e",
+//     "separators.methods.borderColor": "#373c4e",
+//     "separators.functions.borderColor": "#373c4e",
+//     "separators.constructors.borderColor": "#373c4e",
+//     "separators.namespaces.borderColor": "#373c4e",
+//     "separators.enums.borderColor": "#373c4e",
+//     // editor tab
+//     "tab.activeBackground": "#2b5585",
+//     "editorCursor.foreground": "#e787e7",
+//     "editorCursor.background": "#ffffff",
+//     // panels and terminals
+//     "terminalCursor.foreground": "#ffae00",
+//     "terminal.foreground": "#75869b",
+//     //"terminal.background": "#1c1e29",
+//     "terminal.background": "#21222e",
+//     "terminal.border": "#3d3b4c",
+//     "panel.border": "#3d3b4c",
+//     //"panel.background": "#1c1e29"
+//     "panel.background": "#21222e",
+//     "editorLineNumber.activeForeground": "#71fffa",
+//     "gitDecoration.untrackedResourceForeground": "#489e9e"
+// },
