@@ -27,6 +27,8 @@
             "activityBar.inactiveForeground": "#646363",
             "activityBarBadge.background": "#ff0000",
             "statusBar.foreground": "#9ccbd1",
+            // intellisense
+            "editorSuggestWidget.selectedBackground": "#305183",
             // separators
             "separators.interfaces.borderColor": "#373a47",
             "separators.methods.borderColor": "#373a47",
@@ -35,6 +37,7 @@
             "separators.namespaces.borderColor": "#373a47",
             "separators.enums.borderColor": "#373a47",
             "separators.structs.borderColor": "#373a47",
+            "separators.classes.borderColor": "#373a47",
             // editor
             "tab.activeBorder": "#00ffea",
             "tab.activeBackground": "#292929",
@@ -151,7 +154,7 @@
         "[Min Dark]": {
             "textMateRules": [
                 {
-                    "scope": "string.quoted.single.js",
+                    "scope": "string.quoted.single.js, string.quoted.double.js, string.quoted.double.html",
                     "settings": {
                         "foreground": "#59b2b2"
                         //"foreground": "#91ba75"
@@ -253,7 +256,8 @@
     "prettier.tabWidth": 4,
     "auto-close-tag.activationOnLanguage": ["html", "svelte"],
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "workbench.colorTheme": "Min Dark"
+    "workbench.colorTheme": "Min Dark",
+    "explorer.confirmDragAndDrop": false
 }
 
 // ***************************

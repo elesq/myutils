@@ -21,7 +21,8 @@
         "prefix": "gamecanvas",
         "body": [
             "/** @type {HTMLCanvasElement} */",
-            "const canvas = document.getElementById('gameCanvas');"
+            "const canvas = document.getElementById('gameCanvas');",
+            "const ctx = canvas.getContext('2d');"
         ],
         "description": "create a new canvas element with intellisense type declared"
     }
