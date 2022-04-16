@@ -12,8 +12,8 @@ fi
 export ZSH="/Users/ed/.oh-my-zsh"
 
 #ZSH_THEME="half-life"
-ZSH_THEME="hyperzsh"
-#ZSH_THEME="spaceship"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+#ZSH_THEME="hyperzsh"
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -76,9 +76,18 @@ alias vi=vim
 # --------------------------------------------------------------
 alias xx='clear'
 alias lrt='ls -lrt'
-alias www='cd ~/.elesq/code/js'
-alias yoo='cd ~/.elesq/yootils'
 alias zzz='source ~/.zshrc'
+
+# --------------------------------------------------------------
+# place aliases
+# --------------------------------------------------------------
+alias ccc='cd ~/.elesq/code'
+alias ooo='cd ~/.elesq/code/go'
+alias www='cd ~/.elesq/code/www'
+alias yyy='cd ~/.elesq/code/python'
+alias fff='cd ~/.elesq/code/mobile/flutter-projects'
+alias vvv='cd ~/.elesq/code/gamedev'
+alias yoo='cd ~/.elesq/yootils'
 
 # --------------------------------------------------------------
 # node aliases
@@ -158,6 +167,17 @@ alias mongouser='docker exec -it mongodb bash'
 # stored on github
 
 # --------------------------------------------------------------
+# go development settings
+# --------------------------------------------------------------
+export PATH="/usr/local/go/bin:$PATH"
+
+
+# --------------------------------------------------------------
+# flutter development settings
+# --------------------------------------------------------------
+export PATH="$HOME/.flutter/flutter/bin:$PATH"
+
+# --------------------------------------------------------------
 # add node commands installed to path
 # --------------------------------------------------------------
 export PATH=./node_modules/.bin:$PATH
@@ -177,11 +197,33 @@ then
   compinit
 fi
 
-cat << endOfBanner
 
-   __                 __           __      _______ _______ _______
-  |  |.-----.---.-.--|  |.-----.--|  |    |__     |     __|   |   |
-  |  ||  _  |  _  |  _  ||  -__|  _  |    |     __|__     |       |__ __ __
-  |__||_____|___._|_____||_____|_____|    |_______|_______|___|___|__|__|__|
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH=$HOME/.pyenv/shims:$PATH
 
-endOfBanner
+
+if command -v pyenv &>/dev/null; then
+    eval "$(pyenv init -)"
+fi
+if command -v pyenv-virtualenv &>/dev/null; then
+    eval "$(pyenv virtualenv-init -)"
+fi
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+conda config --set auto_activate_base false
+# <<< conda initialize <<<
