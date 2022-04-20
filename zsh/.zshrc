@@ -38,6 +38,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#688183"
 
 # If you need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -81,12 +82,8 @@ alias zzz='source ~/.zshrc'
 # --------------------------------------------------------------
 # place aliases
 # --------------------------------------------------------------
-alias ccc='cd ~/.elesq/code'
-alias ooo='cd ~/.elesq/code/go'
-alias www='cd ~/.elesq/code/www'
-alias yyy='cd ~/.elesq/code/python'
-alias fff='cd ~/.elesq/code/mobile/flutter-projects'
-alias vvv='cd ~/.elesq/code/gamedev'
+alias aaa='cd ~/.elesq/code/archived'
+alias www='cd ~/.elesq/code/wip'
 alias yoo='cd ~/.elesq/yootils'
 
 # --------------------------------------------------------------

@@ -4,7 +4,7 @@
   // ***************************
   // globals and basics
   // ***************************
-  "window.zoomLevel": -1.2,
+  "window.zoomLevel": -1.15,
   "window.titleBarStyle": "custom",
   "explorer.compactFolders": false,
   "debug.allowBreakpointsEverywhere": true,
@@ -22,7 +22,7 @@
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Electron",
+  "workbench.colorTheme": "Radical",
   "workbench.startupEditor": "none",
   "workbench.editorAssociations": {
     "*.db": "sqlite-viewer.option"
@@ -50,13 +50,49 @@
       "statusBar.background": "#141820",
       // panel and term
       "panel.border": "#3c627d"
+    },
+    "[Radical]": {
+      // sidebar, frame and panel
+      "titleBar.border": "#000F1A",
+      "titleBar.activeForeground": "#766174",
+      "activityBar.border": "#000F1A",
+      "sideBar.border": "#52213a",
+      "panel.border": "#642b49",
+      "statusBar.border": "#331424",
+      "terminal.border": "#52213a",
+      // editor
+      "tab.activeBackground": "#44233b",
+      "editorCursor.foreground": "#ffae00",
+      "editorCursor.background": "#170326",
+      // theme palette adjustments
+      "editor.background": "#1b1a2b",
+      "terminal.background": "#1b1a2b",
+      "panel.background": "#1b1a2b",
+      "breadcrumb.background": "#1b1a2b",
+      "tab.activeBorder": "#bc0a8c",
+      "tab.inactiveBackground": "#16152c",
+      "tab.border": "#53243d",
+      // separators
+      "separators.interfaces.borderColor": "#313650",
+      "separators.methods.borderColor": "#313650",
+      "separators.functions.borderColor": "#313650",
+      "separators.constructors.borderColor": "#313650",
+      "separators.namespaces.borderColor": "#313650",
+      "separators.enums.borderColor": "#313650",
+      "separators.structs.borderColor": "#313650",
+      "separators.classes.borderColor": "#313650",
+      // terminal
+      "terminalCursor.foreground": "#ff0000",
+      "terminalCursor.background": "#ffffff",
+      "terminal.foreground": "#6d8889",
+      "terminal.ansiBrightBlack": "#777"
     }
   },
   // ***************************
   // editor general settings
   // ***************************
-  //"editor.fontFamily": " 'Lekton Nerd Font Mono', 'InconsolataGo Nerd Font Mono', 'Operator Mono Lig', Menlo, Monaco",
-  "editor.fontFamily": " 'Inconsolata Nerd Font Mono', 'Operator Mono Lig', Menlo, Monaco",
+  "editor.fontFamily": " 'Lekton Nerd Font Mono', 'InconsolataGo Nerd Font Mono', 'Operator Mono Lig', Menlo, Monaco",
+  //"editor.fontFamily": " 'Inconsolata Nerd Font Mono', 'Operator Mono Lig', Menlo, Monaco",
   //"editor.fontFamily": "'Operator Mono Lig', 'Lekton Nerd Font Mono', 'InconsolataGo Nerd Font Mono', Menlo, Monaco",
   //"editor.fontFamily": "'UbuntuMono Nerd Font', 'Hack Nerd font Mono', Menlo, Monaco",
   //"editor.fontFamily": " 'Hack Nerd font Mono', Menlo, Monaco",
@@ -100,6 +136,35 @@
           }
         }
       ]
+    },
+    "[Radical]": {
+      "textMateRules": [
+        {
+          "scope": "string.quoted, string.quoted.double",
+          "settings": {
+            //"foreground": "#9393ca"
+            "foreground": "#9f9fc9"
+          }
+        },
+        {
+          "scope": "keyword.operator, storage.type",
+          "settings": {
+            "foreground": "#ff87bf"
+          }
+        },
+        {
+          "scope": "variable.other.object.js",
+          "settings": {
+            "foreground": "#a0c0d0"
+          }
+        },
+        {
+          "scope": "support.type.object.module.js",
+          "settings": {
+            "foreground": "#b3e646"
+          }
+        }
+      ]
     }
   },
   "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
@@ -114,14 +179,14 @@
   // Settings for Go programming
   // *****************************
   "go.toolsManagement.autoUpdate": true,
-  "[go]": {
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    },
-    "editor.tabSize": 4,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "golang.go"
-  },
+  // "[go]": {
+  //   "editor.codeActionsOnSave": {
+  //     "source.organizeImports": true
+  //   },
+  //   "editor.tabSize": 4,
+  //   "editor.formatOnSave": true,
+  //   "editor.defaultFormatter": "golang.go"
+  // },
   "gopls": {
     "analyses": {
       "composites": false
@@ -130,7 +195,7 @@
   // *****************************
   // Settings for python
   // *****************************
-  "python.defaultInterpreterPath": "/Users/ed/.pyenv/versions/3.9.1/envs/flask",
+  "python.defaultInterpreterPath": "/Users/ed/.pyenv/versions/3.9.1/envs/pydev",
   "[python]": {
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-python.python",
@@ -217,7 +282,9 @@
     "track",
     "wbr"
   ],
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  "python.formatting.provider": "black",
+  "editor.fontLigatures": true
 }
 
 // ADDITIONAL THEME OVERRIDES
