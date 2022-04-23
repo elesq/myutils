@@ -159,6 +159,12 @@
           }
         },
         {
+          "scope": "variable.language.this.js",
+          "settings": {
+            "foreground": "#03b3ca"
+          }
+        },
+        {
           "scope": "support.type.object.module.js",
           "settings": {
             "foreground": "#b3e646"
@@ -284,7 +290,9 @@
   ],
   "liveServer.settings.donotShowInfoMsg": true,
   "python.formatting.provider": "black",
-  "editor.fontLigatures": true
+  "editor.fontLigatures": true,
+  "editor.autoClosingQuotes": "always",
+  "window.title": "${activeEditorMedium}${separator}${rootName}"
 }
 
 // ADDITIONAL THEME OVERRIDES
