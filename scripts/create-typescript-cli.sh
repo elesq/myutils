@@ -52,6 +52,9 @@ echo -e "\xE2\x9C\x94 removed link to base repo as origin."
 # remove the readme from the clone
 rm -rf readme.md
 
+# run the typescript compiler on the new project
+# to create a runnable version with npm start
+tsc
 
 echo ""
 echo "  ${bold}Added packages:${normal}"
