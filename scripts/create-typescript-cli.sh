@@ -49,6 +49,10 @@ echo -e "\xE2\x9C\x94 added types."
 git remote rm origin
 echo -e "\xE2\x9C\x94 removed link to base repo as origin."
 
+# remove the readme from the clone
+rm -rf readme.md
+
+
 echo ""
 echo "  ${bold}Added packages:${normal}"
 echo "    @types/node"
