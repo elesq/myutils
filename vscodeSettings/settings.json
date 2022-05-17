@@ -26,22 +26,125 @@
     "*.db": "sqlite-viewer.option"
   },
   "workbench.colorCustomizations": {
-    "[Default Dark+]": {
+    // *************************
+    // ** Current default light
+    // ** theme coice
+    // *************************
+    "[Light (Visual Studio for Mac)]": {
+      // app container
+      "titleBar.activeBackground": "#b1b1b1",
+      "sideBar.background": "#d5d6d6",
+      "sideBar.border": "#b0b0b0",
+      "sideBarSectionHeader.background": "#d0d1d1",
+      "panelTitle.activeForeground": "#555454",
+      "panelTitle.inactiveForeground": "#989696",
+      "panel.background": "#d9dadb",
+      "panel.border": "#9a9a9a",
+      "terminal.background": "#d9dadb",
+      "terminal.ansiGreen": "#0f9329",
+      "list.inactiveSelectionBackground": "#cbc9c9",
+      // editor
+      "tab.activeBorder": "#52cde3",
+      "tab.inactiveBackground": "#dddddd",
+      "tab.border": "#cacaca",
+      "tab.activeBackground": "#f7f9fa",
+      "editorLineNumber.foreground": "#bcbcbc",
+      "editor.lineHighlightBackground": "#e5e4e4",
+      "editor.lineHighlightBorder": "#e5e4e4",
+      "editor.background": "#e8e9ea",
+      "minimap.background": "#e7e9ea",
+      "editorSuggestWidget.focusHighlightForeground": "#5fe5fd",
+      // seps
+      "separators.interfaces.borderColor": "#d8d3c1",
+      "separators.methods.borderColor": "#d8d3c1",
+      "separators.functions.borderColor": "#d8d3c1",
+      "separators.constructors.borderColor": "#d8d3c1",
+      "separators.namespaces.borderColor": "#d8d3c1",
+      "separators.enums.borderColor": "#d8d3c1",
+      "separators.structs.borderColor": "#d8d3c1",
+      "separators.classes.borderColor": "#d8d3c1"
+    },
+    "[Blueberry dark theme]": {
+      // app shell
+      "activityBar.background": "#181c2a",
+      "activityBar.foreground": "#09b49d",
+      "activityBar.border": "#19332c",
+      "activityBar.inactiveForeground": "#27495a",
+      "sideBar.background": "#1b1f2d",
+      "sideBar.border": "#0c2b22",
+      "editor.background": "#202534",
+      "editor.lineHighlightBackground": "#262b3a",
+      "scrollbar.shadow": "#202534",
+      "scrollbarSlider.activeBackground": "#262b3a72",
+      "scrollbarSlider.hoverBackground": "#262b3a72",
+      "scrollbarSlider.background": "#262b3a72",
+      "tab.activeBackground": "#163f4aa4",
+      "tab.inactiveBackground": "#212533",
+      "tab.activeBorder": "#00eaff89",
+      "tab.border": "#141723",
+      "panel.border": "#22473d",
+      "terminal.foreground": "#79868f",
+      // seps
+      "separators.interfaces.borderColor": "#1f3244",
+      "separators.methods.borderColor": "#1f3244",
+      "separators.functions.borderColor": "#1f3244",
+      "separators.constructors.borderColor": "#1f3244",
+      "separators.namespaces.borderColor": "#1f3244",
+      "separators.enums.borderColor": "#1f3244",
+      "separators.structs.borderColor": "#1f3244",
+      "separators.classes.borderColor": "#1f3244"
+    },
+    "[Solarized Light]": {
+      // app container
+      "titleBar.activeBackground": "#d1cbb7",
+      "activityBar.background": "#d1cbb7",
+      "activityBar.inactiveForeground": "#7f7e7b",
+      "sideBarSectionHeader.background": "#d1cbb7",
+      "sideBar.background": "#e0dac7",
+      "sideBar.border": "#d8d3c1",
+      // editor
+      "editor.background": "#f5efdc",
+      "tab.inactiveBackground": "#c4c1ac",
+      // terminal
+      "panel.background": "#ebe5d2",
+      "panel.border": "#bbb6a7",
+      "terminal.background": "#ebe5d2",
+      // separators
+      "separators.interfaces.borderColor": "#d8d3c1",
+      "separators.methods.borderColor": "#d8d3c1",
+      "separators.functions.borderColor": "#d8d3c1",
+      "separators.constructors.borderColor": "#d8d3c1",
+      "separators.namespaces.borderColor": "#d8d3c1",
+      "separators.enums.borderColor": "#d8d3c1",
+      "separators.structs.borderColor": "#d8d3c1",
+      "separators.classes.borderColor": "#d8d3c1"
+    },
+    "[Default Dark+][Visual Studio Dark]": {
       // app container
       "titleBar.activeBackground": "#242424",
       "activityBar.background": "#242424",
       "activityBar.border": "#191919",
+      //"activityBar.inactiveForeground": "#547a90",
       "statusBar.background": "#242424",
       "sideBar.background": "#242424",
       "sideBar.border": "#373737",
       "sideBar.foreground": "#aab",
-      "activityBar.foreground": "#8dbfc4",
+      //"activityBar.foreground": "#b9b19a",
+      "activityBar.foreground": "#e3d4ab",
+      "activityBar.inactiveForeground": "#5e5e54",
+      "activityBarBadge.background": "#e9ba0e",
+      "activityBarBadge.foreground": "#393937",
+      // terminal
+      "terminalCursor.foreground": "#eb4e7d",
       // editor
       "editor.background": "#232323",
       "editorLineNumber.foreground": "#555",
       "tab.activeBackground": "#555",
       "tab.activeBorderTop": "#42a1d4",
       "tab.activeBorder": "#6ac3ed",
+      "editorCursor.foreground": "#fbc11f",
+      "editor.lineHighlightBorder": "#262626",
+      "editor.lineHighlightBackground": "#262626",
       // separators
       "separators.interfaces.borderColor": "#373737",
       "separators.methods.borderColor": "#373737",
@@ -51,14 +154,43 @@
       "separators.enums.borderColor": "#373737",
       "separators.structs.borderColor": "#373737",
       "separators.classes.borderColor": "#373737"
+    },
+    "[Tokyo Night][Tokyo Night Storm]": {
+      // app containers
+      "panel.background": "#1a1b26",
+      "panel.border": "#2f464d",
+      // editor
+      "editorLineNumber.activeForeground": "#9892db",
+      "editorCursor.foreground": "#ffb700",
+      "tab.activeBackground": "#262448",
+      "tab.activeBorder": "#1c65c5",
+      "tab.activeBorderTop": "#164c91",
+      // terminal
+      "terminal.background": "#1a1b26",
+      "terminalCursor.foreground": "#11c151",
+      // intellisense
+      "editorSuggestWidget.selectedBackground": "#1348ab",
+      // separators
+      "separators.interfaces.borderColor": "#232a4b",
+      "separators.methods.borderColor": "#232a4b",
+      "separators.functions.borderColor": "#232a4b",
+      "separators.constructors.borderColor": "#232a4b",
+      "separators.namespaces.borderColor": "#232a4b",
+      "separators.enums.borderColor": "#232a4b",
+      "separators.structs.borderColor": "#232a4b",
+      "separators.classes.borderColor": "#232a4b"
+    },
+    "[Tokyo Night Storm]": {
+      "panel.background": "#24283b",
+      "terminal.background": "#24283b"
     }
   },
   // ***************************
   // ** editor general settings
   // ***************************
   //"editor.fontFamily": " 'Lekton Nerd Font Mono', 'InconsolataGo Nerd Font Mono', 'Operator Mono Lig', Menlo, Monaco",
-  "editor.fontFamily": " 'Inconsolata Nerd Font Mono', 'Operator Mono Lig', Menlo, Monaco",
-  //"editor.fontFamily": "'Operator Mono Lig', 'Lekton Nerd Font Mono', 'InconsolataGo Nerd Font Mono', Menlo, Monaco",
+  //"editor.fontFamily": " 'Inconsolata Nerd Font Mono', 'Operator Mono Lig', Menlo, Monaco",
+  "editor.fontFamily": "'Operator Mono Lig', 'Lekton Nerd Font Mono', 'InconsolataGo Nerd Font Mono', Menlo, Monaco",
   //"editor.fontFamily": "'MesloLGS NF'",
   //"editor.fontFamily": "'Monofur Nerd Font'",
   //"editor.fontFamily": "'UbuntuMono Nerd Font'",
@@ -66,8 +198,8 @@
   //"editor.fontFamily": "'Comic Mono'",
 
   "editor.tabSize": 2,
-  "editor.lineHeight": 21,
-  "editor.fontSize": 16,
+  "editor.lineHeight": 22,
+  "editor.fontSize": 13.85,
   "editor.fontWeight": "100",
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 27,
@@ -87,10 +219,40 @@
     "comments": false,
     "strings": false
   },
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.wordBasedSuggestions": true,
+  "editor.parameterHints.enabled": true,
   "editor.tokenColorCustomizations": {
     // **************************
     // ** universal overrides
     // **************************
+    "[Light (Visual Studio for Mac)]": {
+      "textMateRules": [
+        {
+          "scope": "entity.name.type.class",
+          "settings": {
+            //"fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "comment",
+          "settings": {
+            "foreground": "#a3a0a0"
+          }
+        }
+      ]
+    },
+    "[Blueberry dark theme]": {
+      "textMateRules": [
+        {
+          "scope": "entity.name.function",
+          "settings": {
+            "foreground": "#cbd7e2"
+          }
+        }
+      ]
+    },
     "[Default Dark+]": {
       "textMateRules": [
         {
@@ -111,8 +273,24 @@
         {
           "scope": "string.quoted, string.template",
           "settings": {
-            //"foreground": "#d08031"
-            "foreground": "#cb6666"
+            "foreground": "#adbb94"
+            //"foreground": "#e88686"
+          }
+        },
+        {
+          "scope": "punctuation, meta.brace",
+          "settings": {
+            "foreground": "#7d9eae"
+          }
+        }
+      ]
+    },
+    "[Tokyo Night][Tokyo Night Storm]": {
+      "textMateRules": [
+        {
+          "scope": "variable.language.this, variable.language.super",
+          "settings": {
+            "foreground": "#cf79a5"
           }
         }
       ]
@@ -123,20 +301,11 @@
   // *****************************
   // ** terminal
   // *****************************
-  "terminal.integrated.fontFamily": "MesloLGS NF",
+  //"terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontFamily": "Lekton Nerd Font Mono",
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.defaultLocation": "editor",
   "terminal.integrated.tabs.enabled": false,
-
-  // *****************************
-  // ** Settings for python
-  // *****************************
-  "python.defaultInterpreterPath": "/Users/ed/.pyenv/versions/3.9.1/envs/pydev",
-  "[python]": {
-    "editor.tabSize": 4,
-    "editor.defaultFormatter": "ms-python.python",
-    "gitlens.codeLens.symbolScopes": ["!Module"],
-    "editor.wordBasedSuggestions": false
-  },
   // *****************************
   // ** Settings for html emmet css
   // *****************************
@@ -187,7 +356,6 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "liveServer.settings.donotVerifyTags": true,
   "liveServer.settings.donotShowInfoMsg": true,
-  "python.formatting.provider": "black",
   "editor.fontLigatures": true,
   "editor.autoClosingQuotes": "always",
   "window.title": "${activeEditorMedium}",
