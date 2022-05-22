@@ -115,6 +115,7 @@ alias csa='~/.elesq/yootils/scripts/create-svelte-app.sh'
 alias cwa='~/.elesq/yootils/scripts/create-webpack-app.sh'
 alias cpa='~/.elesq/yootils/scripts/create-parcel-app.sh'
 alias cja='~/.elesq/yootils/scripts/create-react-jest-babel-app.sh'
+alias 3ts='~/.elesq/yootils/scripts/create-three-ts-app.sh'
 
 # testing / automation clis
 alias pup='~/.elesq/yootils/scripts/create-puppeteer-project-cli.sh'
