@@ -2,19 +2,15 @@
 
 cat << endOfBanner
 
-                 _
- ___ ___ ___ ___| |_ ___
-|  _|  _| -_| .'|  _| -_|
-|___|_| |___|__,|_| |___|
-             _ _
- ___ _ _ ___| | |_ ___
-|_ -| | | -_| |  _| -_|
-|___|\_/|___|_|_| |___|
 
- ___ ___ ___
-| .'| . | . |
-|__,|  _|  _|
-    |_| |_|
+   +-+-+-+-+-+-+
+   |c|r|e|a|t|e|
+   +-+-+-+-+-+-+
+   |S|v|e|l|t|e|
+   +-+-+-+-+-+-+
+   |a|p|p|
+   +-+-+-+
+
 
 endOfBanner
 echo "...Cybernetically enhanced web apps"
@@ -31,7 +27,11 @@ grey=`echo -e "$e[1;90m"`
 echo -e "${green}\xE2\x9C\x94 ${grey}created project "
 
 echo ""
-echo "  cd " $1
-echo "  npm install"
+echo "  Installing npm modules... "
+
+cd $1
+npm install
+
+echo "  Start server with:"
 echo "  npm run dev"
 echo ""
