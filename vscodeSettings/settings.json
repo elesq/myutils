@@ -7,7 +7,7 @@
   "window.titleBarStyle": "custom",
   "explorer.compactFolders": false,
   "debug.allowBreakpointsEverywhere": true,
-  "editor.minimap.scale": 2,
+  "editor.minimap.scale": 1,
   "gitlens.showWelcomeOnInstall": false,
   "material-icon-theme.showWelcomeMessage": false,
   "terminal.integrated.inheritEnv": false,
@@ -30,110 +30,75 @@
     // ** Current default light
     // ** theme coice
     // *************************
-    "[Light (Visual Studio for Mac)]": {
-      // app container
-      "titleBar.activeBackground": "#b1b1b1",
-      "sideBar.background": "#d5d6d6",
-      "sideBar.border": "#b0b0b0",
-      "sideBarSectionHeader.background": "#d0d1d1",
-      "panelTitle.activeForeground": "#555454",
-      "panelTitle.inactiveForeground": "#989696",
-      "panel.background": "#d9dadb",
-      "panel.border": "#9a9a9a",
-      "terminal.background": "#d9dadb",
-      "terminal.ansiGreen": "#0f9329",
-      "list.inactiveSelectionBackground": "#cbc9c9",
-      // editor
-      "tab.activeBorder": "#52cde3",
-      "tab.inactiveBackground": "#dddddd",
-      "tab.border": "#cacaca",
-      "tab.activeBackground": "#f7f9fa",
-      "editorLineNumber.foreground": "#bcbcbc",
-      "editor.lineHighlightBackground": "#e5e4e4",
-      "editor.lineHighlightBorder": "#e5e4e4",
-      "editor.background": "#e8e9ea",
-      "minimap.background": "#e7e9ea",
-      "editorSuggestWidget.focusHighlightForeground": "#5fe5fd",
-      // seps
-      "separators.interfaces.borderColor": "#d8d3c1",
-      "separators.methods.borderColor": "#d8d3c1",
-      "separators.functions.borderColor": "#d8d3c1",
-      "separators.constructors.borderColor": "#d8d3c1",
-      "separators.namespaces.borderColor": "#d8d3c1",
-      "separators.enums.borderColor": "#d8d3c1",
-      "separators.structs.borderColor": "#d8d3c1",
-      "separators.classes.borderColor": "#d8d3c1"
-    },
-    "[Blueberry dark theme]": {
-      // app shell
-      "activityBar.background": "#181c2a",
-      "activityBar.foreground": "#09b49d",
-      "activityBar.border": "#19332c",
-      "activityBar.inactiveForeground": "#27495a",
-      "sideBar.background": "#1b1f2d",
-      "sideBar.border": "#0c2b22",
-      "editor.background": "#202534",
-      "editor.lineHighlightBackground": "#262b3a",
-      "scrollbar.shadow": "#202534",
-      "scrollbarSlider.activeBackground": "#262b3a72",
-      "scrollbarSlider.hoverBackground": "#262b3a72",
-      "scrollbarSlider.background": "#262b3a72",
-      "tab.activeBackground": "#163f4aa4",
-      "tab.inactiveBackground": "#212533",
-      "tab.activeBorder": "#00eaff89",
-      "tab.border": "#141723",
-      "panel.border": "#22473d",
-      "terminal.foreground": "#79868f",
-      // seps
-      "separators.interfaces.borderColor": "#1f3244",
-      "separators.methods.borderColor": "#1f3244",
-      "separators.functions.borderColor": "#1f3244",
-      "separators.constructors.borderColor": "#1f3244",
-      "separators.namespaces.borderColor": "#1f3244",
-      "separators.enums.borderColor": "#1f3244",
-      "separators.structs.borderColor": "#1f3244",
-      "separators.classes.borderColor": "#1f3244"
-    },
-    "[Solarized Light]": {
-      // app container
-      "titleBar.activeBackground": "#d1cbb7",
-      "activityBar.background": "#d1cbb7",
-      "activityBar.inactiveForeground": "#7f7e7b",
-      "sideBarSectionHeader.background": "#d1cbb7",
-      "sideBar.background": "#e0dac7",
-      "sideBar.border": "#d8d3c1",
-      // editor
-      "editor.background": "#f5efdc",
-      "tab.inactiveBackground": "#c4c1ac",
-      // terminal
-      "panel.background": "#ebe5d2",
-      "panel.border": "#bbb6a7",
-      "terminal.background": "#ebe5d2",
+    "[Ease]": {
+      "titleBar.activeBackground": "#C9C8BA",
+      "sideBarSectionHeader.border": "#D9D8D1",
+      "sideBarSectionHeader.background": "#E3E2DB",
+      "editorLineNumber.foreground": "#999888",
+      "statusBar.background": "#3e425bca",
+      "panel.background": "#D9D8D0",
+      "terminal.background": "#D9D8D0",
+      "tab.activeBackground": "#D1D0C2",
+      "tab.activeBorder": "#6673e6",
+      "tab.border": "#bcbcb7",
+      "editor.lineHighlightBackground": "#DAD9D1",
+      "terminalCursor.foreground": "#403c3c",
+      "terminalCursor.background": "#e4e0e0",
+      "editorSuggestWidget.selectedBackground": "#81a5e3bb",
+      "editorSuggestWidget.background": "#d0cfc1",
       // separators
-      "separators.interfaces.borderColor": "#d8d3c1",
-      "separators.methods.borderColor": "#d8d3c1",
-      "separators.functions.borderColor": "#d8d3c1",
-      "separators.constructors.borderColor": "#d8d3c1",
-      "separators.namespaces.borderColor": "#d8d3c1",
-      "separators.enums.borderColor": "#d8d3c1",
-      "separators.structs.borderColor": "#d8d3c1",
-      "separators.classes.borderColor": "#d8d3c1"
+      "separators.interfaces.borderColor": "#C9C8BA",
+      "separators.methods.borderColor": "#C9C8BA",
+      "separators.functions.borderColor": "#C9C8BA",
+      "separators.constructors.borderColor": "#C9C8BA",
+      "separators.namespaces.borderColor": "#C9C8BA",
+      "separators.enums.borderColor": "#C9C8BA",
+      "separators.structs.borderColor": "#C9C8BA",
+      "separators.classes.borderColor": "#C9C8BA"
+    },
+    // *************************
+    // ** Current default light
+    // ** theme coice
+    // *************************
+    "[Gatito Theme]": {
+      "editorSuggestWidget.selectedBackground": "#8f3964",
+      "activityBar.background": "#161c1e",
+      "activityBar.border": "#141a1c",
+      "sideBarSectionHeader.background": "#202728",
+      "sideBarSectionHeader.border": "#2c3234",
+      "editor.foreground": "#b3b4bd",
+      "tab.activeBackground": "#2f3638",
+      "tab.activeForeground": "#7bedff",
+      "tab.inactiveForeground": "#666666",
+      "tab.activeBorderTop": "#51d8ed",
+      "terminal.foreground": "#8a90a0",
+      // separators
+      "separators.interfaces.borderColor": "#373737",
+      "separators.methods.borderColor": "#373737",
+      "separators.functions.borderColor": "#373737",
+      "separators.constructors.borderColor": "#373737",
+      "separators.namespaces.borderColor": "#373737",
+      "separators.enums.borderColor": "#373737",
+      "separators.structs.borderColor": "#373737",
+      "separators.classes.borderColor": "#373737"
     },
     "[Default Dark+][Visual Studio Dark]": {
       // app container
       "titleBar.activeBackground": "#252525",
-      "activityBar.background": "#252525",
-      "activityBar.border": "#191919",
+      "activityBar.background": "#272727",
+      "activityBar.border": "#2d2d2d",
       //"activityBar.inactiveForeground": "#547a90",
+      "scrollbar.shadow": "#232323",
       "statusBar.border": "#212121",
       "statusBar.background": "#323232",
       "sideBar.background": "#252525",
       "sideBar.border": "#373737",
       "sideBarSectionHeader.border": "#3c3b3b",
-      "sideBar.foreground": "#aab",
+      "sideBar.foreground": "#9d9dad",
+      "gitDecoration.ignoredResourceForeground": "#73737f",
       "activityBar.foreground": "#e3d4ab",
       "activityBar.inactiveForeground": "#5e5e54",
-      "activityBarBadge.background": "#e9ba0e",
+      "activityBarBadge.background": "#e0a505",
       "activityBarBadge.foreground": "#393937",
       // terminal
       "terminalCursor.foreground": "#eb4e7d",
@@ -228,39 +193,15 @@
     // **************************
     // ** universal overrides
     // **************************
-    "[Light (Visual Studio for Mac)]": {
-      "textMateRules": [
-        {
-          "scope": "entity.name.type.class",
-          "settings": {
-            //"fontStyle": "bold"
-          }
-        },
-        {
-          "scope": "comment",
-          "settings": {
-            "foreground": "#a3a0a0"
-          }
-        }
-      ]
-    },
-    "[Blueberry dark theme]": {
-      "textMateRules": [
-        {
-          "scope": "entity.name.function",
-          "settings": {
-            "foreground": "#cbd7e2"
-          }
-        }
-      ]
-    },
+
     "[Default Dark+]": {
       "textMateRules": [
         {
-          "scope": "comment",
+          "scope": "comment, punctuation.definition.comment.js",
           "settings": {
             //"foreground": "#4f5467"
-            "foreground": "#4c5e53"
+            "foreground": "#4c5e53",
+            "fontStyle": "italic"
           }
         },
         {
@@ -330,7 +271,11 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.preferences.quoteStyle": "single",
   "[javascript]": {
-    "editor.quickSuggestions": true,
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    },
     "editor.suggestOnTriggerCharacters": true,
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
@@ -340,6 +285,9 @@
       ["[", "]"],
       ["(", ")"]
     ]
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "[json]": {
     "editor.quickSuggestions": {
@@ -360,5 +308,124 @@
   "editor.fontLigatures": true,
   "editor.autoClosingQuotes": "always",
   "window.title": "${activeEditorMedium}",
-  "window.titleSeparator": "  —  "
+  "window.titleSeparator": "  —  ",
+  "svelte.enable-ts-plugin": true,
+  "reactSnippets.settings.importReactOnTop": false,
+  "workbench.colorTheme": "Gatito Theme"
 }
+
+//"[Light (Visual Studio for Mac)]": {
+//   // app container
+//   "titleBar.activeBackground": "#b1b1b1",
+//   "sideBar.background": "#d5d6d6",
+//   "sideBar.border": "#b0b0b0",
+//   "sideBarSectionHeader.background": "#d0d1d1",
+//   "panelTitle.activeForeground": "#555454",
+//   "panelTitle.inactiveForeground": "#989696",
+//   "panel.background": "#d9dadb",
+//   "panel.border": "#9a9a9a",
+//   "terminal.background": "#d9dadb",
+//   "terminal.ansiGreen": "#0f9329",
+//   "list.inactiveSelectionBackground": "#cbc9c9",
+//   // editor
+//   "tab.activeBorder": "#52cde3",
+//   "tab.inactiveBackground": "#dddddd",
+//   "tab.border": "#cacaca",
+//   "tab.activeBackground": "#f7f9fa",
+//   "editorLineNumber.foreground": "#bcbcbc",
+//   "editor.lineHighlightBackground": "#e5e4e4",
+//   "editor.lineHighlightBorder": "#e5e4e4",
+//   "editor.background": "#e8e9ea",
+//   "minimap.background": "#e7e9ea",
+//   "editorSuggestWidget.focusHighlightForeground": "#5fe5fd",
+//   // seps
+//   "separators.interfaces.borderColor": "#d8d3c1",
+//   "separators.methods.borderColor": "#d8d3c1",
+//   "separators.functions.borderColor": "#d8d3c1",
+//   "separators.constructors.borderColor": "#d8d3c1",
+//   "separators.namespaces.borderColor": "#d8d3c1",
+//   "separators.enums.borderColor": "#d8d3c1",
+//   "separators.structs.borderColor": "#d8d3c1",
+//   "separators.classes.borderColor": "#d8d3c1"
+// },
+// "[Light (Visual Studio for Mac)]": {
+//   "textMateRules": [
+//     {
+//       "scope": "entity.name.type.class",
+//       "settings": {
+//         //"fontStyle": "bold"
+//       }
+//     },
+//     {
+//       "scope": "comment",
+//       "settings": {
+//         "foreground": "#a3a0a0"
+//       }
+//     }
+//   ]
+// },
+// "[Blueberry dark theme]": {
+//   // app shell
+//   "activityBar.background": "#181c2a",
+//   "activityBar.foreground": "#09b49d",
+//   "activityBar.border": "#19332c",
+//   "activityBar.inactiveForeground": "#27495a",
+//   "sideBar.background": "#1b1f2d",
+//   "sideBar.border": "#0c2b22",
+//   "editor.background": "#202534",
+//   "editor.lineHighlightBackground": "#262b3a",
+//   "scrollbar.shadow": "#202534",
+//   "scrollbarSlider.activeBackground": "#262b3a72",
+//   "scrollbarSlider.hoverBackground": "#262b3a72",
+//   "scrollbarSlider.background": "#262b3a72",
+//   "tab.activeBackground": "#163f4aa4",
+//   "tab.inactiveBackground": "#212533",
+//   "tab.activeBorder": "#00eaff89",
+//   "tab.border": "#141723",
+//   "panel.border": "#22473d",
+//   "terminal.foreground": "#79868f",
+//   // seps
+//   "separators.interfaces.borderColor": "#1f3244",
+//   "separators.methods.borderColor": "#1f3244",
+//   "separators.functions.borderColor": "#1f3244",
+//   "separators.constructors.borderColor": "#1f3244",
+//   "separators.namespaces.borderColor": "#1f3244",
+//   "separators.enums.borderColor": "#1f3244",
+//   "separators.structs.borderColor": "#1f3244",
+//   "separators.classes.borderColor": "#1f3244"
+// },
+// "[Blueberry dark theme]": {
+//   "textMateRules": [
+//     {
+//       "scope": "entity.name.function",
+//       "settings": {
+//         "foreground": "#cbd7e2"
+//       }
+//     }
+//   ]
+// },
+// "[Solarized Light]": {
+//   // app container
+//   "titleBar.activeBackground": "#d1cbb7",
+//   "activityBar.background": "#d1cbb7",
+//   "activityBar.inactiveForeground": "#7f7e7b",
+//   "sideBarSectionHeader.background": "#d1cbb7",
+//   "sideBar.background": "#e0dac7",
+//   "sideBar.border": "#d8d3c1",
+//   // editor
+//   "editor.background": "#f5efdc",
+//   "tab.inactiveBackground": "#c4c1ac",
+//   // terminal
+//   "panel.background": "#ebe5d2",
+//   "panel.border": "#bbb6a7",
+//   "terminal.background": "#ebe5d2",
+//   // separators
+//   "separators.interfaces.borderColor": "#d8d3c1",
+//   "separators.methods.borderColor": "#d8d3c1",
+//   "separators.functions.borderColor": "#d8d3c1",
+//   "separators.constructors.borderColor": "#d8d3c1",
+//   "separators.namespaces.borderColor": "#d8d3c1",
+//   "separators.enums.borderColor": "#d8d3c1",
+//   "separators.structs.borderColor": "#d8d3c1",
+//   "separators.classes.borderColor": "#d8d3c1"
+// },
