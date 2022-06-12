@@ -5,21 +5,15 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ed/.oh-my-zsh"
-
-#ZSH_THEME="half-life"
 ZSH_THEME="powerlevel10k/powerlevel10k"
-#ZSH_THEME="hyperzsh"
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -55,18 +49,18 @@ source $ZSH/oh-my-zsh.sh
 # sets the out the box path
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
-#export PATH="$PATH:/Users/ed/.dotnet/tools"
-#export PATH="$PATH:/Users/ed/.flutter/flutter/bin"
+# adds homebrew
+export PATH="$PATH:/opt/homebrew/bin/"
+
+# add composer
+export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 # adds golang settings to path
-export GO111MODULE=auto
-export PATH=$HOME/go/bin:$PATH
-
-# protobuf settings
-export PATH=$PATH:/usr/local/protobuf/bin
+#export GO111MODULE=auto
+#export PATH=$HOME/go/bin:$PATH
 
 # local mongoDB installations
-export PATH=$PATH:/usr/local/Cellar/mongodb-community@4.2/4.2.17/bin
+#export PATH=$PATH:/usr/local/Cellar/mongodb-community@4.2/4.2.17/bin
 
 # editor update
 export EDITOR=nvim
@@ -83,7 +77,8 @@ alias zzz='source ~/.zshrc'
 # place aliases
 # --------------------------------------------------------------
 alias aaa='cd ~/.elesq/code/archived'
-alias www='cd ~/.elesq/code/wip'
+alias wip='cd ~/.elesq/code/wip'
+alias www='cd ~/.elesq/code/sites'
 alias yoo='cd ~/.elesq/yootils'
 
 # --------------------------------------------------------------
@@ -174,7 +169,7 @@ export PATH="/usr/local/go/bin:$PATH"
 # --------------------------------------------------------------
 # flutter development settings
 # --------------------------------------------------------------
-export PATH="$HOME/.flutter/flutter/bin:$PATH"
+#export PATH="$HOME/.flutter/flutter/bin:$PATH"
 
 # --------------------------------------------------------------
 # add node commands installed to path
@@ -198,31 +193,31 @@ fi
 
 
 # pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-export PATH=$HOME/.pyenv/shims:$PATH
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# export PATH=$HOME/.pyenv/shims:$PATH
 
 
-if command -v pyenv &>/dev/null; then
-    eval "$(pyenv init -)"
-fi
-if command -v pyenv-virtualenv &>/dev/null; then
-    eval "$(pyenv virtualenv-init -)"
-fi
+# if command -v pyenv &>/dev/null; then
+#     eval "$(pyenv init -)"
+# fi
+# if command -v pyenv-virtualenv &>/dev/null; then
+#     eval "$(pyenv virtualenv-init -)"
+# fi
 
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-conda config --set auto_activate_base false
+# __conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+#         . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+# conda config --set auto_activate_base false
 # <<< conda initialize <<<

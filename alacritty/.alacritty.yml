@@ -66,22 +66,25 @@ scrolling:
 font:
   # Normal (roman) font face
   normal:
-    family: "MesloLGS NF"
+    #family: "MesloLGS NF"
     family: "Lekton Nerd Font"
     style: Regular
 
   # Bold font face
   bold:
+    #family: "MesloLGS NF"
     family: "Lekton Nerd Font"
     #style: Bold
 
   # Italic font face
   italic:
+    #family: "MesloLGS NF"
     family: "Lekton Nerd Font"
     #style: Italic
 
   # Bold italic font face
   bold_italic:
+    #family: "MesloLGS NF"
     family: "Lekton Nerd Font"
     #style: Bold Italic
 
