@@ -66,6 +66,7 @@
         "activityBar.border": "#141a1c",
         "sideBarSectionHeader.background": "#202728",
         "sideBarSectionHeader.border": "#2c3234",
+        "editorLineNumber.activeForeground": "#00ddff",
         "editor.foreground": "#b3b4bd",
         "tab.activeBackground": "#2f3638",
         "tab.activeForeground": "#7bedff",
