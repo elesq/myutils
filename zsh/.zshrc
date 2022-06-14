@@ -135,6 +135,12 @@ alias ppp='~/.elesq/yootils/scripts/add-prettier-config-file.sh'
 alias cli='~/.elesq/yootils/scripts/show-clis.sh'
 
 # --------------------------------------------------------------
+# nginx for laravel
+# --------------------------------------------------------------
+alias startnginx='brew services start nginx'
+alias stopnginx='brew services stop nginx'
+
+# --------------------------------------------------------------
 # containerised services alias
 # --------------------------------------------------------------
 # docker prune
@@ -164,12 +170,6 @@ alias mongouser='docker exec -it mongodb bash'
 # go development settings
 # --------------------------------------------------------------
 export PATH="/usr/local/go/bin:$PATH"
-
-
-# --------------------------------------------------------------
-# flutter development settings
-# --------------------------------------------------------------
-#export PATH="$HOME/.flutter/flutter/bin:$PATH"
 
 # --------------------------------------------------------------
 # add node commands installed to path
