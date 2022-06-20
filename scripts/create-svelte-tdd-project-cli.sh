@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # create a banner to show as intro to the scaffold.
-cat << endOfBanner
+cat <<endOfBanner
 
    +-+-+-+-+-+-+
    |S|v|e|l|t|e|
@@ -12,9 +12,9 @@ cat << endOfBanner
 endOfBanner
 
 e=$(printf "\e")
-red=`echo -e "$e[1;31m"`
-green=`echo -e "$e[1;32m"`
-grey=`echo -e "$e[1;90m"`
+red=$(echo -e "$e[1;31m")
+green=$(echo -e "$e[1;32m")
+grey=$(echo -e "$e[1;90m")
 
 # ------------------------------------
 #     Create the Scaffold
@@ -37,15 +37,13 @@ git init
 echo "Adding folders..."
 mkdir -p ./src/pages
 
-
 # ------------------------------------
 #     update the package files
 # ------------------------------------
 echo "Updating package.json... "
 echo "Adding npm scripts... "
 packageCheck=$(npm list -location=global | grep npm-add-scripts)
-if [ -z "$packageCheck" ]
-then
+if [ -z "$packageCheck" ]; then
     npm i -D npm-add-script
 fi
 npmAddScript -k test -v "jest --watch"
@@ -54,7 +52,7 @@ npmAddScript -k test -v "jest --watch"
 # end of the package.json file and add a
 # new section.
 sed -i '' -e '$ d' package.json
-cat << EOF >> package.json
+cat <<EOF >>package.json
 ,
 "jest": {
     "transform": {
@@ -70,7 +68,7 @@ EOF
 #     Create additional files
 # ------------------------------------
 echo "  Creating babel configuration file... "
-cat << EOF >> babel.config.js
+cat <<EOF >>babel.config.js
 module.exports = {
   presets: [['@babel/preset-env', { targets: { node: 'current' } }]],
 };
@@ -78,12 +76,12 @@ EOF
 
 echo ""
 echo "  Creating sample component... "
-cat << EOF >> ./src/pages/Example.svelte
+cat <<EOF >>./src/pages/Example.svelte
 <h1>Example</h1>
 EOF
 
 echo "  Creating sample component test file... "
-cat << EOF >> ./src/pages/Example.spec.js
+cat <<EOF >>./src/pages/Example.spec.js
 import Example from './Example.svelte';
 import { render, screen } from '@testing-library/svelte';
 
@@ -93,6 +91,3 @@ it('has a sign up header', () => {
   expect(header).toBeTruthy();
 });
 EOF
-
-
-

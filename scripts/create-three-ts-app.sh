@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat << endOfBanner
+cat <<endOfBanner
 
      +-+-+-+-+-+-+-+
      |T|h|r|e|e|J|S|
@@ -23,7 +23,7 @@ mkdir $1
 cd $1 && npm init -y
 
 # write the scripts section of the package.json
-cat > ./package.json  << EOL
+cat >./package.json <<EOL
 {
   "name": "$1",
   "version": "1.0.0",
@@ -45,7 +45,6 @@ EOL
 # add the dependency packages for a webpack project
 npm i -D webpack webpack-cli webpack-dev-server webpack-merge typescript ts-loader three @types/three dat.gui @types/dat.gui
 
-
 echo "  ${bold}added packages:${normal}"
 echo "    webpack"
 echo "    webpack-cli"
@@ -64,7 +63,7 @@ echo "creating project directory structure..."
 mkdir -p dist/client dist/server src/client src/server
 
 echo "creating webpack files..."
-cat > ./src/client/webpack.common.js  << EOL
+cat >./src/client/webpack.common.js <<EOL
 const path = require('path');
 
 module.exports = {
@@ -88,7 +87,7 @@ module.exports = {
 };
 EOL
 
-cat > ./src/client/webpack.dev.js  << EOL
+cat >./src/client/webpack.dev.js <<EOL
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 const path = require('path');
@@ -106,7 +105,7 @@ module.exports = merge(common, {
 EOL
 
 echo "creating a typescript config..."
-cat > ./src/client/tsconfig.json  << EOL
+cat >./src/client/tsconfig.json <<EOL
 {
   "compilerOptions": {
     "moduleResolution": "node",
@@ -117,7 +116,7 @@ cat > ./src/client/tsconfig.json  << EOL
 EOL
 
 echo "creating project starter boilerplate..."
-cat > ./dist/client/index.html  << EOL
+cat >./dist/client/index.html <<EOL
 <!DOCTYPE html>
 <html lang="en">
 
@@ -154,7 +153,7 @@ cat > ./dist/client/index.html  << EOL
 </html>
 EOL
 
-cat > ./src/client/client.ts << EOL
+cat >./src/client/client.ts <<EOL
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Stats from 'three/examples/jsm/libs/stats.module';
@@ -241,10 +240,9 @@ function render() {
 animate();
 EOL
 
-
 e=$(printf "\e")
-red=`echo -e "$e[1;31m"`
-green=`echo -e "$e[1;32m"`
-grey=`echo -e "$e[1;90m"`
+red=$(echo -e "$e[1;31m")
+green=$(echo -e "$e[1;32m")
+grey=$(echo -e "$e[1;90m")
 
 echo -e "${green}\xE2\x9C\x94 ${grey}created"

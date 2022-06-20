@@ -1,11 +1,11 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
 
-# Path to your oh-my-zsh installation.
+# Pa    th to your oh-my-zsh installation.
 export ZSH="/Users/ed/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
@@ -49,11 +49,8 @@ source $ZSH/oh-my-zsh.sh
 # sets the out the box path
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
-# adds homebrew
-export PATH="$PATH:/opt/homebrew/bin/"
-
-# add composer
-export PATH="$PATH:$HOME/.composer/vendor/bin"
+# adds homebrew first in the list
+export PATH="/opt/homebrew/bin/:$PATH"
 
 # adds golang settings to path
 #export GO111MODULE=auto
@@ -183,20 +180,17 @@ export NVM_DIR=~/.nvm
 source ~/.nvm/nvm.sh
 #source $(brew --prefix nvm)/nvm.sh[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-if type brew &>/dev/null
-then
-  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+if type brew &>/dev/null; then
+    FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
-  autoload -Uz compinit
-  compinit
+    autoload -Uz compinit
+    compinit
 fi
-
 
 # pyenv
 # export PYENV_ROOT="$HOME/.pyenv"
 # export PATH="$PYENV_ROOT/bin:$PATH"
 # export PATH=$HOME/.pyenv/shims:$PATH
-
 
 # if command -v pyenv &>/dev/null; then
 #     eval "$(pyenv init -)"
@@ -204,7 +198,6 @@ fi
 # if command -v pyenv-virtualenv &>/dev/null; then
 #     eval "$(pyenv virtualenv-init -)"
 # fi
-
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

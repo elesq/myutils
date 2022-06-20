@@ -1,19 +1,17 @@
 #!/bin/bash
 
-cat << endOfBanner
+cat <<endOfBanner
 
-   _
-  | |_ ___ ___ _ _ _ _ _ ___
-  | . |  _| -_| | | | | | . |_ _ _
-  |___|_| |___|_____|___|  _|_|_|_|
-                        |_|
+ +-+-+-+-+-+-+
+ |b|r|e|w|u|p|
+ +-+-+-+-+-+-+
 
 endOfBanner
 
 e=$(printf "\e")
-red=`echo -e "$e[1;31m"`
-green=`echo -e "$e[1;32m"`
-grey=`echo -e "$e[1;90m"`
+red=$(echo -e "$e[1;31m")
+green=$(echo -e "$e[1;32m")
+grey=$(echo -e "$e[1;90m")
 
 echo "running brew services.... "
 
