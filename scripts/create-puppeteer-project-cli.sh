@@ -6,8 +6,6 @@ cat <<endOfBanner
  |p|u|p|p|e|t|e|e|r|
  +-+-+-+-+-+-+-+-+-+
    |p|r|o|j|e|c|t|
-   +-+-+-+-+-+-+-+
-
 endOfBanner
 
 # colors
@@ -17,7 +15,6 @@ green=$(echo -e "$e[1;32m")
 grey=$(echo -e "$e[1;90m")
 
 if [[ $1 == "-jest" ]]; then
-    echo ""
     echo " +-+-+-+-+ +-+-+-+-+ "
     echo " |w|i|t|h| |j|e|s|t| "
     echo " +-+-+-+-+ +-+-+-+-+ "
@@ -25,10 +22,9 @@ if [[ $1 == "-jest" ]]; then
     #create_repo()
     git clone git@github.com:elesq/new-puppeteer-project-cli.git $2
     cd $2 && git remote rm origin
-    npm i --save puppeteer@10.1.0 jest jest-image-snapshot @types/puppeteer
+    npm i --save puppeteer jest jest-image-snapshot @types/puppeteer
 
 elif [[ $1 == "-mocha" ]]; then
-    echo ""
     echo " +-+-+-+-+ +-+-+-+-+-+ "
     echo " |w|i|t|h| |m|o|c|h|a| "
     echo " +-+-+-+-+ +-+-+-+-+-+ "
@@ -36,7 +32,7 @@ elif [[ $1 == "-mocha" ]]; then
     #create_repo()
     git clone git@github.com:elesq/new-puppeteer-project-cli.git $2
     cd $2 && git remote rm origin
-    npm i --save puppeteer@10.1.0 mocha chai @types/puppeteer
+    npm i --save puppeteer mocha chai @types/puppeteer
 else
     echo -e "Bad call to script. Use: scriptName -teslib projectName"
     exit 1

@@ -73,9 +73,9 @@ alias zzz='source ~/.zshrc'
 # --------------------------------------------------------------
 # place aliases
 # --------------------------------------------------------------
-alias ttt='cd ~/.elesq/code/automator'
-alias wip='cd ~/.elesq/code/wip'
-alias www='cd ~/.elesq/code/sites'
+alias qa='cd ~/.elesq/code/qa'
+alias rrr='cd ~/.elesq/code/current'
+alias www='cd ~/.elesq/code/web'
 alias yoo='cd ~/.elesq/yootils'
 
 # --------------------------------------------------------------
