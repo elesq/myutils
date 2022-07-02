@@ -13,6 +13,13 @@ window:
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
 
+  # Background opacity
+  #
+  # Window opacity as a floating point number from `0.0` to `1.0`.
+  # The value `0.0` is completely transparent and `1.0` is opaque.
+  opacity: 0.9
+
+
   # Window decorations
   # Values for `decorations`:
   #     - full: Borders and title bar
@@ -131,7 +138,7 @@ colors:
     #background: "0x403e41"
     #background: "0x221f22" # standard dark
     #background: "0x152238" # dark blue
-    background: "0x090d1e"
+    #background: "0x090d1e"
     background: "0x19181a"
     #foreground: "0xcbbae9"
     foreground: "0xaccdf3"
@@ -239,11 +246,7 @@ bell:
   duration: 0
   color: "0xffffff"
 
-# Background opacity
-#
-# Window opacity as a floating point number from `0.0` to `1.0`.
-# The value `0.0` is completely transparent and `1.0` is opaque.
-window_opacity: 0.95
+
 
 #selection:
 #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
