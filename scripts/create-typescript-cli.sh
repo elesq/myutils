@@ -1,20 +1,12 @@
 #!/bin/bash
 
-cat << endOfBanner
+cat <<endOfBanner
 
-  _                           _     _
- | |_ _ _ ___ ___ ___ ___ ___|_|___| |_
- |  _| | | . | -_|_ -|  _|  _| | . |  _|
- |_| |_  |  _|___|___|___|_| |_|  _|_|
-     |___|_|                   |_|
-        ___ ___ ___
-       | .'| . | . |
-       |__,|  _|  _|
-           |_| |_|
-      _           _
-  ___| |_ ___ ___| |_ ___ ___
- |_ -|  _| .'|  _|  _| -_|  _|
- |___|_| |__,|_| |_| |___|_|
+  +-+-+-+-+-+-+-+-+-+-
+  |T|y|p|e|s|c|r|i|p|t
+  +-+-+-+-+-+-+-+-+-+-
+  |S|t|a|r|t|e|r|
+  +-+-+-+-+-+-+-+
 
 endOfBanner
 echo " typescript project setup... "
@@ -26,11 +18,10 @@ normal=$(tput sgr0)
 # pull the base repo
 git clone git@github.com:elesq/ts-app-starter.git $1
 
-
 e=$(printf "\e")
-red=`echo -e "$e[1;31m"`
-green=`echo -e "$e[1;32m"`
-grey=`echo -e "$e[1;90m"`
+red=$(echo -e "$e[1;31m")
+green=$(echo -e "$e[1;32m")
+grey=$(echo -e "$e[1;90m")
 
 echo -e "${green}\xE2\x9C\x94 ${grey}created project" $1
 
@@ -64,4 +55,3 @@ echo "    concurrently"
 echo ""
 echo "Update the scripts in ${bold}package.json ${normal}as per the readme document."
 echo "run ${bold}npm start${normal}"
-

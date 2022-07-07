@@ -6,6 +6,7 @@ cat <<endOfBanner
  |p|u|p|p|e|t|e|e|r|
  +-+-+-+-+-+-+-+-+-+
    |p|r|o|j|e|c|t|
+   +-+-+-+-+-+-+-+
 endOfBanner
 
 # colors

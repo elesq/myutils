@@ -14,6 +14,7 @@ alias zzz='source ~/.zshrc'
 # --------------------------------------------------------------
 alias qa='cd ~/.elesq/code/qa'
 alias rrr='cd ~/.elesq/code/current'
+alias ppp='cd ~/.elesq/code/pystuff'
 alias www='cd ~/.elesq/code/web'
 alias yoo='cd ~/.elesq/yootils'
 
@@ -55,6 +56,7 @@ alias pup='~/.elesq/yootils/scripts/create-puppeteer-project-cli.sh'
 # typescript web apps
 alias tra='~/.elesq/yootils/scripts/create-typescript-react-app.sh'
 alias tsa='~/.elesq/yootils/scripts/create-typescript-cli.sh'
+alias tts='~/.elesq/yootils/scripts/create-simple-typescript-project.sh'
 
 # --------------------------------------------------------------
 # utility script aliases
@@ -67,7 +69,7 @@ alias gupd='~/.elesq/yootils/scripts/gupd.sh'
 alias gout='~/.elesq/yootils/scripts/gout.sh'
 alias mgo='~/.elesq/yootils/scripts/shellmongo.sh'
 alias pgs='~/.elesq/yootils/scripts/shellpostgres.sh'
-alias ppp='~/.elesq/yootils/scripts/add-prettier-config-file.sh'
+alias cpc='~/.elesq/yootils/scripts/add-prettier-config-file.sh'
 alias cli='~/.elesq/yootils/scripts/show-clis.sh'
 
 # --------------------------------------------------------------
@@ -89,7 +91,7 @@ alias docrabbit='docker run -d --hostname rabbitmq-host --name rabbitmq-server -
 alias docmysql="docker run --restart always --name mysql --net dev-net -v /Users/ed/data/mysql:/var/lib/mysql -p 3306:3306 -d -e MYSQL_USER=web@localhost -e MYSQL_PASSWORD=pass -e MYSQL_ROOT_PASSWORD=pass mysql"
 alias docpg10='docker run --name postgres-local -p 5432:5432 -v ~/data/postgres10:/var/lib/postgresql/data -e POSTGRES_USER=web -e POSTGRES_PASSWORD=pass -d postgres:10.8'
 alias docpg13='docker run --name pg13 -p 5432:5432 -v ~/data/postgres13:/var/lib/postgresql/data -e POSTGRES_USER=web -e POSTGRES_PASSWORD=pass -d postgres:13.4-alpine'
-alias docmongo='docker run -d --name mongodb -v ~/data/mongo:/data/db -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=pass -p 27017:27017 mongo:4.4.0'
+alias docmongo='docker run -d --name mongodb -v ~/data/mongo:/data/db -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=pass -p 27017:27017 mongo:5.0.2'
 
 # DB shells
 alias mysqlroot="docker exec -it mysql mysql -u root -p"
