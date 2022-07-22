@@ -14,7 +14,7 @@ alias zzz='source ~/.zshrc'
 # --------------------------------------------------------------
 alias qa='cd ~/.elesq/code/qa'
 alias rrr='cd ~/.elesq/code/current'
-alias ppp='cd ~/.elesq/code/pystuff'
+alias ppp='cd ~/.elesq/code/cpp'
 alias www='cd ~/.elesq/code/web'
 alias yoo='cd ~/.elesq/yootils'
 
