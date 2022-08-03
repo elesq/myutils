@@ -74,25 +74,25 @@ font:
   # Normal (roman) font face
   normal:
     #family: "MesloLGS NF"
-    family: "Lekton Nerd Font"
+    family: "Lekton Nerd Font Mono"
     style: Regular
 
   # Bold font face
   bold:
     #family: "MesloLGS NF"
-    family: "Lekton Nerd Font"
+    family: "Lekton Nerd Font Mono"
     #style: Bold
 
   # Italic font face
   italic:
     #family: "MesloLGS NF"
-    family: "Lekton Nerd Font"
+    family: "Lekton Nerd Font Mono"
     #style: Italic
 
   # Bold italic font face
   bold_italic:
     #family: "MesloLGS NF"
-    family: "Lekton Nerd Font"
+    family: "Lekton Nerd Font Mono"
     #style: Bold Italic
 
   # Point size

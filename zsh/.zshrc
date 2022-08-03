@@ -75,6 +75,11 @@ export PATH="/usr/local/go/bin:$PATH"
 export PATH=./node_modules/.bin:$PATH
 
 # --------------------------------------------------------------
+# haskell setup
+# --------------------------------------------------------------
+[ -f "/Users/ed/.ghcup/env" ] && source "/Users/ed/.ghcup/env" # ghcup-env
+
+# --------------------------------------------------------------
 # package version managers
 # --------------------------------------------------------------
 export NVM_DIR=~/.nvm
@@ -121,3 +126,4 @@ unset __conda_setup
 # source the aliases
 # --------------------------------------------------------------
 . ~/.alias
+
