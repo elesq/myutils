@@ -40,22 +40,22 @@ alias ss='git status'
 alias testrep='go test -coverprofile=coverage.out && go tool cover -html=coverage.out'
 
 # javascript web apps
-alias vwa='~/.elesq/yootils/scripts/create-vanilla-web-app.sh'
+alias wa='~/.elesq/yootils/scripts/create-vanilla-web-app.sh'
 alias cra='npx create-react-app'
-alias csa='~/.elesq/yootils/scripts/create-svelte-app.sh'
-alias cwa='~/.elesq/yootils/scripts/create-webpack-app.sh'
-alias cpa='~/.elesq/yootils/scripts/create-parcel-app.sh'
-alias cja='~/.elesq/yootils/scripts/create-react-jest-babel-app.sh'
-alias 3ts='~/.elesq/yootils/scripts/create-three-ts-app.sh'
-alias tddsv='~/.elesq/yootils/scripts/create-svelte-tdd-project-cli.sh'
+# alias csa='~/.elesq/yootils/scripts/create-svelte-app.sh'
+# alias cwa='~/.elesq/yootils/scripts/create-webpack-app.sh'
+# alias cpa='~/.elesq/yootils/scripts/create-parcel-app.sh'
+# alias cja='~/.elesq/yootils/scripts/create-react-jest-babel-app.sh'
+# alias 3ts='~/.elesq/yootils/scripts/create-three-ts-app.sh'
+# alias tddsv='~/.elesq/yootils/scripts/create-svelte-tdd-project-cli.sh'
 
 # testing / automation clis
-alias pup='~/.elesq/yootils/scripts/create-puppeteer-project-cli.sh'
+# alias pup='~/.elesq/yootils/scripts/create-puppeteer-project-cli.sh'
 
 # typescript web apps
-alias tra='~/.elesq/yootils/scripts/create-typescript-react-app.sh'
-alias tsa='~/.elesq/yootils/scripts/create-typescript-cli.sh'
-alias tts='~/.elesq/yootils/scripts/create-simple-typescript-project.sh'
+# alias tra='~/.elesq/yootils/scripts/create-typescript-react-app.sh'
+# alias tsa='~/.elesq/yootils/scripts/create-typescript-cli.sh'
+# alias tts='~/.elesq/yootils/scripts/create-simple-typescript-project.sh'
 
 # --------------------------------------------------------------
 # utility script aliases
