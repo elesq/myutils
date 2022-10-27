@@ -13,6 +13,8 @@ alias zzz='source ~/.zshrc'
 # place aliases
 # --------------------------------------------------------------
 alias nn='cd ~/.elesq/code/now'
+alias mob='cd ~/.elesq/code/mobile'
+alias ios='cd ~/.elesq/code/mobile/iOS'
 alias paused='cd ~/.elesq/code/paused'
 alias arc='cd ~/.elesq/code/archive'
 alias yoo='cd ~/.elesq/yootils'
