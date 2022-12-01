@@ -12,14 +12,14 @@ alias zzz='source ~/.zshrc'
 # --------------------------------------------------------------
 # place aliases
 # --------------------------------------------------------------
-alias nn='cd ~/.elesq/code/now'
-alias ddd='cd ~/.elesq/code/data'
-alias ppp='cd ~/.elesq/code/py'
-alias mob='cd ~/.elesq/code/mobile'
-alias ios='cd ~/.elesq/code/mobile/iOS'
-alias paused='cd ~/.elesq/code/paused'
-alias arc='cd ~/.elesq/code/archive'
-alias yoo='cd ~/.elesq/yootils'
+alias nn='cd ~/elesq/code/now'
+alias ddd='cd ~/elesq/code/data'
+alias ppp='cd ~/elesq/code/py'
+alias mob='cd ~/elesq/code/mobile'
+alias ios='cd ~/elesq/code/mobile/iOS'
+alias paused='cd ~/elesq/code/paused'
+alias arc='cd ~/elesq/code/archive'
+alias yoo='cd ~/elesq/yootils'
 
 # --------------------------------------------------------------
 # node aliases
@@ -44,36 +44,36 @@ alias ss='git status'
 alias testrep='go test -coverprofile=coverage.out && go tool cover -html=coverage.out'
 
 # javascript web apps
-alias wa='~/.elesq/yootils/scripts/create-vanilla-web-app.sh'
+alias wa='~/elesq/yootils/scripts/create-vanilla-web-app.sh'
 alias cra='npx create-react-app'
-# alias csa='~/.elesq/yootils/scripts/create-svelte-app.sh'
-# alias cwa='~/.elesq/yootils/scripts/create-webpack-app.sh'
-# alias cpa='~/.elesq/yootils/scripts/create-parcel-app.sh'
-# alias cja='~/.elesq/yootils/scripts/create-react-jest-babel-app.sh'
-# alias 3ts='~/.elesq/yootils/scripts/create-three-ts-app.sh'
-# alias tddsv='~/.elesq/yootils/scripts/create-svelte-tdd-project-cli.sh'
+# alias csa='~/elesq/yootils/scripts/create-svelte-app.sh'
+# alias cwa='~/elesq/yootils/scripts/create-webpack-app.sh'
+# alias cpa='~/elesq/yootils/scripts/create-parcel-app.sh'
+# alias cja='~/elesq/yootils/scripts/create-react-jest-babel-app.sh'
+# alias 3ts='~/elesq/yootils/scripts/create-three-ts-app.sh'
+# alias tddsv='~/elesq/yootils/scripts/create-svelte-tdd-project-cli.sh'
 
 # testing / automation clis
-# alias pup='~/.elesq/yootils/scripts/create-puppeteer-project-cli.sh'
+# alias pup='~/elesq/yootils/scripts/create-puppeteer-project-cli.sh'
 
 # typescript web apps
-# alias tra='~/.elesq/yootils/scripts/create-typescript-react-app.sh'
-# alias tsa='~/.elesq/yootils/scripts/create-typescript-cli.sh'
-# alias tts='~/.elesq/yootils/scripts/create-simple-typescript-project.sh'
+# alias tra='~/elesq/yootils/scripts/create-typescript-react-app.sh'
+# alias tsa='~/elesq/yootils/scripts/create-typescript-cli.sh'
+# alias tts='~/elesq/yootils/scripts/create-simple-typescript-project.sh'
 
 # --------------------------------------------------------------
 # utility script aliases
 # --------------------------------------------------------------
-alias bb='~/.elesq/yootils/scripts/brewup.sh'
-alias cc='~/.elesq/yootils/scripts/copycat.sh'
-alias kk='~/.elesq/yootils/scripts/porter.sh'
-alias npl='~/.elesq/yootils/scripts/npl.sh'
-alias gupd='~/.elesq/yootils/scripts/gupd.sh'
-alias gout='~/.elesq/yootils/scripts/gout.sh'
-alias mgo='~/.elesq/yootils/scripts/shellmongo.sh'
-alias pgs='~/.elesq/yootils/scripts/shellpostgres.sh'
-alias cpc='~/.elesq/yootils/scripts/add-prettier-config-file.sh'
-alias cli='~/.elesq/yootils/scripts/show-clis.sh'
+alias bb='~/elesq/yootils/scripts/brewup.sh'
+alias cc='~/elesq/yootils/scripts/copycat.sh'
+alias kk='~/elesq/yootils/scripts/porter.sh'
+alias npl='~/elesq/yootils/scripts/npl.sh'
+alias gupd='~/elesq/yootils/scripts/gupd.sh'
+alias gout='~/elesq/yootils/scripts/gout.sh'
+alias mgo='~/elesq/yootils/scripts/shellmongo.sh'
+alias pgs='~/elesq/yootils/scripts/shellpostgres.sh'
+alias cpc='~/elesq/yootils/scripts/add-prettier-config-file.sh'
+alias cli='~/elesq/yootils/scripts/show-clis.sh'
 
 # --------------------------------------------------------------
 # nginx for laravel
