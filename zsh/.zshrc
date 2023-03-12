@@ -1,6 +1,13 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
 # if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
 #   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 # fi
@@ -59,6 +66,11 @@ export PATH="/opt/homebrew/bin/:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # --------------------------------------------------------------
+# apache maven settings
+# --------------------------------------------------------------
+export PATH=$PATH:/opt/apache-maven/bin
+
+# --------------------------------------------------------------
 # go development settings
 # --------------------------------------------------------------
 export PATH="/usr/local/go/bin:$PATH"
@@ -74,6 +86,12 @@ export PATH=${PATH}:/usr/local/mysql/bin
 # add node commands installed to path
 # --------------------------------------------------------------
 export PATH=./node_modules/.bin:$PATH
+
+# --------------------------------------------------------------
+# add android emulator to path
+# --------------------------------------------------------------
+export PATH="/Users/ed/Library/Android/sdk/emulator:$PATH"
+
 
 # --------------------------------------------------------------
 # haskell setup
@@ -107,6 +125,11 @@ fi
 if command -v pyenv-virtualenv &>/dev/null; then
     eval "$(pyenv virtualenv-init -)"
 fi
+
+# --------------------------------------------------------------
+# language servers
+# --------------------------------------------------------------
+export PATH=$PATH:$HOME/.config/lsp/lua-language-server/bin
 
 # --------------------------------------------------------------
 # conda
