@@ -1,6 +1,14 @@
 // Place your key bindings in this file
 // to override the defaults
 [
+  {
+    "key": "cmd+`",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile"
+  },
   // ********************************************
   // Toggle between editor and terminal with cmd+e
   // ********************************************
