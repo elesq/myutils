@@ -129,7 +129,7 @@ fi
 # --------------------------------------------------------------
 # language servers
 # --------------------------------------------------------------
-export PATH=$PATH:$HOME/.config/lsp/lua-language-server/bin
+# export PATH=$PATH:$HOME/.config/lsp/lua-language-server/bin
 
 # --------------------------------------------------------------
 # conda
