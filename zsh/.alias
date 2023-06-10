@@ -18,9 +18,12 @@ alias jn='jupyter notebook'
 alias yoo='cd ~/elesq/yootils'
 alias cc='cd ~/elesq/code'
 alias qa='cd ~/elesq/code/qa'
-alias www='cd ~/elesq/code/web'
-alias ppp='cd ~/elesq/code/pyml'
-alias sql='cd ~/elesq/code/db'
+alias www='cd ~/elesq/code/www'
+alias se='cd ~/elesq/code/se'
+alias sql='cd ~/elesq/code/dataEngineering/db'
+alias de='cd ~/elesq/code/dataEngineering/de'
+alias jjj='cd ~/elesq/code/jvm'
+
 # alias gl='cd ~/elesq/code/dev/golang'
 # alias xr='cd ~/elesq/code/dev/xrvrar'
 # alias tt='cd ~/elesq/code/dev/web/ts'
@@ -103,7 +106,7 @@ alias docrabbit='docker run -d --hostname rabbitmq-host --name rabbitmq-server -
 
 # Database Engines
 alias docmysql="docker run --restart always --name mysql --net dev-net -v /Users/ed/data/mysql:/var/lib/mysql -p 3306:3306 -d -e MYSQL_USER=dbuser -e MYSQL_PASSWORD=pass -e MYSQL_ROOT_PASSWORD=pass mysql"
-alias docpg='docker run --name postgres-local -p 5432:5432 -v ~/data/postgres:/var/lib/postgresql/data -e POSTGRES_USER=web -e POSTGRES_PASSWORD=pass -d postgres'
+alias docpg='docker run --name pglocal -p 5432:5432 -v ~/data/postgres:/var/lib/postgresql/data -e POSTGRES_USER=pgroot -e POSTGRES_PASSWORD=pass -d postgres'
 
 alias docmongo='docker run -d --name mongodb -v ~/data/mongo:/data/db -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=pass -p 27017:27017 mongo:5.0.2'
 

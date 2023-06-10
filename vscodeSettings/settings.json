@@ -1,32 +1,73 @@
 {
-  "security.workspace.trust.untrustedFiles": "open",
-  // ***************************§
+  // ***************************
   // ** globals and basics
   // ***************************
-  "window.zoomLevel": -0.8,
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.zoomLevel": -0.7,
   "window.titleBarStyle": "custom",
   "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
   "debug.allowBreakpointsEverywhere": true,
-  "editor.minimap.scale": 1,
-  "gitlens.showWelcomeOnInstall": false,
-  "material-icon-theme.showWelcomeMessage": false,
   "terminal.integrated.inheritEnv": false,
   "files.trimTrailingWhitespace": true,
-  "explorer.confirmDragAndDrop": false,
+  "gitlens.showWelcomeOnInstall": false,
   "workbench.tree.indent": 24,
   "workbench.editor.wrapTabs": true,
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.startupEditor": "none",
   "workbench.colorCustomizations": {
-    // hins colors
-    "editorInlayHint.background": "#293038",
+    // hints colors
+    "editorInlayHint.background": "#2f3a45",
     "editorInlayHint.foreground": "#6e7e99",
 
-    "[Soft Colors]": {
-      "tab.activeBackground": "#2b313f",
-      "editor.background": "#1c212c",
-      "editor.lineHighlightBackground": "#1f242f"
+    "separators.functions.borderColor": "#464b5f",
+    "separators.classes.borderColor": "#464b5f",
+    "separators.constructors.borderColor": "#464b5f",
+    "separators.methods.borderColor": "#464b5f",
+    "separators.structs.borderColor": "#464b5f",
+    "separators.interfaces.borderColor": "#464b5f",
+
+    "[poimandres-storm]": {
+      "sideBarSectionHeader.background": "#202630",
+      "sideBarSectionHeader.foreground": "#5d92c7",
+      "sideBar.background": "#202630",
+      "activityBar.background": "#1c222c",
+      "editor.lineHighlightBackground": "#283041",
+      "editor.lineHighlightBorder": "#2f3747",
+      "tab.activeBackground": "#3f5876",
+      "editorSuggestWidget.selectedBackground": "#377abc",
+      "editorSuggestWidget.background": "#283547",
+      "editorCursor.foreground": "#ffac05",
+      "editorCursor.background": "#212631",
+      "editorLineNumber.activeForeground": "#ffd071",
+      "editorHoverWidget.background": "#384253",
+      "scrollbarSlider.background": "#262b36",
+      "scrollbarSlider.hoverBackground": "#2e3549"
+    },
+
+    "[Chogori Darkest Orange]": {
+      "activityBarBadge.foreground": "#e9dad6",
+      "activityBarBadge.background": "#e12b02",
+      "statusBar.border": "#1b1d24",
+      "statusBar.background": "#313648",
+      "editorLineNumber.foreground": "#455c69",
+      "editorLineNumber.activeForeground": "#fff",
+      "editor.lineHighlightBorder": "#2e2f37",
+      "editor.lineHighlightBackground": "#272830",
+      "editorCursor.foreground": "#00ddff",
+      "terminal.foreground": "#8998a7",
+      "tab.activeBackground": "#54443e"
+    },
+
+    "[Sublime Text 4 Theme]": {
+      "titleBar.activeBackground": "#23262a",
+      "titleBar.inactiveBackground": "#2b3037",
+      "editor.background": "#282e36",
+      "editorGroupHeader.tabsBackground": "#282c30",
+      "tab.activeBackground": "#4f555d",
+      "panel.background": "#3d4148",
+      "terminal.background": "#3d4148"
     },
 
     "[bliss-ui]": {
@@ -44,12 +85,8 @@
       "editorSuggestWidget.selectedBackground": "#1b6cdf",
       "editorSuggestWidget.highlightForeground": "#fff",
       "editorSuggestWidget.focusHighlightForeground": "#fff",
-      "separators.functions.borderColor": "#55466a",
-      "separators.classes.borderColor": "#55466a",
-      "separators.constructors.borderColor": "#55466a",
-      "separators.methods.borderColor": "#55466a",
-      "separators.structs.borderColor": "#55466a",
-      "separators.interfaces.borderColor": "#55466a"
+      "editorCursor.foreground": "#e9af00",
+      "editorCursor.background": "#000000"
     },
 
     "[React Theme]": {
@@ -62,50 +99,32 @@
       "tab.activeBackground": "#484d59",
       "tab.inactiveForeground": "#8897a6",
       //"editor.background": "#2c303a",
-      "separators.functions.borderColor": "#116786",
-      "separators.interfaces.borderColor": "#116786",
-      "separators.methods.borderColor": "#116786",
-
-      "separators.structs.borderColor": "#116786",
       "terminal.foreground": "#516a84",
       "terminalCursor.foreground": "#0ee1e8"
     },
 
-    "[Soft Colors (No Italics)]": {
-      "titleBar.activeBackground": "#1e232e",
-      "tab.activeBackground": "#313948",
-      "tab.activeBorderTop": "#00b7ff",
-      "editorGroupHeader.tabsBackground": "#1e232e",
-      "sideBarSectionHeader.background": "#222732",
-      "sideBar.background": "#1e232e",
-      "panel.background": "#222732",
-      "terminal.background": "#222732",
-      //separators
-      "separators.functions.borderColor": "#116786",
-      "separators.interfaces.borderColor": "#116786",
-      "separators.methods.borderColor": "#116786",
-      "separators.structs.borderColor": "#116786"
+    "[React Ocean Next Extended]": {
+      "activityBar.background": "#1e2126",
+      "sideBarSectionHeader.background": "#22252a",
+      "sideBarSectionHeader.foreground": "#5d92c7",
+      "editor.lineHighlightBackground": "#2a3039",
+      "tab.activeBackground": "#334c64"
     }
   },
   // ***************************
   // ** editor general settings
   // ***************************
+  // additional font choices
   // 'Lekton Nerd Font Mono', 'Inconsolata Nerd Font Mono', 'Operator Mono Lig', Menlo, Monaco,'MesloLGS NF'",
-  //"editor.fontFamily": "'Operator Mono Lig', 'Lekton Nerd Font Mono'",
-  //"editor.fontFamily": " 'Oxygen Mono', 'Lekton Nerd Font Mono'",
-  //"editor.fontFamily": " 'Space Mono', 'Cutive Mono'",
-  //"editor.fontFamily": " 'Share Tech Mono', 'Lekton Nerd Font Mono'",
-  //"editor.fontFamily": " 'Chivo Mono', 'Cutive Mono', 'Operator Mono Lig', 'Lekton Nerd Font Mono'",
-  //"editor.fontFamily": " 'Cutive Mono', 'Operator Mono Lig', 'Lekton Nerd Font Mono'",
-  //"editor.fontFamily": " 'Overpass Mono', 'Cutive Mono', 'Operator Mono Lig', 'Lekton Nerd Font Mono'",
+  // 'Oxygen Mono','Space Mono', 'Cutive Mono'",'Share Tech Mono','Chivo Mono', 'Overpass Mono',
   "editor.fontFamily": " 'Azeret Mono', 'Cutive Mono', 'Operator Mono Lig', 'Lekton Nerd Font Mono'",
-  //"editor.snippetSuggestions": "top",
-  "editor.tabSize": 2,
+
+  "editor.minimap.scale": 1,
   "editor.lineHeight": 23,
   "editor.fontSize": 13,
   "editor.fontWeight": "100",
   "editor.cursorStyle": "line",
-  "editor.cursorWidth": 27,
+  "editor.cursorWidth": 15,
   "editor.occurrencesHighlight": true,
   "editor.cursorBlinking": "smooth",
   "editor.formatOnSave": true,
@@ -117,26 +136,26 @@
   "editor.detectIndentation": false,
   "editor.guides.bracketPairs": true,
   "editor.suggestOnTriggerCharacters": true,
-  "editor.suggestSelection": "first",
   "editor.suggest.localityBonus": true,
   "editor.fontLigatures": true,
-  "editor.autoClosingQuotes": "always",
-  // "editor.quickSuggestions": {
-  //   "other": true,
-  //   "comments": false,
-  //   "strings": false
-  // },
-  "editor.acceptSuggestionOnCommitCharacter": true,
-  "editor.acceptSuggestionOnEnter": "on",
-  "editor.wordBasedSuggestions": true,
-  "editor.inlayHints.enabled": "off",
-  //"editor.parameterHints.enabled": true,
+  "editor.autoClosingQuotes": "languageDefined",
+  "editor.suggestSelection": "first",
   "editor.tokenColorCustomizations": {
     // **************************
     // ** universal overrides
     // **************************
-    //"comments": "#526381",
-    "comments": "#7185a8",
+    "comments": "#5b7095",
+
+    "[Chogori Darkest Orange]": {
+      "textMateRules": [
+        {
+          "scope": "meta.object-literal.key",
+          "settings": {
+            "foreground": "#d3bf98"
+          }
+        }
+      ]
+    },
 
     "[React Theme]": {
       "textMateRules": [
@@ -144,6 +163,22 @@
           "scope": "comment.line.double-slash.go",
           "settings": {
             "foreground": "#566783"
+          }
+        }
+      ]
+    },
+    "[poimandres-storm]": {
+      "textMateRules": [
+        {
+          "scope": "string.quoted",
+          "settings": {
+            "foreground": "#96dcff"
+          }
+        },
+        {
+          "scope": "string.template.js",
+          "settings": {
+            "foreground": "#b6fbe8"
           }
         }
       ]
@@ -199,9 +234,6 @@
       ["(", ")"]
     ]
   },
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
-  },
   "[css]": {
     // switch off separators
     "separators.enabledSymbols": []
@@ -215,35 +247,21 @@
     "editor.suggest.insertMode": "replace",
     "gitlens.codeLens.scopes": ["document"]
   },
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer",
-    "editor.formatOnSave": true
-  },
+
   "[python]": {
     "gitlens.codeLens.symbolScopes": ["!Module"],
     "editor.wordBasedSuggestions": false,
-    "editor.defaultFormatter": "ms-python.python",
+    "editor.defaultFormatter": "ms-python.vscode-pylance",
     "editor.tabSize": 4,
     "editor.formatOnType": true
   },
-  "[go]": {
-    "editor.defaultFormatter": "golang.go",
-    "editor.insertSpaces": false,
+  //   "[java]": {
+  //     "editor.defaultFormatter": "redhat.java"
+  //   },
+  "[svelte]": {
     "editor.formatOnSave": true,
-    "editor.tabSize": 4,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    },
-    "editor.suggest.snippetsPreventQuickSuggestions": false
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   },
-  "[cpp][c]": {
-    "editor.tabSize": 4,
-    "editor.defaultFormatter": "ms-vscode.cpptools",
-    "editor.wordBasedSuggestions": false,
-    "editor.suggest.insertMode": "replace",
-    "editor.semanticHighlighting.enabled": true
-  },
-
   "liveServer.settings.donotVerifyTags": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "prettier.jsxSingleQuote": true,
@@ -255,10 +273,12 @@
   "svelte.enable-ts-plugin": true,
   "prettier.arrowParens": "avoid",
   "go.toolsManagement.autoUpdate": true,
-  "haskell.manageHLS": "GHCup",
-  "[haskell]": {},
   "files.autoSave": "afterDelay",
-  "workbench.colorTheme": "bliss-ui",
+  "workbench.tree.renderIndentGuides": "always",
+  "redhat.telemetry.enabled": false,
+  "extensions.ignoreRecommendations": true,
   "workbench.iconTheme": "vscode-icons",
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.colorTheme": "Chogori Darkest Orange",
+  "eslint.run": "onSave",
+  "editor.tabSize": 2
 }
