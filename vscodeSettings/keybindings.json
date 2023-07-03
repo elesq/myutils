@@ -2,7 +2,7 @@
 // to override the defaults
 [
   {
-    "key": "cmd+`",
+    "key": "[IntlBackslash] [IntlBackslash]",
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {

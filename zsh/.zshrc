@@ -63,7 +63,7 @@ export PATH="/opt/homebrew/bin/:$PATH"
 # --------------------------------------------------------------
 # rust settings
 # --------------------------------------------------------------
-export PATH="$HOME/.cargo/bin:$PATH"
+# export PATH="$HOME/.cargo/bin:$PATH"
 
 # --------------------------------------------------------------
 # apache maven settings
@@ -73,7 +73,7 @@ export PATH=$PATH:/opt/apache-maven/bin
 # --------------------------------------------------------------
 # go development settings
 # --------------------------------------------------------------
-export PATH="/usr/local/go/bin:$PATH"
+# export PATH="/usr/local/go/bin:$PATH"
 
 # --------------------------------------------------------------
 # local DB settings
@@ -96,7 +96,7 @@ export PATH="/Users/ed/Library/Android/sdk/emulator:$PATH"
 # --------------------------------------------------------------
 # haskell setup
 # --------------------------------------------------------------
-[ -f "/Users/ed/.ghcup/env" ] && source "/Users/ed/.ghcup/env" # ghcup-env
+# [ -f "/Users/ed/.ghcup/env" ] && source "/Users/ed/.ghcup/env" # ghcup-env
 
 # --------------------------------------------------------------
 # package version managers
