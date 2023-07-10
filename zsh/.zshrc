@@ -63,7 +63,7 @@ export PATH="/opt/homebrew/bin/:$PATH"
 # --------------------------------------------------------------
 # rust settings
 # --------------------------------------------------------------
-# export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # --------------------------------------------------------------
 # apache maven settings

@@ -17,11 +17,11 @@ alias jn='jupyter notebook'
 # --------------------------------------------------------------
 alias yoo='cd ~/elesq/yootils'
 alias cc='cd ~/elesq/code'
+alias de='cd ~/elesq/code/dataeng'
+alias rrr='cd ~/elesq/code/rustcode'
 alias qa='cd ~/elesq/code/qa'
 alias www='cd ~/elesq/code/www'
 alias se='cd ~/elesq/code/se'
-alias sql='cd ~/elesq/code/dataEngineering/db'
-alias de='cd ~/elesq/code/dataEngineering/de'
 alias jjj='cd ~/elesq/code/jvm'
 
 # alias gl='cd ~/elesq/code/dev/golang'
@@ -88,6 +88,7 @@ alias mgo='~/elesq/yootils/scripts/shellmongo.sh'
 alias pgs='~/elesq/yootils/scripts/shellpostgres.sh'
 alias cpc='~/elesq/yootils/scripts/add-prettier-config-file.sh'
 alias cli='~/elesq/yootils/scripts/show-clis.sh'
+alias noconda='~/elesq/yootils/scripts/noautoenv.sh'
 
 # --------------------------------------------------------------
 # nginx for laravel
