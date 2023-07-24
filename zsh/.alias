@@ -17,22 +17,13 @@ alias jn='jupyter notebook'
 # --------------------------------------------------------------
 alias yoo='cd ~/elesq/yootils'
 alias cc='cd ~/elesq/code'
-alias de='cd ~/elesq/code/dataeng'
-alias rrr='cd ~/elesq/code/rustcode'
-alias qa='cd ~/elesq/code/qa'
-alias www='cd ~/elesq/code/www'
+alias de='cd ~/elesq/code/learn/dataeng'
+alias ppp='cd ~/elesq/code/learn/py'
+alias qa='cd ~/elesq/code/learn/qa'
+alias www='cd ~/elesq/code/learn/www'
 alias se='cd ~/elesq/code/se'
-alias jjj='cd ~/elesq/code/jvm'
+# alias jjj='cd ~/elesq/code/jvm'
 
-# alias gl='cd ~/elesq/code/dev/golang'
-# alias xr='cd ~/elesq/code/dev/xrvrar'
-# alias tt='cd ~/elesq/code/dev/web/ts'
-# alias rrr='cd ~/elesq/code/dev/web/react'
-# alias mob='cd ~/elesq/code/mobile'
-# alias ios='cd ~/elesq/code/mobile/iOS'
-# alias paused='cd ~/elesq/code/paused'
-# alias arc='cd ~/elesq/code/archive'
-# alias ppp='cd ~/elesq/code/py'
 
 # --------------------------------------------------------------
 # node aliases

@@ -68,5 +68,26 @@
       "const ctx = canvas.getContext('2d');"
     ],
     "description": "create a new canvas element with intellisense type declared"
+  },
+  "create a socketio server": {
+    "scope": "javascript, typescript",
+    "prefix": "sockserve",
+    "body": [
+      "const express = require('express');",
+      "const app = express();",
+      "const { Server } = require('socket.io');",
+      "",
+      "app.use(express.static(__dirname + '/public'));",
+      "",
+      "const expressServer = app.listen(8000);",
+      "",
+      "const io = new Server(expressServer, {",
+      " cors: {",
+      "   origin: '*',",
+      " },",
+      "});",
+      "",
+      "io.on('', () => {});"
+    ]
   }
 }
