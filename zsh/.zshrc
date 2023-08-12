@@ -60,6 +60,7 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 # --------------------------------------------------------------
 export PATH="/opt/homebrew/bin/:$PATH"
 
+
 # --------------------------------------------------------------
 # rust settings
 # --------------------------------------------------------------
@@ -81,6 +82,8 @@ export PATH=$PATH:/opt/apache-maven/bin
 # mongoDB installations
 #export PATH=$PATH:/usr/local/Cellar/mongodb-community@4.2/4.2.17/bin
 export PATH=${PATH}:/usr/local/mysql/bin
+
+
 
 # --------------------------------------------------------------
 # add node commands installed to path

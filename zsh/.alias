@@ -24,6 +24,15 @@ alias www='cd ~/elesq/code/learn/www'
 alias se='cd ~/elesq/code/se'
 # alias jjj='cd ~/elesq/code/jvm'
 
+# --------------------------------------------------------------
+# services aliases
+# --------------------------------------------------------------
+alias startmysql='brew services start mysql'
+alias stopmysql='brew services stop mysql'
+alias startpostgres="brew services start postgresql@14"
+alias stoppostgres="brew services stop postgresql@14"
+alias startmongodb=" brew services start mongodb/brew/mongodb-community"
+alias stopmongodb=" brew services stop mongodb/brew/mongodb-community"
 
 # --------------------------------------------------------------
 # node aliases
