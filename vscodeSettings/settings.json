@@ -1,6 +1,6 @@
 {
   "security.workspace.trust.untrustedFiles": "open",
-  "window.zoomLevel": -0.7,
+  "window.zoomLevel": -0.5,
   "editor.linkedEditing": true,
   "workbench.tree.indent": 24,
   "workbench.editor.wrapTabs": true,
@@ -34,13 +34,16 @@
       "terminal.background": "#272930",
       "panel.background": "#272930",
       "panel.border": "#373a45",
-      // "editorSuggestWidget.selectedBackground": "#5b5b5b",
       "editorSuggestWidget.selectedBackground": "#cf4906",
       "editorSuggestWidget.focusHighlightForeground": "#fff",
-      "editorSuggestWidget.highlightForeground": "#fff"
+      "editorSuggestWidget.highlightForeground": "#fff",
+      // python specific
+      "notebook.outputContainerBackgroundColor": "#2a2f38"
     }
   },
-  "editor.fontFamily": " 'Azeret Mono', 'Cutive Mono', 'Operator Mono Lig', 'Lekton Nerd Font Mono'",
+
+  //"editor.fontFamily": " 'Azeret Mono', 'Cutive Mono', 'Operator Mono Lig', 'Lekton Nerd Font Mono'",
+  "editor.fontFamily": " 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
   "editor.minimap.scale": 1,
   "editor.lineHeight": 23,
   "editor.fontSize": 13,
@@ -62,8 +65,153 @@
   "editor.autoClosingQuotes": "languageDefined",
   "editor.suggestSelection": "first",
   "editor.tokenColorCustomizations": {
-    "comments": "#5b7095",
-    "strings": "#baa88e"
+    "comments": "#697ea0",
+    "strings": "#b19f87",
+
+    // remove italics
+
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "comment.block",
+          "comment.block.documentation",
+          "comment.line",
+          "constant",
+          "constant.character",
+          "constant.character.escape",
+          "constant.numeric",
+          "constant.numeric.integer",
+          "constant.numeric.float",
+          "constant.numeric.hex",
+          "constant.numeric.octal",
+          "constant.other",
+          "constant.regexp",
+          "constant.rgb-value",
+          "emphasis",
+          "entity",
+          "entity.name",
+          "entity.name.class",
+          "entity.name.function",
+          "entity.name.method",
+          "entity.name.section",
+          "entity.name.selector",
+          "entity.name.tag",
+          "entity.name.type",
+          "entity.other",
+          "entity.other.attribute-name",
+          "entity.other.inherited-class",
+          "invalid",
+          "invalid.deprecated",
+          "invalid.illegal",
+          "keyword",
+          "keyword.control",
+          "keyword.operator",
+          "keyword.operator.new",
+          "keyword.operator.assignment",
+          "keyword.operator.arithmetic",
+          "keyword.operator.logical",
+          "keyword.other",
+          "markup",
+          "markup.bold",
+          "markup.changed",
+          "markup.deleted",
+          "markup.heading",
+          "markup.inline.raw",
+          "markup.inserted",
+          "markup.italic",
+          "markup.list",
+          "markup.list.numbered",
+          "markup.list.unnumbered",
+          "markup.other",
+          "markup.quote",
+          "markup.raw",
+          "markup.underline",
+          "markup.underline.link",
+          "meta",
+          "meta.block",
+          "meta.cast",
+          "meta.class",
+          "meta.function",
+          "meta.function-call",
+          "meta.preprocessor",
+          "meta.return-type",
+          "meta.selector",
+          "meta.tag",
+          "meta.type.annotation",
+          "meta.type",
+          "punctuation.definition.string.begin",
+          "punctuation.definition.string.end",
+          "punctuation.separator",
+          "punctuation.separator.continuation",
+          "punctuation.terminator",
+          "storage",
+          "storage.modifier",
+          "storage.type",
+          "string",
+          "string.interpolated",
+          "string.other",
+          "string.quoted",
+          "string.quoted.double",
+          "string.quoted.other",
+          "string.quoted.single",
+          "string.quoted.triple",
+          "string.regexp",
+          "string.unquoted",
+          "strong",
+          "support",
+          "support.class",
+          "support.constant",
+          "support.function",
+          "support.other",
+          "support.type",
+          "support.type.property-name",
+          "support.variable",
+          "variable",
+          "variable.language",
+          "variable.name",
+          "variable.other",
+          "variable.other.readwrite",
+          "variable.parameter"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ],
+
+    "[Chogori Darkest Orange]": {
+      "textMateRules": [
+        {
+          "scope": "keyword",
+          "settings": {
+            "foreground": "#e9be00"
+            // "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "entity.name.function.decorator",
+          "settings": {
+            "foreground": "#d0d0d0"
+          }
+        },
+        {
+          "scope": "meta.function-call.arguments",
+          "settings": {
+            //"foreground": "#e84b20"
+            // "foreground": "#f15023"
+            "foreground": "#e0d4c5",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "entity.name.function, support.function.builtin, meta.function-call.generic",
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ]
+    }
   },
   "terminal.integrated.fontFamily": "Lekton Nerd Font Mono",
   "terminal.integrated.fontSize": 15,
@@ -82,6 +230,41 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4
   },
+  "[css]": {
+    "editor.suggest.insertMode": "replace",
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "gitlens.codeLens.symbolScopes": ["!Module"],
+    "editor.formatOnType": true,
+    "editor.wordBasedSuggestions": false,
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "[sql]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "[cpp]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnSave": true,
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true
+  },
   "liveServer.settings.donotVerifyTags": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "prettier.jsxSingleQuote": true,
@@ -91,13 +274,42 @@
   "window.title": "${activeEditorMedium}",
   "window.titleSeparator": "  —  ",
   "svelte.enable-ts-plugin": true,
-  "prettier.arrowParens": "avoid",
   "files.autoSave": "afterDelay",
   "workbench.tree.renderIndentGuides": "always",
   "extensions.ignoreRecommendations": true,
   "workbench.iconTheme": "vscode-icons",
   "eslint.run": "onSave",
   "editor.tabSize": 2,
+  "editor.defaultColorDecorators": true,
+  "scm.diffDecorations": "none",
+  "terminal.integrated.inheritEnv": false,
   "workbench.colorTheme": "Chogori Darkest Orange",
-  "editor.defaultColorDecorators": true
+  "workbench.editorAssociations": {
+    "*.db": "default"
+  },
+  "sqltools.format": {
+    "language": "sql",
+    "linesBetweenQueries": 2,
+    "reservedWordCase": "upper"
+  },
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "explorer.compactFolders": false,
+  "cSpell.language": "en-GB",
+  "cSpell.userWords": [
+    "Chogori",
+    "Color",
+    "Colorization",
+    "elesq",
+    "servemux",
+    "snippetbox",
+    "sqltools",
+    "structs",
+    "tmpl",
+    "yootils"
+  ],
+  "code-runner.runInTerminal": true,
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }",
+  "projectTemplates.templatesDirectory": "Users/ed/elesq/yootils/projectTemplates"
 }

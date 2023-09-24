@@ -74,7 +74,7 @@ export PATH=$PATH:/opt/apache-maven/bin
 # --------------------------------------------------------------
 # go development settings
 # --------------------------------------------------------------
-# export PATH="/usr/local/go/bin:$PATH"
+export PATH="/usr/local/go/bin:$PATH"
 
 # --------------------------------------------------------------
 # local DB settings

@@ -71,5 +71,13 @@
   {
     "key": "alt+cmd+l alt+cmd+l",
     "command": "editor.action.transformToLowercase"
+  },
+  {
+    "key": "cmd+.",
+    "command": "code-runner.run"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
   }
 ]
