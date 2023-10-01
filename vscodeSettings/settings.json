@@ -257,7 +257,7 @@
       "source.organizeImports": true
     }
   },
-  "[cpp]": {
+  "[c][cpp]": {
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-vscode.cpptools",
     "editor.formatOnSave": true,
@@ -302,6 +302,7 @@
     "Color",
     "Colorization",
     "elesq",
+    "foolsgold",
     "servemux",
     "snippetbox",
     "sqltools",
@@ -311,5 +312,22 @@
   ],
   "code-runner.runInTerminal": true,
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }",
-  "projectTemplates.templatesDirectory": "Users/ed/elesq/yootils/projectTemplates"
+  "projectTemplates.templatesDirectory": "Users/ed/elesq/yootils/projectTemplates",
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -Wall -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "zig": "zig run",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "python": "python -u",
+    "go": "go run",
+    "csharp": "scriptcs",
+    "typescript": "ts-node",
+    "swift": "swift",
+    "r": "Rscript",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "dart": "dart",
+    "haskell": "runghc"
+  }
 }

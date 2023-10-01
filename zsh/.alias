@@ -17,14 +17,10 @@ alias jn='jupyter notebook'
 # --------------------------------------------------------------
 alias yoo='cd ~/elesq/yootils'
 alias cc='cd ~/elesq/code'
-alias de='cd ~/elesq/code/learn/dataeng'
-alias cpp='cd ~/elesq/code/learn/ccpp'
-alias rrr='cd ~/elesq/code/learn/r'
+alias ooo='cd ~/elesq/code/learn/gocode'
+alias cpp='cd ~/elesq/code/learn/ccppcode'
 alias ppp='cd ~/elesq/code/learn/py'
-alias qa='cd ~/elesq/code/learn/qa'
 alias www='cd ~/elesq/code/learn/www'
-alias se='cd ~/elesq/code/se'
-# alias jjj='cd ~/elesq/code/jvm'
 
 # --------------------------------------------------------------
 # services aliases
@@ -81,7 +77,7 @@ alias cra='npx create-react-app'
 # utility script aliases
 # --------------------------------------------------------------
 alias bb='~/elesq/yootils/scripts/brewup.sh'
-alias cc='~/elesq/yootils/scripts/copycat.sh'
+alias copycat='~/elesq/yootils/scripts/copycat.sh'
 alias kk='~/elesq/yootils/scripts/porter.sh'
 alias npl='~/elesq/yootils/scripts/npl.sh'
 alias gupd='~/elesq/yootils/scripts/gupd.sh'
