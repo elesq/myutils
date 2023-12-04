@@ -19,6 +19,7 @@ alias uuu='cd ~/elesq/myutils'
 alias cc='cd ~/elesq/code'
 alias cpp='cd ~/elesq/code/ccppcode'
 alias www='cd ~/elesq/code/www'
+alias qa='cd ~/elesq/code/qa'
 
 # --------------------------------------------------------------
 # services aliases
