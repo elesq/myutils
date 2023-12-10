@@ -308,11 +308,11 @@
     "sqltools",
     "structs",
     "tmpl",
-    "yootils"
+    "myutils"
   ],
   "code-runner.runInTerminal": true,
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }",
-  "projectTemplates.templatesDirectory": "Users/ed/elesq/yootils/projectTemplates",
+  "projectTemplates.templatesDirectory": "Users/ed/elesq/myutils/projectTemplates",
   "code-runner.executorMap": {
     "javascript": "node",
     "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",

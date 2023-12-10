@@ -1,4 +1,4 @@
-# yootils
+# myutils
 
 A repo of utility scripts and setup of tooling for MBP
 
