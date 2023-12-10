@@ -17,9 +17,10 @@ alias jn='jupyter notebook'
 # --------------------------------------------------------------
 alias uuu='cd ~/elesq/myutils'
 alias cc='cd ~/elesq/code'
-alias cpp='cd ~/elesq/code/ccppcode'
+alias cpp='cd ~/elesq/code/cppcode'
 alias www='cd ~/elesq/code/www'
 alias qa='cd ~/elesq/code/qa'
+alias ggg='cd ~/elesq/code/gocode'
 
 # --------------------------------------------------------------
 # services aliases
