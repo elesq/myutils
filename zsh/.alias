@@ -3,6 +3,11 @@ export EDITOR=nvim
 alias vi=vim
 
 # --------------------------------------------------------------
+# override aliases (python related)
+# --------------------------------------------------------------
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+
+# --------------------------------------------------------------
 # user aliases
 # --------------------------------------------------------------
 alias xx='clear'
@@ -17,10 +22,11 @@ alias jn='jupyter notebook'
 # --------------------------------------------------------------
 alias uuu='cd ~/elesq/myutils'
 alias cc='cd ~/elesq/code'
-alias cpp='cd ~/elesq/code/cppcode'
+# alias cpp='cd ~/elesq/code/cppcode'
 alias www='cd ~/elesq/code/www'
 alias qa='cd ~/elesq/code/qa'
-alias ggg='cd ~/elesq/code/gocode'
+# alias ggg='cd ~/elesq/code/gocode'
+alias aaa='cd ~/elesq/code/aiml'
 
 # --------------------------------------------------------------
 # services aliases

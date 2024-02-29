@@ -1,12 +1,18 @@
 {
   "security.workspace.trust.untrustedFiles": "open",
   "window.zoomLevel": -0.5,
-  "editor.linkedEditing": true,
+  "window.title": "${activeEditorMedium}",
+  "window.titleSeparator": "  —  ",
   "workbench.tree.indent": 24,
   "workbench.editor.wrapTabs": true,
+  "workbench.tree.renderIndentGuides": "always",
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Chogori Darkest Orange",
+  "workbench.editorAssociations": {
+      "*.db": "default"
+    },
   "workbench.colorCustomizations": {
     "editorInlayHint.background": "#2f3a45",
     "editorInlayHint.foreground": "#6e7e99",
@@ -44,14 +50,18 @@
 
   //"editor.fontFamily": " 'Azeret Mono', 'Cutive Mono', 'Operator Mono Lig', 'Lekton Nerd Font Mono'",
   "editor.fontFamily": " 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
+  "editor.linkedEditing": true,
+  "editor.defaultColorDecorators": true,
   "editor.minimap.scale": 1,
   "editor.lineHeight": 23,
   "editor.fontSize": 13,
+  "editor.tabSize": 4,
   "editor.fontWeight": "100",
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 15,
-  "editor.occurrencesHighlight": true,
+  "editor.occurrencesHighlight": "singleFile",
   "editor.cursorBlinking": "smooth",
+  "editor.insertSpaces": true,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
@@ -69,7 +79,6 @@
     "strings": "#b19f87",
 
     // remove italics
-
     "textMateRules": [
       {
         "scope": [
@@ -216,6 +225,7 @@
   "terminal.integrated.fontFamily": "Lekton Nerd Font Mono",
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.inheritEnv": false,
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
@@ -226,42 +236,42 @@
   },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features",
-    "editor.formatOnSave": true,
-    "editor.insertSpaces": true,
     "editor.tabSize": 4
   },
   "[css]": {
     "editor.suggest.insertMode": "replace",
-    "editor.formatOnSave": true,
-    "editor.insertSpaces": true,
     "editor.tabSize": 4
   },
   "[python]": {
-    "diffEditor.ignoreTrimWhitespace": false,
-    "gitlens.codeLens.symbolScopes": ["!Module"],
-    "editor.formatOnType": true,
-    "editor.wordBasedSuggestions": false,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit"
+    },
     "editor.tabSize": 4,
-    "editor.defaultFormatter": "ms-python.autopep8"
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordBasedSuggestions": "currentDocument",
+    "gitlens.codeLens.symbolScopes": ["!Module"]
   },
   "[sql]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "mtxr.sqltools"
   },
-  "[go]": {
-    "editor.defaultFormatter": "golang.go",
-    "editor.tabSize": 4,
-    "editor.insertSpaces": false,
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    }
-  },
+  // "[go]": {
+  //   "editor.defaultFormatter": "golang.go",
+  //   "editor.tabSize": 4,
+  //   "editor.insertSpaces": false,
+  //   "editor.formatOnSave": true,
+  //   "editor.codeActionsOnSave": {
+  //     "source.organizeImports": "always"
+  //   }
+  // },
   "[c][cpp]": {
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-vscode.cpptools",
     "editor.formatOnSave": true,
-    "editor.wordBasedSuggestions": false,
+    "editor.wordBasedSuggestions": "currentDocument",
     "editor.suggest.insertMode": "replace",
     "editor.semanticHighlighting.enabled": true
   },
@@ -271,22 +281,11 @@
   "prettier.singleQuote": true,
   "prettier.tabWidth": 2,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.title": "${activeEditorMedium}",
-  "window.titleSeparator": "  —  ",
-  "svelte.enable-ts-plugin": true,
   "files.autoSave": "afterDelay",
-  "workbench.tree.renderIndentGuides": "always",
   "extensions.ignoreRecommendations": true,
   "workbench.iconTheme": "vscode-icons",
   "eslint.run": "onSave",
-  "editor.tabSize": 2,
-  "editor.defaultColorDecorators": true,
   "scm.diffDecorations": "none",
-  "terminal.integrated.inheritEnv": false,
-  "workbench.colorTheme": "Chogori Darkest Orange",
-  "workbench.editorAssociations": {
-    "*.db": "default"
-  },
   "sqltools.format": {
     "language": "sql",
     "linesBetweenQueries": 2,
@@ -296,7 +295,7 @@
     "**/__pycache__": true
   },
   "explorer.compactFolders": false,
-  "cSpell.language": "en-GB",
+  "cSpell.language": "en-GB"
   "cSpell.userWords": [
     "Chogori",
     "Color",
@@ -309,25 +308,5 @@
     "structs",
     "tmpl",
     "myutils"
-  ],
-  "code-runner.runInTerminal": true,
-  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }",
-  "projectTemplates.templatesDirectory": "Users/ed/elesq/myutils/projectTemplates",
-  "code-runner.executorMap": {
-    "javascript": "node",
-    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-    "c": "cd $dir && gcc $fileName -Wall -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "zig": "zig run",
-    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "python": "python -u",
-    "go": "go run",
-    "csharp": "scriptcs",
-    "typescript": "ts-node",
-    "swift": "swift",
-    "r": "Rscript",
-    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
-    "dart": "dart",
-    "haskell": "runghc"
-  }
+  ]
 }
