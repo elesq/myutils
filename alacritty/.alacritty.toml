@@ -1,0 +1,101 @@
+[bell]
+animation = "EaseOutExpo"
+color = "0xffffff"
+duration = 0
+
+[colors]
+#custom_cursor_colors = true
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "0x5c6370"
+blue = "0x61afef"
+cyan = "0xcd4c6d"
+green = "0x98c379"
+magenta = "0xc678dd"
+red = "0xe06c75"
+white = "0xe6efff"
+yellow = "0xd19a66"
+
+[colors.cursor]
+cursor = "0xf12c66"
+text = "0x000000"
+
+[colors.dim]
+black = "0x1e2127"
+blue = "0x61afef"
+cyan = "0x56b6c2"
+green = "0x98c379"
+magenta = "0xc678dd"
+red = "0xe06c75"
+white = "0x828791"
+yellow = "0xd19a66"
+
+[colors.normal]
+black = "0x1e2127"
+blue = "0x61afef"
+cyan = "0x56b6c2"
+green = "0x98c379"
+magenta = "0xc678dd"
+red = "0xe06c75"
+white = "0x828791"
+yellow = "0xd19a66"
+
+[colors.primary]
+background = "0x19181a"
+foreground = "0x9595cf"
+
+[colors.selection]
+background = "0x94c379"
+text = "0x282d34"
+
+[cursor]
+style = "Block"
+unfocused_hollow = true
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 13.3
+
+[font.bold]
+family = "Lekton Nerd Font Mono"
+
+[font.bold_italic]
+family = "Lekton Nerd Font Mono"
+
+[font.italic]
+family = "Lekton Nerd Font Mono"
+
+[font.normal]
+family = "Lekton Nerd Font Mono"
+style = "Regular"
+
+[font.offset]
+x = 1
+y = 4
+
+[scrolling]
+history = 5000
+
+[window]
+decorations = "transparent"
+opacity = 0.92
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.dimensions]
+columns = 120
+lines = 52
+
+[window.padding]
+x = 10
+y = 30
+
+[window.position]
+x = 1140
+y = 100
