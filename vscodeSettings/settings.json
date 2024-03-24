@@ -11,8 +11,8 @@
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Chogori Darkest Orange",
   "workbench.editorAssociations": {
-      "*.db": "default"
-    },
+    "*.db": "default"
+  },
   "workbench.colorCustomizations": {
     "editorInlayHint.background": "#2f3a45",
     "editorInlayHint.foreground": "#6e7e99",
@@ -295,7 +295,7 @@
     "**/__pycache__": true
   },
   "explorer.compactFolders": false,
-  "cSpell.language": "en-GB"
+  "cSpell.language": "en-GB",
   "cSpell.userWords": [
     "Chogori",
     "Color",

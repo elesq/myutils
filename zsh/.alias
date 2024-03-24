@@ -15,7 +15,9 @@ alias lrt='ls -lrt'
 alias zzz='source ~/.zshrc'
 alias myip='ipconfig getifaddr en0'
 alias kp='npx kill-port'
+alias ds='conda activate dsenv'
 alias jn='jupyter notebook'
+alias jl='jupyter lab'
 
 # --------------------------------------------------------------
 # place aliases

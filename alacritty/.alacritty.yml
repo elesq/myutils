@@ -141,9 +141,9 @@ colors:
     #background: "0x090d1e"
     background: "0x19181a"
     #foreground: "0xcbbae9"
-    foreground: "0xaccdf3"
-    foreground: "0xdcb3dc" # pinkish
-    foreground: "0xb392b3"
+    #foreground: "0xaccdf3"
+    #foreground: "0xdcb3dc" # pinkish
+    #foreground: "0xb392b3"
     foreground: "0x9595cf"
 
 
@@ -192,7 +192,7 @@ colors:
     yellow: "0xd19a66"
     blue: "0x61afef"
     magenta: "0xc678dd"
-    cyan: "0x69d0ff"
+      #cyan: "0x69d0ff"
     cyan: "0xcd4c6d" # adjusted color for the reddish folders
     white: "0xe6efff"
 
