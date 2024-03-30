@@ -9,7 +9,6 @@
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Chogori Darkest Orange",
   "workbench.editorAssociations": {
     "*.db": "default"
   },
@@ -22,6 +21,44 @@
     "separators.methods.borderColor": "#464b5f",
     "separators.structs.borderColor": "#464b5f",
     "separators.interfaces.borderColor": "#464b5f",
+
+    "[React Theme]": {
+      "panel.border": "#515766",
+      "activityBar.background": "#262930",
+      "activityBar.inactiveForeground": "#555",
+      "sideBar.background": "#262930",
+      "sideBarSectionHeader.background": "#262930",
+      "editor.lineHighlightBackground": "#2c2f38",
+      "editorLineNumber.foreground": "#666",
+      "editorLineNumber.activeForeground": "#ffffff"
+    },
+
+    "[★★★★★ DARCULA ★★]": {
+      "editor.lineHighlightBorder": "#393939",
+      "editor.lineHighlightBackground": "#343434"
+    },
+
+    "[★★★★★ DARCULA ★★★]": {
+      "editor.lineHighlightBorder": "#282828",
+      "editor.lineHighlightBackground": "#323232",
+      "sideBarSectionHeader.background": "#2f3131",
+      "sideBar.background": "#2f3131",
+      "list.inactiveSelectionBackground": "#3a3d3d",
+      "panel.border": "#787878",
+      "statusBar.border": "#383838",
+      "editorCursor.foreground": "#00fff2",
+      "editorCursor.background": "#000000"
+    },
+
+    "[poimandres]": {
+      "list.activeSelectionBackground": "#0f435b",
+      "list.focusBackground": "#377493",
+      "editor.lineHighlightBackground": "#252838",
+      "editorCursor.foreground": "#ffa200",
+      "sideBar.border": "#1f3e48",
+      "panel.border": "#2a5462"
+    },
+
     "[Chogori Darkest Orange]": {
       "activityBarBadge.foreground": "#e9dad6",
       "activityBarBadge.background": "#e12b02",
@@ -55,7 +92,7 @@
   "editor.minimap.scale": 1,
   "editor.lineHeight": 23,
   "editor.fontSize": 13,
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
   "editor.fontWeight": "100",
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 15,
@@ -76,7 +113,7 @@
   "editor.suggestSelection": "first",
   "editor.tokenColorCustomizations": {
     "comments": "#697ea0",
-    "strings": "#b19f87",
+    // "strings": "#b19f87",
 
     // remove italics
     "textMateRules": [
@@ -189,6 +226,23 @@
       }
     ],
 
+    "[★★★★★ DARCULA ★★★]": {
+      "textMateRules": [
+        {
+          "scope": "string",
+          "settings": {
+            "foreground": "#98ddff"
+          }
+        },
+        {
+          "scope": "constant.character.format.placeholder",
+          "settings": {
+            "foreground": "#47ffff"
+          }
+        }
+      ]
+    },
+
     "[Chogori Darkest Orange]": {
       "textMateRules": [
         {
@@ -234,6 +288,9 @@
   "files.associations": {
     "*tmpl": "html"
   },
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features",
     "editor.tabSize": 4
@@ -247,7 +304,7 @@
       "source.organizeImports": "explicit",
       "source.fixAll": "explicit"
     },
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "charliermarsh.ruff",
     "diffEditor.ignoreTrimWhitespace": false,
@@ -281,7 +338,8 @@
   "prettier.singleQuote": true,
   "prettier.tabWidth": 2,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 10000,
+  "files.autoSave": "off",
   "extensions.ignoreRecommendations": true,
   "workbench.iconTheme": "vscode-icons",
   "eslint.run": "onSave",
@@ -307,6 +365,10 @@
     "sqltools",
     "structs",
     "tmpl",
-    "myutils"
-  ]
+    "myutils",
+    "fastapi"
+  ],
+  "sqltools.useNodeRuntime": true,
+  "workbench.colorTheme": "React Theme",
+  "cSpell.ignoreWords": ["htmx"]
 }

@@ -23,7 +23,8 @@ alias jl='jupyter lab'
 # place aliases
 # --------------------------------------------------------------
 alias uuu='cd ~/elesq/myutils'
-alias cc='cd ~/elesq/code'
+alias ccc='cd ~/elesq/code'
+alias jjj='cd ~/elesq/code/jvm'
 # alias cpp='cd ~/elesq/code/cppcode'
 alias www='cd ~/elesq/code/www'
 alias qa='cd ~/elesq/code/qa'
