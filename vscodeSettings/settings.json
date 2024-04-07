@@ -1,8 +1,14 @@
 {
   "security.workspace.trust.untrustedFiles": "open",
+  // window
+  "window.commandCenter": false,
   "window.zoomLevel": -0.5,
   "window.title": "${activeEditorMedium}",
   "window.titleSeparator": "  —  ",
+  "explorer.compactFolders": false,
+  // workbench
+  "workbench.colorTheme": "React Theme",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.tree.indent": 24,
   "workbench.editor.wrapTabs": true,
   "workbench.tree.renderIndentGuides": "always",
@@ -15,77 +21,39 @@
   "workbench.colorCustomizations": {
     "editorInlayHint.background": "#2f3a45",
     "editorInlayHint.foreground": "#6e7e99",
-    "separators.functions.borderColor": "#464b5f",
-    "separators.classes.borderColor": "#464b5f",
-    "separators.constructors.borderColor": "#464b5f",
-    "separators.methods.borderColor": "#464b5f",
-    "separators.structs.borderColor": "#464b5f",
-    "separators.interfaces.borderColor": "#464b5f",
 
     "[React Theme]": {
+      "titleBar.activeBackground": "#262930",
+      "editorGroupHeader.tabsBackground": "#262930",
+      "statusBar.border": "#333a47",
+      "statusBar.background": "#2c2f36",
+      "statusBar.foreground": "#b0b0b0",
       "panel.border": "#515766",
-      "activityBar.background": "#262930",
+      "activityBar.border": "#3c404c",
+      "activityBar.background": "#21242b",
       "activityBar.inactiveForeground": "#555",
+      "sideBar.border": "#3e424f",
       "sideBar.background": "#262930",
       "sideBarSectionHeader.background": "#262930",
+      "terminal.background": "#2d3039",
+      "panel.background": "#2d3039",
+      "editor.background": "#2d3039",
       "editor.lineHighlightBackground": "#2c2f38",
       "editorLineNumber.foreground": "#666",
-      "editorLineNumber.activeForeground": "#ffffff"
-    },
-
-    "[★★★★★ DARCULA ★★]": {
-      "editor.lineHighlightBorder": "#393939",
-      "editor.lineHighlightBackground": "#343434"
-    },
-
-    "[★★★★★ DARCULA ★★★]": {
-      "editor.lineHighlightBorder": "#282828",
-      "editor.lineHighlightBackground": "#323232",
-      "sideBarSectionHeader.background": "#2f3131",
-      "sideBar.background": "#2f3131",
-      "list.inactiveSelectionBackground": "#3a3d3d",
-      "panel.border": "#787878",
-      "statusBar.border": "#383838",
-      "editorCursor.foreground": "#00fff2",
-      "editorCursor.background": "#000000"
-    },
-
-    "[poimandres]": {
-      "list.activeSelectionBackground": "#0f435b",
-      "list.focusBackground": "#377493",
-      "editor.lineHighlightBackground": "#252838",
-      "editorCursor.foreground": "#ffa200",
-      "sideBar.border": "#1f3e48",
-      "panel.border": "#2a5462"
-    },
-
-    "[Chogori Darkest Orange]": {
-      "activityBarBadge.foreground": "#e9dad6",
-      "activityBarBadge.background": "#e12b02",
-      "statusBar.border": "#1b1d24",
-      "statusBar.background": "#313648",
-      "sideBar.border": "#373a45",
-      "editorLineNumber.foreground": "#455c69",
-      "editorLineNumber.activeForeground": "#fff",
-      "editor.lineHighlightBorder": "#2e2f37",
-      "editor.lineHighlightBackground": "#272830",
-      "editorCursor.foreground": "#00ddff",
-      "terminal.foreground": "#8998a7",
-      "tab.activeBackground": "#54443e",
-      "tab.inactiveBackground": "#272930",
-      "editor.background": "#272930",
-      "terminal.background": "#272930",
-      "panel.background": "#272930",
-      "panel.border": "#373a45",
-      "editorSuggestWidget.selectedBackground": "#cf4906",
-      "editorSuggestWidget.focusHighlightForeground": "#fff",
-      "editorSuggestWidget.highlightForeground": "#fff",
-      // python specific
-      "notebook.outputContainerBackgroundColor": "#2a2f38"
+      "editorLineNumber.activeForeground": "#ffffff",
+      "tab.activeBackground": "#585d6c",
+      "tab.inactiveBackground": "#2d3039",
+      "tab.border": "#444",
+      "breadcrumb.background": "#2d3039",
+      "breadcrumb.foreground": "#8191b3",
+      "editorSuggestWidget.border": "#707070",
+      "editorSuggestWidget.background": "#3b3e44",
+      "editorSuggestWidget.selectedBackground": "#586269",
+      "editorHoverWidget.background": "#373c45",
+      "editorHoverWidget.border": "#707070"
     }
   },
 
-  //"editor.fontFamily": " 'Azeret Mono', 'Cutive Mono', 'Operator Mono Lig', 'Lekton Nerd Font Mono'",
   "editor.fontFamily": " 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
   "editor.linkedEditing": true,
   "editor.defaultColorDecorators": true,
@@ -112,10 +80,20 @@
   "editor.autoClosingQuotes": "languageDefined",
   "editor.suggestSelection": "first",
   "editor.tokenColorCustomizations": {
-    "comments": "#697ea0",
+    "[React Theme]": {
+      "textMateRules": [
+        {
+          "scope": ["comment.line.double-slash.js"],
+          "settings": {
+            "foreground": "#647188"
+          }
+        }
+      ]
+    },
+    "comments": "#647188",
     // "strings": "#b19f87",
 
-    // remove italics
+    // remove all italics
     "textMateRules": [
       {
         "scope": [
@@ -224,57 +202,7 @@
           "fontStyle": ""
         }
       }
-    ],
-
-    "[★★★★★ DARCULA ★★★]": {
-      "textMateRules": [
-        {
-          "scope": "string",
-          "settings": {
-            "foreground": "#98ddff"
-          }
-        },
-        {
-          "scope": "constant.character.format.placeholder",
-          "settings": {
-            "foreground": "#47ffff"
-          }
-        }
-      ]
-    },
-
-    "[Chogori Darkest Orange]": {
-      "textMateRules": [
-        {
-          "scope": "keyword",
-          "settings": {
-            "foreground": "#e9be00"
-            // "fontStyle": "italic"
-          }
-        },
-        {
-          "scope": "entity.name.function.decorator",
-          "settings": {
-            "foreground": "#d0d0d0"
-          }
-        },
-        {
-          "scope": "meta.function-call.arguments",
-          "settings": {
-            //"foreground": "#e84b20"
-            // "foreground": "#f15023"
-            "foreground": "#e0d4c5",
-            "fontStyle": ""
-          }
-        },
-        {
-          "scope": "entity.name.function, support.function.builtin, meta.function-call.generic",
-          "settings": {
-            "fontStyle": ""
-          }
-        }
-      ]
-    }
+    ]
   },
   "terminal.integrated.fontFamily": "Lekton Nerd Font Mono",
   "terminal.integrated.fontSize": 15,
@@ -288,28 +216,13 @@
   "files.associations": {
     "*tmpl": "html"
   },
-  "[javascript]": {
-    "editor.tabSize": 2
-  },
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 4
   },
   "[css]": {
     "editor.suggest.insertMode": "replace",
     "editor.tabSize": 4
-  },
-  "[python]": {
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit",
-      "source.fixAll": "explicit"
-    },
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.wordBasedSuggestions": "currentDocument",
-    "gitlens.codeLens.symbolScopes": ["!Module"]
   },
   "[sql]": {
     "editor.formatOnSave": true,
@@ -324,24 +237,23 @@
   //     "source.organizeImports": "always"
   //   }
   // },
-  "[c][cpp]": {
-    "editor.tabSize": 4,
-    "editor.defaultFormatter": "ms-vscode.cpptools",
-    "editor.formatOnSave": true,
-    "editor.wordBasedSuggestions": "currentDocument",
-    "editor.suggest.insertMode": "replace",
-    "editor.semanticHighlighting.enabled": true
-  },
+  // "[c][cpp]": {
+  //   "editor.tabSize": 4,
+  //   "editor.defaultFormatter": "ms-vscode.cpptools",
+  //   "editor.formatOnSave": true,
+  //   "editor.wordBasedSuggestions": "currentDocument",
+  //   "editor.suggest.insertMode": "replace",
+  //   "editor.semanticHighlighting.enabled": true
+  // },
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "liveServer.settings.donotVerifyTags": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "prettier.jsxSingleQuote": true,
   "prettier.singleQuote": true,
   "prettier.tabWidth": 2,
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "files.autoSaveDelay": 10000,
   "files.autoSave": "off",
   "extensions.ignoreRecommendations": true,
-  "workbench.iconTheme": "vscode-icons",
   "eslint.run": "onSave",
   "scm.diffDecorations": "none",
   "sqltools.format": {
@@ -349,26 +261,7 @@
     "linesBetweenQueries": 2,
     "reservedWordCase": "upper"
   },
-  "files.exclude": {
-    "**/__pycache__": true
-  },
-  "explorer.compactFolders": false,
-  "cSpell.language": "en-GB",
-  "cSpell.userWords": [
-    "Chogori",
-    "Color",
-    "Colorization",
-    "elesq",
-    "foolsgold",
-    "servemux",
-    "snippetbox",
-    "sqltools",
-    "structs",
-    "tmpl",
-    "myutils",
-    "fastapi"
-  ],
   "sqltools.useNodeRuntime": true,
-  "workbench.colorTheme": "React Theme",
-  "cSpell.ignoreWords": ["htmx"]
+  "cSpell.language": "en-GB",
+  "cSpell.diagnosticLevel": "Hint"
 }
