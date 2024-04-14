@@ -8,8 +8,7 @@
   "explorer.compactFolders": false,
   // workbench
   "workbench.colorTheme": "React Theme",
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.tree.indent": 24,
+  "workbench.tree.indent": 36,
   "workbench.editor.wrapTabs": true,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.editor.decorations.badges": true,
@@ -35,14 +34,21 @@
       "sideBar.border": "#3e424f",
       "sideBar.background": "#262930",
       "sideBarSectionHeader.background": "#262930",
+      "list.inactiveSelectionForeground": "#fff",
+      "list.inactiveSelectionBackground": "#2f323c",
+      "sideBar.foreground": "#888f9d",
       "terminal.background": "#2d3039",
       "panel.background": "#2d3039",
       "editor.background": "#2d3039",
-      "editor.lineHighlightBackground": "#2c2f38",
+      "editorCursor.background": "#2d3039",
+      "editorCursor.foreground": "#0eefff",
+      "editorHoverWidget.border": "#707070",
+      "editor.lineHighlightBackground": "#32333c",
       "editorLineNumber.foreground": "#666",
       "editorLineNumber.activeForeground": "#ffffff",
       "tab.activeBackground": "#585d6c",
       "tab.inactiveBackground": "#2d3039",
+      "tab.inactiveForeground": "#7a8194",
       "tab.border": "#444",
       "breadcrumb.background": "#2d3039",
       "breadcrumb.foreground": "#8191b3",
@@ -50,7 +56,7 @@
       "editorSuggestWidget.background": "#3b3e44",
       "editorSuggestWidget.selectedBackground": "#586269",
       "editorHoverWidget.background": "#373c45",
-      "editorHoverWidget.border": "#707070"
+      "terminal.foreground": "#a6b8c3"
     }
   },
 
@@ -80,18 +86,23 @@
   "editor.autoClosingQuotes": "languageDefined",
   "editor.suggestSelection": "first",
   "editor.tokenColorCustomizations": {
+    "comments": "#647188",
+    // "comments": "#455f8d",
+
     "[React Theme]": {
       "textMateRules": [
         {
-          "scope": ["comment.line.double-slash.js"],
+          "scope": [
+            "comment.line.double-slash.js",
+            "comment.line.number-sign.python"
+          ],
           "settings": {
-            "foreground": "#647188"
+            "foreground": "#647188",
+            "fontStyle": ""
           }
         }
       ]
     },
-    "comments": "#647188",
-    // "strings": "#b19f87",
 
     // remove all italics
     "textMateRules": [
@@ -228,6 +239,17 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "mtxr.sqltools"
   },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "gitlens.codeLens.symbolScopes": ["!Module"],
+    "editor.wordBasedSuggestions": "off"
+  },
   // "[go]": {
   //   "editor.defaultFormatter": "golang.go",
   //   "editor.tabSize": 4,
@@ -263,5 +285,8 @@
   },
   "sqltools.useNodeRuntime": true,
   "cSpell.language": "en-GB",
-  "cSpell.diagnosticLevel": "Hint"
+  "cSpell.diagnosticLevel": "Hint",
+  "files.exclude": {
+    "**/__pycache__": true
+  }
 }
