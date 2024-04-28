@@ -25,11 +25,10 @@ alias jl='jupyter lab'
 alias uuu='cd ~/elesq/myutils'
 alias ccc='cd ~/elesq/code'
 alias jjj='cd ~/elesq/code/jvm'
-# alias cpp='cd ~/elesq/code/cppcode'
 alias www='cd ~/elesq/code/www'
 alias qa='cd ~/elesq/code/qa'
 # alias ggg='cd ~/elesq/code/gocode'
-alias aaa='cd ~/elesq/code/aiml'
+alias aaa='cd ~/elesq/code/bamlai'
 
 # --------------------------------------------------------------
 # services aliases
