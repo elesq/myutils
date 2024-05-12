@@ -150,6 +150,10 @@ unset __conda_setup
 unsetopt correct_all
 
 # ----------------------------------------------------------------------------- 
+# iterm pointer update
+printf "\033]22;arrow\a"
+
+# ----------------------------------------------------------------------------- 
 # SDKMAN - THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
