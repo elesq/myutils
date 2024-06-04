@@ -2,7 +2,7 @@
   "security.workspace.trust.untrustedFiles": "open",
   // window
   "window.commandCenter": false,
-  "window.zoomLevel": -0.5,
+  "window.zoomLevel": -0.4,
   "window.title": "${activeEditorMedium}",
   "window.titleSeparator": "  —  ",
   "explorer.compactFolders": false,
@@ -20,12 +20,17 @@
   "workbench.colorCustomizations": {
     "editorInlayHint.background": "#2f3a45",
     "editorInlayHint.foreground": "#6e7e99",
-    "notebook.cellEditorBackground": "#262831",
+    "notebook.editorBackground": "#2a2c33",
+    // "notebook.cellEditorBackground": "#25272d",
+    // "notebook.cellEditorBackground": "#272932",
+    // "notebook.cellEditorBackground": "#222935",
 
     "[Chogori Darkest Blue]": {
       "titleBar.activeBackground": "#23252c",
-      "activityBar.border": "#38394d",
-      "activityBar.background": "#202228",
+      //"activityBar.border": "#38394d",
+      //"activityBar.background": "#202228",
+      "activityBar.border": "#313244",
+      "activityBar.background": "#23252b",
       "activityBar.inactiveForeground": "#515866",
       "panel.border": "#38394d",
       "panelTitle.inactiveForeground": "#474f60",
@@ -281,6 +286,7 @@
   "notebook.globalToolbar": false,
   "notebook.consolidatedRunButton": true,
   "notebook.output.fontFamily": "DM Mono",
-  "notebook.output.fontSize": 12,
-  "notebook.output.scrolling": true
+  "notebook.output.fontSize": 11,
+  "notebook.output.scrolling": true,
+  "notebook.markup.fontSize": 13
 }
