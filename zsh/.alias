@@ -24,13 +24,10 @@ alias jl='jupyter lab'
 # --------------------------------------------------------------
 alias uuu='cd ~/elesq/myutils'
 alias ccc='cd ~/elesq/code'
-alias mmm='cd ~/elesq/code/mobile'
-alias ggg='cd ~/elesq/code/programmingGo'
-alias jjj='cd ~/elesq/code/programmingJava'
-alias ppp='cd ~/elesq/code/programmingPython'
+alias jjj='cd ~/elesq/code/jvm'
+alias ppp='cd ~/elesq/code/py'
 alias qa='cd ~/elesq/code/qa'
 alias www='cd ~/elesq/code/www'
-alias aaa='cd ~/elesq/code/dataEngineering'
 
 # --------------------------------------------------------------
 # services aliases
