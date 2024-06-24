@@ -23,18 +23,15 @@
         "notebook.editorBackground": "#2a2c33",
 
         "[Catppuccin Frappé]": {
-            "activityBar.foreground": "#399cb0",
+            //"activityBar.foreground": "#399cb0",
             "activityBar.inactiveForeground": "#555a78",
-            "sideBarTitle.foreground": "#4e98a0",
-            "activityBarBadge.background": "#7af4ff",
             "statusBarItem.remoteBackground": "#444860",
             "statusBarItem.remoteForeground": "#fff",
-            "tab.hoverForeground": "#62a6d7",
             "tab.activeForeground": "#e7e7e7",
             "tab.activeBackground": "#555a78",
+            "editorCursor.foreground": "#ffb700",
             "editorLineNumber.activeForeground": "#fff",
             "editorLineNumber.foreground": "#606686",
-            "editorCursor.foreground": "#72f3ff",
             "editorCursor.background": "#1d1e29",
             "terminalCursor.foreground": "#ffc415",
             "editor.lineHighlightBackground": "#36394b"
