@@ -28,6 +28,7 @@ alias jjj='cd ~/elesq/code/jvm'
 alias ppp='cd ~/elesq/code/py'
 alias qa='cd ~/elesq/code/qa'
 alias www='cd ~/elesq/code/www'
+alias web='cd /Applications/XAMPP/xamppfiles/htdocs/php'
 
 # --------------------------------------------------------------
 # services aliases

@@ -47,6 +47,11 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ----------------------------------------------------------------------------- 
+# tmux settings 
+export XDG_CONFIG_HOME="$HOME/.config"
+
+
+# ----------------------------------------------------------------------------- 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
