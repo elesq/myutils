@@ -1,12 +1,16 @@
 {
     "security.workspace.trust.untrustedFiles": "open",
+    // ------------------------------
     // window
+    // ------------------------------
     "window.commandCenter": false,
-    "window.zoomLevel": -0.4,
+    "window.zoomLevel": -0.5,
     "window.title": "${activeEditorMedium}",
     "window.titleSeparator": "  —  ",
     "explorer.compactFolders": false,
+    // ------------------------------
     // workbench
+    // ------------------------------
     "workbench.colorTheme": "Catppuccin Frappé",
     "workbench.tree.indent": 36,
     "workbench.editor.wrapTabs": true,
@@ -17,6 +21,9 @@
     "workbench.editorAssociations": {
         "*.db": "default"
     },
+    // ------------------------------
+    // workbench customisations
+    // ------------------------------
     "workbench.colorCustomizations": {
         "editorInlayHint.background": "#2f3a45",
         "editorInlayHint.foreground": "#6e7e99",
@@ -35,58 +42,12 @@
             "editorCursor.background": "#1d1e29",
             "terminalCursor.foreground": "#ffc415",
             "editor.lineHighlightBackground": "#36394b"
-        },
-
-        "[Chogori Darkest Blue]": {
-            "titleBar.activeBackground": "#23252c",
-            "activityBar.border": "#313244",
-            "activityBar.background": "#23252b",
-            "activityBar.inactiveForeground": "#515866",
-            "panel.border": "#38394d",
-            "panelTitle.inactiveForeground": "#474f60",
-            "statusBarItem.remoteBackground": "#465260",
-            "statusBarItem.remoteForeground": "#fff",
-            "statusBarItem.remoteHoverBackground": "#17d1ff",
-            "statusBarItem.remoteHoverForeground": "#000000",
-            "sideBarSectionHeader.background": "#23252c",
-            "list.inactiveSelectionBackground": "#313445",
-            "list.activeSelectionBackground": "#313445",
-            "list.focusOutline": "#31343a",
-            "list.focusBackground": "#272a33",
-            "list.hoverBackground": "#272a33",
-            "statusBar.border": "#404258",
-            "statusBar.background": "#38394d",
-            "statusBar.foreground": "#acacd9",
-            "sideBar.foreground": "#8a8aa8",
-            "sideBar.background": "#23252c",
-            "sideBar.border": "#38394d",
-            "breadcrumb.background": "#343640",
-            "breadcrumb.foreground": "#8994ac",
-            "tab.border": "#1d1e24",
-            "tab.activeBackground": "#44455d",
-            "tab.inactiveBackground": "#2d2e3a",
-            "tab.inactiveForeground": "#779",
-            "tab.hoverBackground": "#393a50",
-            "tab.hoverForeground": "#69b1ff",
-            "editorGroupHeader.tabsBackground": "#23252c",
-            "editorLineNumber.foreground": "#46505a",
-            "editorLineNumber.activeForeground": "#fff",
-            "editorCursor.foreground": "#1fffbc",
-            "editorCursor.background": "#111",
-            "editorHoverWidget.background": "#2d3041",
-            "editorHoverWidget.border": "#525977",
-            "editorSuggestWidget.background": "#2d3041",
-            "editorSuggestWidget.selectedBackground": "#4b485f",
-            "editorSuggestWidget.focusHighlightForeground": "#20f0ff",
-            "editorSuggestWidget.highlightForeground": "#20f0ff",
-            "editor.hoverHighlightBackground": "#0f416dc6",
-            "editor.background": "#2a2c34",
-            "terminal.foreground": "#a1b5c5",
-            "terminal.background": "#2a2c34",
-            "panel.background": "#2a2c34"
         }
     },
-
+    // ------------------------------
+    // editor customisations
+    // ------------------------------
+    "editor.formatOnSave": true,
     "editor.fontFamily": " 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
     "editor.linkedEditing": true,
     "editor.defaultColorDecorators": true,
@@ -94,12 +55,10 @@
     "editor.lineHeight": 23,
     "editor.fontSize": 13,
     "editor.fontWeight": "100",
-    "editor.cursorStyle": "line",
-    "editor.cursorWidth": 15,
+    "editor.cursorStyle": "block",
     "editor.occurrencesHighlight": "singleFile",
     "editor.cursorBlinking": "smooth",
     "editor.insertSpaces": true,
-    "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.formatOnType": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -111,32 +70,9 @@
     "editor.fontLigatures": true,
     "editor.autoClosingQuotes": "languageDefined",
     "editor.suggestSelection": "first",
-    // "editor.lineNumbers": "relative",
+    //"editor.lineNumbers": "relative",
     "editor.tokenColorCustomizations": {
-        "comments": "#5f7191",
-        // "comments": "#455f8d",
-
-        "[Chogori Darkest Blue]": {
-            "textMateRules": [
-                {
-                    "scope": "string",
-                    "settings": {
-                        "foreground": "#50caec"
-                    }
-                },
-                {
-                    "scope": [
-                        "keyword.control.export.js",
-                        "keyword.control.import.js",
-                        "keyword.control.import"
-                    ],
-                    "settings": {
-                        "foreground": "#dc9e18"
-                        // "fontStyle": "bold"
-                    }
-                }
-            ]
-        }
+        "comments": "#5f7191"
     },
     "catppuccin.accentColor": "blue",
     "terminal.integrated.fontFamily": "Lekton Nerd Font Mono",
@@ -151,12 +87,15 @@
     "files.associations": {
         "*tmpl": "html"
     },
+    // ------------------------------
+    // per language customisations
+    // ------------------------------
     "[json]": {
-        "editor.tabSize": 2,
+        "editor.tabSize": 4,
         "editor.suggest.insertMode": "replace"
     },
     "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "vscode.html-language-features",
         "editor.tabSize": 4
     },
     "[css]": {
@@ -165,7 +104,8 @@
     },
     "[javascript]": {
         "editor.maxTokenizationLineLength": 2500,
-        "prettier.tabWidth": 2
+        "editor.tabSize": 4,
+        "prettier.tabWidth": 4
     },
     "[sql]": {
         "editor.formatOnSave": true,
@@ -186,51 +126,42 @@
         "gitlens.codeLens.symbolScopes": ["!Module"],
         "editor.wordBasedSuggestions": "off"
     },
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "liveServer.settings.donotVerifyTags": true,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "prettier.jsxSingleQuote": true,
-    "prettier.singleQuote": true,
-    "prettier.tabWidth": 4,
-    "files.autoSaveDelay": 10000,
-    "files.autoSave": "off",
-    "extensions.ignoreRecommendations": true,
-    "eslint.run": "onSave",
-    "scm.diffDecorations": "none",
-    "sqltools.format": {
-        "language": "sql",
-        "linesBetweenQueries": 2,
-        "reservedWordCase": "upper"
-    },
-    "sqltools.useNodeRuntime": true,
+    // ------------------------------
+    // misc
+    // ------------------------------
+    "breadcrumbs.enabled": false,
     "cSpell.language": "en-GB",
     "cSpell.diagnosticLevel": "Hint",
+    "extensions.ignoreRecommendations": true,
+    "eslint.run": "onSave",
+    "files.autoSaveDelay": 10000,
+    "files.autoSave": "off",
     "files.exclude": {
         "**/__pycache__": true
     },
-    "editor.tabSize": 2,
-
-    "breadcrumbs.enabled": false,
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
     "notebook.insertToolbarLocation": "notebookToolbar",
     "notebook.showCellStatusBar": "hidden",
-    "notebook.cellToolbarLocation": {
-        "jupyter-notebook": "hidden"
-    },
     "notebook.globalToolbar": false,
     "notebook.consolidatedRunButton": true,
     "notebook.output.fontFamily": "DM Mono",
     "notebook.output.fontSize": 11,
     "notebook.output.scrolling": true,
     "notebook.markup.fontSize": 13,
-    "php.validate.executablePath": "/Applications/XAMPP/xamppfiles/bin/php"
+    "notebook.cellToolbarLocation": {
+        "jupyter-notebook": "hidden"
+    },
+    "php.validate.executablePath": "/Applications/XAMPP/xamppfiles/bin/php",
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "scm.diffDecorations": "none",
+    "sqltools.useNodeRuntime": true,
+    "sqltools.format": {
+        "language": "sql",
+        "linesBetweenQueries": 2,
+        "reservedWordCase": "upper"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }
-
-// "[go]": {
-//   "editor.defaultFormatter": "golang.go",
-//   "editor.tabSize": 4,
-//   "editor.insertSpaces": false,
-//   "editor.formatOnSave": true,
-//   "editor.codeActionsOnSave": {
-//     "source.organizeImports": "always"
-//   }
-// },
