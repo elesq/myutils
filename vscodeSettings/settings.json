@@ -8,10 +8,6 @@
     "window.title": "${activeEditorMedium}",
     "window.titleSeparator": "  —  ",
     "explorer.compactFolders": false,
-    // ------------------------------
-    // workbench
-    // ------------------------------
-    "workbench.colorTheme": "Catppuccin Frappé",
     "workbench.tree.indent": 36,
     "workbench.editor.wrapTabs": true,
     "workbench.tree.renderIndentGuides": "always",
@@ -42,6 +38,22 @@
             "editorCursor.background": "#1d1e29",
             "terminalCursor.foreground": "#ffc415",
             "editor.lineHighlightBackground": "#36394b"
+        },
+
+        "[habamix]": {
+            "titleBar.activeBackground": "#252526",
+            "activityBar.border": "#3e3e40",
+            "activityBar.background": "#252526",
+            "sideBar.foreground": "#889198",
+            "sideBar.border": "#39393b",
+            "panel.background": "#1c1c1c",
+            "terminal.background": "#1c1c1c",
+            "terminalCursor.foreground": "#67b0e0",
+            "editorCursor.foreground": "#ffb70e",
+            "editorLineNumber.foreground": "#50545e",
+            "editorLineNumber.activeForeground": "#a6e6f5",
+            "tab.inactiveBackground": "#1e1e1e",
+            "tab.activeBackground": "#535658"
         }
     },
     // ------------------------------
@@ -111,10 +123,6 @@
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "mtxr.sqltools"
     },
-    "[php]": {
-        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-        "editor.tabSize": 4
-    },
     "[python]": {
         "editor.tabSize": 4,
         "editor.codeActionsOnSave": {
@@ -163,5 +171,6 @@
         "linesBetweenQueries": 2,
         "reservedWordCase": "upper"
     },
-    "typescript.updateImportsOnFileMove.enabled": "always"
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorTheme": "habamix"
 }
