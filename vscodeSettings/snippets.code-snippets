@@ -23,7 +23,7 @@
     },
     "go boilerplate": {
         "scope": "golang, go",
-        "prefix": "gbb",
+        "prefix": "gfg",
         "body": [
             "package main",
             "\nimport \"fmt\"",

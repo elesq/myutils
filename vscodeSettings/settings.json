@@ -102,16 +102,21 @@
     // ------------------------------
     // per language customisations
     // ------------------------------
-    "[json]": {
+    "[css]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.tabSize": 4
+    },
+    "[go]": {
+        "editor.defaultFormatter": "golang.go",
         "editor.tabSize": 4,
-        "editor.suggest.insertMode": "replace"
+        "editor.insertSpaces": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "always"
+        }
     },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features",
-        "editor.tabSize": 4
-    },
-    "[css]": {
-        "editor.suggest.insertMode": "replace",
         "editor.tabSize": 4
     },
     "[javascript]": {
@@ -119,9 +124,9 @@
         "editor.tabSize": 4,
         "prettier.tabWidth": 4
     },
-    "[sql]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "mtxr.sqltools"
+    "[json]": {
+        "editor.tabSize": 4,
+        "editor.suggest.insertMode": "replace"
     },
     "[python]": {
         "editor.tabSize": 4,
@@ -133,6 +138,10 @@
         "editor.formatOnSave": true,
         "gitlens.codeLens.symbolScopes": ["!Module"],
         "editor.wordBasedSuggestions": "off"
+    },
+    "[sql]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "mtxr.sqltools"
     },
     // ------------------------------
     // misc
