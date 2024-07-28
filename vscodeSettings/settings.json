@@ -34,10 +34,13 @@
             "tab.activeBackground": "#555a78",
             "editorCursor.foreground": "#ffb700",
             "editorLineNumber.activeForeground": "#fff",
-            "editorLineNumber.foreground": "#606686",
+            "editorLineNumber.foreground": "#595e7a",
             "editorCursor.background": "#1d1e29",
             "terminalCursor.foreground": "#ffc415",
-            "editor.lineHighlightBackground": "#36394b"
+            "editor.lineHighlightBackground": "#343749",
+            "editor.background": "#2d3143",
+            "editorGutter.background": "#2d3143",
+            "panel.border": "#4c505d"
         },
 
         "[habamix]": {
@@ -50,22 +53,59 @@
             "terminal.background": "#1c1c1c",
             "terminalCursor.foreground": "#67b0e0",
             "editorCursor.foreground": "#ffb70e",
-            "editorLineNumber.foreground": "#50545e",
+            "editorLineNumber.foreground": "#404248",
             "editorLineNumber.activeForeground": "#a6e6f5",
             "tab.inactiveBackground": "#1e1e1e",
-            "tab.activeBackground": "#535658"
+            "tab.activeBackground": "#404244",
+            "tab.activeBorder": "#d38b2c",
+            // "editorHoverWidget.background": "#303942",
+            // "editorHoverWidget.background": "#2c302d",
+            "editorHoverWidget.background": "#1d1f21",
+            // "editorHoverWidget.border": "#779082"
+            "editorHoverWidget.border": "#c0791c"
+        },
+
+        "[Solarized Monochrome Light]": {
+            "titleBar.activeBackground": "#d1cdc0",
+            "activityBar.background": "#d1cdc0",
+            "activityBar.border": "#bbbbb7",
+            "activityBar.activeBorder": "#d1cdc0",
+            "activityBar.inactiveForeground": "#9d9a8e",
+            "sideBar.background": "#d8d4c6",
+            "sideBar.border": "#bbbbb7",
+            "list.inactiveSelectionBackground": "#c6c4b9",
+            "list.activeSelectionBackground": "#c6c4b9",
+            "list.focusAndSelectionOutline": "#c4c2b7",
+            "list.focusBackground": "#ceccc0",
+            "list.focusOutline": "#e48525",
+            "editorGroupHeader.tabsBackground": "#d1cdc0",
+            "tab.inactiveBackground": "#c6c3b7",
+            "tab.activeBackground": "#eae4d1",
+            "editor.background": "#e0dac9",
+            "editorGutter.background": "#e0dac9",
+            "editor.selectionBackground": "#e0d9c3",
+            "editorLineNumber.foreground": "#c2c1b4",
+            "editor.lineHighlightBackground": "#e2dcc8",
+            "editorStickyScrollHover.background": "#e0d9c3",
+            "editorStickyScroll.border": "#cdc4a8",
+            "editorStickyScroll.shadow": "#ded4b8"
         }
     },
+    // ------------------------------
+    // apc customisations
+    // ------------------------------
+    "apc.font.family": "Dank Mono",
     // ------------------------------
     // editor customisations
     // ------------------------------
     "editor.formatOnSave": true,
-    "editor.fontFamily": " 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
+    "editor.fontFamily": " 'Dank Mono', 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
     "editor.linkedEditing": true,
     "editor.defaultColorDecorators": true,
+    "editor.minimap.autohide": true,
     "editor.minimap.scale": 1,
     "editor.lineHeight": 23,
-    "editor.fontSize": 13,
+    "editor.fontSize": 14,
     "editor.fontWeight": "100",
     "editor.cursorStyle": "block",
     "editor.occurrencesHighlight": "singleFile",
@@ -84,7 +124,34 @@
     "editor.suggestSelection": "first",
     //"editor.lineNumbers": "relative",
     "editor.tokenColorCustomizations": {
-        "comments": "#5f7191"
+        //"comments": "#5f7191"
+        "comments": "#52555a",
+        "[Catppuccin Frappé]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "comment",
+                        "comment.block",
+                        "comment.block.documentation",
+                        "comment.line"
+                    ],
+                    "settings": {
+                        "foreground": "#5d7386"
+                    }
+                }
+            ]
+        },
+
+        "[habamix]": {
+            "textMateRules": [
+                // {
+                //     "scope": "text.html.derivative",
+                //     "settings": {
+                //         "foreground": "#edc191"
+                //     }
+                // }
+            ]
+        }
     },
     "catppuccin.accentColor": "blue",
     "terminal.integrated.fontFamily": "Lekton Nerd Font Mono",
@@ -97,7 +164,8 @@
         "javascript": "javascriptreact"
     },
     "files.associations": {
-        "*tmpl": "html"
+        "*tmpl": "html",
+        "*.tmpl": "html"
     },
     // ------------------------------
     // per language customisations
@@ -121,12 +189,18 @@
     },
     "[javascript]": {
         "editor.maxTokenizationLineLength": 2500,
-        "editor.tabSize": 4,
-        "prettier.tabWidth": 4
+        "editor.tabSize": 2,
+        "prettier.tabWidth": 2
     },
     "[json]": {
         "editor.tabSize": 4,
         "editor.suggest.insertMode": "replace"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 2,
+        "prettier.jsxSingleQuote": true,
+        "prettier.tabWidth": 2
     },
     "[python]": {
         "editor.tabSize": 4,
@@ -181,5 +255,5 @@
         "reservedWordCase": "upper"
     },
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "workbench.colorTheme": "habamix"
+    "workbench.colorTheme": "Catppuccin Frappé"
 }
