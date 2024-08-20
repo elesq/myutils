@@ -101,6 +101,14 @@ alias cli='~/elesq/myutils/scripts/show-clis.sh'
 alias noconda='~/elesq/myutils/scripts/noautoenv.sh'
 
 # --------------------------------------------------------------
+# conda and pyenv envs for python
+# --------------------------------------------------------------
+alias pyzed='conda activate zedenv'
+alias stopzed='conda deactivate'
+alias pydev='pyenv activate devenv'
+alias stopdev='pyenv deactivate'
+
+# --------------------------------------------------------------
 # nginx for laravel
 # --------------------------------------------------------------
 alias startnginx='brew services start nginx'

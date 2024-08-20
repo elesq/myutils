@@ -4,11 +4,13 @@
     // window
     // ------------------------------
     "window.commandCenter": false,
-    "window.zoomLevel": -0.5,
+    "window.zoomLevel": -0.6,
     "window.title": "${activeEditorMedium}",
     "window.titleSeparator": "  —  ",
     "explorer.compactFolders": false,
+    "workbench.colorTheme": "habamix",
     "workbench.tree.indent": 36,
+    "workbench.externalBrowser": "chrome",
     "workbench.editor.wrapTabs": true,
     "workbench.tree.renderIndentGuides": "always",
     "workbench.editor.decorations.badges": true,
@@ -24,6 +26,14 @@
         "editorInlayHint.background": "#2f3a45",
         "editorInlayHint.foreground": "#6e7e99",
         "notebook.editorBackground": "#2a2c33",
+        "separators.classes.borderColor": "#404040",
+        "separators.constructors.borderColor": "#404040",
+        "separators.enums.borderColor": "#404040",
+        "separators.functions.borderColor": "#404040",
+        "separators.interfaces.borderColor": "#404040",
+        "separators.methods.borderColor": "#404040",
+        "separators.namespaces.borderColor": "#404040",
+        "separators.structs.borderColor": "#404040",
 
         "[Catppuccin Frappé]": {
             //"activityBar.foreground": "#399cb0",
@@ -49,15 +59,18 @@
             "activityBar.background": "#252526",
             "sideBar.foreground": "#889198",
             "sideBar.border": "#39393b",
-            "panel.background": "#1c1c1c",
-            "terminal.background": "#1c1c1c",
+            "panel.background": "#242424",
+            "terminal.background": "#242424",
             "terminalCursor.foreground": "#67b0e0",
             "editorCursor.foreground": "#ffb70e",
-            "editorLineNumber.foreground": "#404248",
+            "editorLineNumber.foreground": "#43454c",
             "editorLineNumber.activeForeground": "#a6e6f5",
-            "tab.inactiveBackground": "#1e1e1e",
+            "editorGutter.background": "#242424",
+            "editor.background": "#242424",
+            "tab.inactiveBackground": "#242424",
             "tab.activeBackground": "#404244",
             "tab.activeBorder": "#d38b2c",
+            "statusBar.border": "#353535",
             // "editorHoverWidget.background": "#303942",
             // "editorHoverWidget.background": "#2c302d",
             "editorHoverWidget.background": "#1d1f21",
@@ -89,6 +102,23 @@
             "editorStickyScrollHover.background": "#e0d9c3",
             "editorStickyScroll.border": "#cdc4a8",
             "editorStickyScroll.shadow": "#ded4b8"
+        },
+
+        "[Tiniri Dark]": {
+            "tab.activeBackground": "#37393d",
+            "editorHoverWidget.background": "#2b2c2f",
+            "editorHoverWidget.border": "#b77319",
+            "editorSuggestWidget.border": "#b77319",
+            "editorSuggestWidget.background": "#2b2c2f"
+        },
+
+        "[Nord Flat]": {
+            "tab.inactiveBackground": "#282e3a",
+            "tab.activeBackground": "#3f4c61",
+            "editorGutter.background": "#282e3a",
+            "editor.background": "#282e3a",
+            "panel.background": "#282e3a",
+            "terminal.background": "#282e3a"
         }
     },
     // ------------------------------
@@ -99,7 +129,8 @@
     // editor customisations
     // ------------------------------
     "editor.formatOnSave": true,
-    "editor.fontFamily": " 'Dank Mono', 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
+    // "editor.fontFamily": " 'Dank Mono', 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
+    "editor.fontFamily": " 'DM Mono', 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
     "editor.linkedEditing": true,
     "editor.defaultColorDecorators": true,
     "editor.minimap.autohide": true,
@@ -126,6 +157,18 @@
     "editor.tokenColorCustomizations": {
         //"comments": "#5f7191"
         "comments": "#52555a",
+
+        "[Tiniri Dark]": {
+            "textMateRules": [
+                {
+                    "scope": "punctuation.definition.string",
+                    "settings": {
+                        "foreground": "#ffcfaa"
+                    }
+                }
+            ]
+        },
+
         "[Catppuccin Frappé]": {
             "textMateRules": [
                 {
@@ -189,8 +232,8 @@
     },
     "[javascript]": {
         "editor.maxTokenizationLineLength": 2500,
-        "editor.tabSize": 2,
-        "prettier.tabWidth": 2
+        "editor.tabSize": 4,
+        "prettier.tabWidth": 4
     },
     "[json]": {
         "editor.tabSize": 4,
@@ -198,9 +241,19 @@
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.tabSize": 2,
+        "editor.tabSize": 4,
         "prettier.jsxSingleQuote": true,
-        "prettier.tabWidth": 2
+        "prettier.tabWidth": 4,
+        "separators.enabledSymbols": [
+            "Enums",
+            "Interfaces",
+            "Classes",
+            "Constructors",
+            "Methods"
+        ],
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
     },
     "[python]": {
         "editor.tabSize": 4,
@@ -254,6 +307,5 @@
         "linesBetweenQueries": 2,
         "reservedWordCase": "upper"
     },
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "workbench.colorTheme": "Catppuccin Frappé"
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }
