@@ -8,7 +8,7 @@
     "window.title": "${activeEditorMedium}",
     "window.titleSeparator": "  —  ",
     "explorer.compactFolders": false,
-    "workbench.colorTheme": "habamix",
+    "workbench.colorTheme": "Tiniri Dark",
     "workbench.tree.indent": 36,
     "workbench.externalBrowser": "chrome",
     "workbench.editor.wrapTabs": true,
@@ -123,7 +123,8 @@
     // ------------------------------
     "editor.formatOnSave": true,
     // "editor.fontFamily": " 'Dank Mono', 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
-    "editor.fontFamily": " 'DM Mono', 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
+    //"editor.fontFamily": " 'DM Mono', 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
+    "editor.fontFamily": " 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
     "editor.linkedEditing": true,
     "editor.defaultColorDecorators": true,
     "editor.minimap.autohide": true,
@@ -149,7 +150,7 @@
     //"editor.lineNumbers": "relative",
     "editor.tokenColorCustomizations": {
         //"comments": "#5f7191"
-        "comments": "#595c61",
+        "comments": "#63676c",
 
         "[Tiniri Dark]": {
             "textMateRules": [
@@ -260,7 +261,7 @@
     "notebook.globalToolbar": false,
     "notebook.consolidatedRunButton": true,
     "notebook.output.fontFamily": "DM Mono",
-    "notebook.output.fontSize": 11,
+    "notebook.output.fontSize": 12,
     "notebook.output.scrolling": true,
     "notebook.markup.fontSize": 13,
     "notebook.cellToolbarLocation": {
