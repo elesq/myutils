@@ -8,7 +8,7 @@
     "window.title": "${activeEditorMedium}",
     "window.titleSeparator": "  —  ",
     "explorer.compactFolders": false,
-    "workbench.colorTheme": "Tiniri Dark",
+    "workbench.colorTheme": "Soft Colors (No Italics)",
     "workbench.tree.indent": 36,
     "workbench.externalBrowser": "chrome",
     "workbench.editor.wrapTabs": true,
@@ -72,7 +72,7 @@
     // ------------------------------
     // apc customisations
     // ------------------------------
-    "apc.font.family": "Dank Mono",
+    //"apc.font.family": "Dank Mono",
     // ------------------------------
     // editor customisations
     // ------------------------------
@@ -81,7 +81,7 @@
     //"editor.fontFamily": " 'DM Mono', 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
     "editor.fontFamily": " 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
     "editor.linkedEditing": true,
-    "editor.defaultColorDecorators": true,
+    "editor.defaultColorDecorators": "auto",
     "editor.minimap.autohide": true,
     "editor.minimap.scale": 1,
     "editor.lineHeight": 23,
@@ -139,9 +139,9 @@
         "editor.suggest.insertMode": "replace",
         "editor.tabSize": 4
     },
-    "[cucumber.feature]": {
-        "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
-    },
+    // "[cucumber.feature]": {
+    //     "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
+    // },
     // "[go]": {
     //     "editor.defaultFormatter": "golang.go",
     //     "editor.tabSize": 4,
@@ -233,10 +233,5 @@
         "linesBetweenQueries": 2,
         "reservedWordCase": "upper"
     },
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "cucumberautocomplete.strictGherkinCompletion": true,
-    "cucumberautocomplete.steps": ["src/step-definitions/*.ts"],
-    "[feature]": {
-        "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
-    }
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }
