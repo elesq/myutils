@@ -35,6 +35,16 @@
         "separators.namespaces.borderColor": "#4a4a5a",
         "separators.structs.borderColor": "#4a4a5a",
 
+        "[Soft Colors (No Italics)]": {
+            "activityBar.border": "#262d3a",
+            "sideBarSectionHeader.border": "#404353",
+            "sideBarSectionHeader.background": "#1e2531",
+            "statusBar.border": "#262d3a",
+            "tab.activeBackground": "#2e3647",
+            "terminal.foreground": "#5e5e6e",
+            "terminal.ansiBrightCyan": "#c379a6"
+        },
+
         "[habamix]": {
             "titleBar.activeBackground": "#252526",
             "activityBar.border": "#3e3e40",
