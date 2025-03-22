@@ -31,7 +31,7 @@ alias ppp='cd ~/elesq/code/py'
 alias qa='cd ~/elesq/code/qa'
 alias rrr='cd ~/elesq/code/rust'
 alias www='cd ~/elesq/code/www'
-alias web='cd /Applications/XAMPP/xamppfiles/htdocs/php'
+alias web='cd /Applications/XAMPP/xamppfiles/htdocs/sites'
 
 # --------------------------------------------------------------
 # services aliases
