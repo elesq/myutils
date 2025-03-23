@@ -36,6 +36,7 @@
         "separators.structs.borderColor": "#4a4a5a",
 
         "[Soft Colors (No Italics)]": {
+            "editor.background": "#1f2531",
             "activityBar.border": "#262d3a",
             "sideBarSectionHeader.border": "#404353",
             "sideBarSectionHeader.background": "#1e2531",
