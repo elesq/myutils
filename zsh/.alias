@@ -69,7 +69,7 @@ alias ss='git status'
 alias testrep='go test -coverprofile=coverage.out && go tool cover -html=coverage.out'
 
 # javascript web apps
-alias wa='~/elesq/myutils/scripts/create-vanilla-web-app.sh'
+alias nwa='~/elesq/myutils/scripts/create-new-vanilla-web-app.sh'
 alias cra='npx create-react-app'
 # alias csa='~/elesq/myutils/scripts/create-svelte-app.sh'
 # alias cwa='~/elesq/myutils/scripts/create-webpack-app.sh'

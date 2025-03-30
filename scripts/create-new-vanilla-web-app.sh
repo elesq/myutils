@@ -18,6 +18,8 @@ green=`echo -e "$e[1;32m"`
 grey=`echo -e "$e[1;90m"`
 
 mkdir $1 && cd $1
+mkdir styles 
+mkdir scripts
 
 echo -e "${green}\xE2\x9C\x94 ${grey}created project directory"
 
@@ -43,7 +45,7 @@ cat <<EOF >>index.html
 </html>
 EOF
 
-cat <<EOF >>styles.css
+cat <<EOF >>styles/styles.css
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
@@ -62,6 +64,6 @@ body {
 }
 EOF
 
-touch script.js
+touch scripts/script.js
 
 echo -e "${green}\xE2\x9C\x94 ${grey}created project files"
