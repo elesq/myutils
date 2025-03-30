@@ -32,14 +32,14 @@ cat <<EOF >>index.html
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles/styles.css">
   <title>project | Home</title>
 </head>
 
 <body>
 
 
-  <script src="./script.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>
@@ -64,6 +64,6 @@ body {
 }
 EOF
 
-touch scripts/script.js
+touch scripts/index.js
 
 echo -e "${green}\xE2\x9C\x94 ${grey}created project files"
