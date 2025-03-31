@@ -88,10 +88,10 @@
     // editor customisations
     // ------------------------------
     "editor.formatOnSave": true,
-    // "editor.fontFamily": " 'Dank Mono', 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
-    //"editor.fontFamily": " 'DM Mono', 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
     "editor.fontFamily": " 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
+    "editor.autoIndent": "advanced",
     "editor.linkedEditing": true,
+    "editor.tabSize": 4,
     "editor.defaultColorDecorators": "auto",
     "editor.minimap.autohide": true,
     "editor.minimap.scale": 1,
@@ -113,7 +113,7 @@
     "editor.fontLigatures": true,
     "editor.autoClosingQuotes": "languageDefined",
     "editor.suggestSelection": "first",
-    //"editor.lineNumbers": "relative",
+    // "editor.lineNumbers": "relative",
     "editor.tokenColorCustomizations": {
         //"comments": "#5f7191"
         "comments": "#63676c",
@@ -147,8 +147,7 @@
     // per language customisations
     // ------------------------------
     "[css]": {
-        "editor.suggest.insertMode": "replace",
-        "editor.tabSize": 4
+        "editor.suggest.insertMode": "replace"
     },
     // "[cucumber.feature]": {
     //     "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
@@ -163,16 +162,13 @@
     //     }
     // },
     "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features",
-        "editor.tabSize": 4
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[javascript]": {
         "editor.maxTokenizationLineLength": 2500,
-        "editor.tabSize": 4,
         "prettier.tabWidth": 4
     },
     "[json]": {
-        "editor.tabSize": 4,
         "editor.suggest.insertMode": "replace"
     },
     "[typescript]": {
@@ -193,7 +189,6 @@
         }
     },
     "[python]": {
-        "editor.tabSize": 4,
         "editor.codeActionsOnSave": {
             "source.organizeImports": "explicit",
             "source.fixAll": "explicit"
@@ -220,8 +215,6 @@
     "files.exclude": {
         "**/__pycache__": true
     },
-    "liveServer.settings.donotVerifyTags": true,
-    "liveServer.settings.donotShowInfoMsg": true,
     "notebook.insertToolbarLocation": "notebookToolbar",
     "notebook.showCellStatusBar": "hidden",
     "notebook.globalToolbar": false,
@@ -244,5 +237,8 @@
         "linesBetweenQueries": 2,
         "reservedWordCase": "upper"
     },
-    "typescript.updateImportsOnFileMove.enabled": "always"
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true
 }
