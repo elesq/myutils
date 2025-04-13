@@ -24,9 +24,7 @@ alias jl='jupyter lab'
 # --------------------------------------------------------------
 alias uuu='cd ~/elesq/myutils'
 alias ccc='cd ~/elesq/code'
-alias dsa='cd ~/elesq/code/dsa'
-alias ggg='cd ~/elesq/code/go'
-alias jjj='cd ~/elesq/code/jvm'
+alias aaa='cd ~/elesq/code/ai'
 alias ppp='cd ~/elesq/code/py'
 alias qa='cd ~/elesq/code/qa'
 alias rrr='cd ~/elesq/code/rust'
@@ -53,12 +51,14 @@ alias ni='node inspect'
 # --------------------------------------------------------------
 # git aliases
 # --------------------------------------------------------------
-alias gh='git push --all origin -ff'
-alias gp='git pull origin main --rebase'
-alias gb='git checkout -b'
-alias gd='git checkout develop'
 alias gf='git add .'
 alias gc='git commit -m'
+alias gh='git push --all origin -ff'
+
+# more git 
+alias gb='git checkout -b'
+alias gd='git checkout develop'
+alias gp='git pull origin main --rebase'
 alias gmm='git checkout main && git merge'
 alias ss='git status'
 
@@ -70,21 +70,6 @@ alias testrep='go test -coverprofile=coverage.out && go tool cover -html=coverag
 
 # javascript web apps
 alias nwa='~/elesq/myutils/scripts/create-new-vanilla-web-app.sh'
-alias cra='npx create-react-app'
-# alias csa='~/elesq/myutils/scripts/create-svelte-app.sh'
-# alias cwa='~/elesq/myutils/scripts/create-webpack-app.sh'
-# alias cpa='~/elesq/myutils/scripts/create-parcel-app.sh'
-# alias cja='~/elesq/myutils/scripts/create-react-jest-babel-app.sh'
-# alias 3ts='~/elesq/myutils/scripts/create-three-ts-app.sh'
-# alias tddsv='~/elesq/myutils/scripts/create-svelte-tdd-project-cli.sh'
-
-# testing / automation clis
-# alias pup='~/elesq/myutils/scripts/create-puppeteer-project-cli.sh'
-
-# typescript web apps
-# alias tra='~/elesq/myutils/scripts/create-typescript-react-app.sh'
-# alias tsa='~/elesq/myutils/scripts/create-typescript-cli.sh'
-# alias tts='~/elesq/myutils/scripts/create-simple-typescript-project.sh'
 
 # --------------------------------------------------------------
 # utility script aliases

@@ -170,3 +170,6 @@ export HERD_PHP_83_INI_SCAN_DIR="/Users/ed/Library/Application Support/Herd/conf
 
 # Herd injected PHP binary.
 export PATH="/Users/ed/Library/Application Support/Herd/bin/":$PATH
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/ed/.lmstudio/bin"
