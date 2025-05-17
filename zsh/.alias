@@ -111,13 +111,15 @@ alias prune="docker container prune"
 alias docrabbit='docker run -d --hostname rabbitmq-host --name rabbitmq-server -p 5672:5672 -p 15672:15672 rabbitmq:3'
 
 # Database Engines
-# alias docmysql="docker run --restart always --name mysql --net dev-net -v /Users/ed/data/mysql:/var/lib/mysql -p 3333:3306 -d -e MYSQL_USER=dbuser -e MYSQL_PASSWORD=pass -e MYSQL_ROOT_PASSWORD=pass mysql"
 alias docmysql="docker run --restart always --name mysql -v /Users/ed/data/mysql:/var/lib/mysql -p 3333:3306 -d -e MYSQL_USER=dbuser -e MYSQL_PASSWORD=pass -e MYSQL_ROOT_PASSWORD=pass mysql"
 alias docpg='docker run --name pglocal -p 5432:5432 -v ~/data/postgres:/var/lib/postgresql/data -e POSTGRES_USER=pgroot -e POSTGRES_PASSWORD=pass -d postgres'
-
+alias docsqlserver='docker run -e "ACCEPT_EULA=1" -e "MSSQL_USER=sa" -e "MSSQL_SA_PASSWORD=Foolsgold2##" -e "MSSQL_PID=Developer" -p 1433:1433 -d --name=sql_connect mcr.microsoft.com/azure-sql-edge'
 alias docmongo='docker run -d --name mongodb -v ~/data/mongo:/data/db -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=pass -p 27017:27017 mongo:5.0.2'
 
 # DB shells
 alias mysqlroot="docker exec -it mysql mysql -u root -p"
 alias mysqluser="docker exec -it mysql mysql -D snippydb -u web -p"
 alias mongouser='docker exec -it mongodb bash'
+
+# stop containers 
+alias stopsqlserver='docker stop sql_connect'

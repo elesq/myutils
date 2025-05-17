@@ -1,0 +1,45 @@
+{
+    "window.zoomLevel": -0.6,
+    "editor.fontSize": 15,
+    "editor.fontFamily": " 'Lekton Nerd Font Mono', 'Operator Mono Nerd Font'",
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "smooth",
+    "workbench.tree.indent": 36,
+    "workbench.colorCustomizations": {
+        "[Default Dark Azure Data Studio]": {
+            "editorCursor.foreground": "#ffb70e"
+        }
+    },
+    "workbench.editorAssociations": {
+        "*.{sqlplan}": "workbench.editor.executionplan"
+    },
+    "workbench.enablePreviewFeatures": true,
+    "datasource.connectionGroups": [
+        {
+            "name": "ROOT",
+            "id": "C777F06B-202E-4480-B475-FA416154D458"
+        }
+    ],
+    "datasource.connections": [
+        {
+            "options": {
+                "connectionName": "",
+                "server": "localhost",
+                "database": "",
+                "authenticationType": "SqlLogin",
+                "user": "sa",
+                "password": "",
+                "applicationName": "azdata",
+                "encrypt": "true",
+                "trustServerCertificate": true,
+                "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+                "databaseDisplayName": ""
+            },
+            "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "13ef7799-8731-49f0-93ca-48fd73bb1d6a"
+        }
+    ],
+    "workbench.colorTheme": "Default Dark Azure Data Studio"
+}
