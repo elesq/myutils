@@ -8,7 +8,6 @@
     "window.title": "${activeEditorMedium}",
     "window.titleSeparator": "  —  ",
     "explorer.compactFolders": false,
-    "workbench.colorTheme": "Soft Colors (No Italics)",
     "workbench.tree.indent": 36,
     "workbench.externalBrowser": "chrome",
     "workbench.editor.wrapTabs": true,
@@ -35,18 +34,35 @@
         "separators.namespaces.borderColor": "#4a4a5a",
         "separators.structs.borderColor": "#4a4a5a",
 
-        "[Soft Colors (No Italics)]": {
-            "editor.background": "#1f2531",
-            "activityBar.border": "#262d3a",
-            "sideBarSectionHeader.border": "#404353",
-            "sideBarSectionHeader.background": "#1e2531",
-            "statusBar.border": "#262d3a",
-            "tab.activeBackground": "#2e3647",
-            "terminal.foreground": "#5e5e6e",
-            "terminal.ansiBrightCyan": "#c379a6"
+        "[Visual Studio 2019 Light]": {
+            "titleBar.activeBackground": "#2c2c2c",
+            "titleBar.activeForeground": "#999",
+            "activityBar.background": "#cacaca",
+            "activityBar.foreground": "#000",
+            "activityBar.activeBorder": "#e0e0e0",
+            "activityBar.inactiveForeground": "#22222255",
+            "activityBar.border": "#d3d3d3",
+            "sideBar.background": "#d5d5d5",
+            "editor.background": "#e1e1e1",
+            "editor.lineHighlightBorder": "#d9d9d9",
+            "editor.lineHighlightBackground": "#dadada",
+            "editorLineNumber.foreground": "#849ca4d3",
+            "list.inactiveSelectionBackground": "#cacacc",
+            "statusBar.background": "#0069af"
+        },
+
+        "[Visual Studio 2019 Dark]": {
+            "titleBar.activeBackground": "#252526",
+            "sideBar.background": "#2b2b2c",
+            "editor.background": "#38393d",
+            "editor.lineHighlightBackground": "#3e3e46",
+            "editor.lineHighlightBorder": "#404046",
+            "editorLineNumber.foreground": "#6b7275d3",
+            "statusBar.background": "#0061a2"
         },
 
         "[habamix]": {
+            "sideBarSectionHeader.border": "#5e5c5c33",
             "titleBar.activeBackground": "#252526",
             "activityBar.border": "#3e3e40",
             "activityBar.background": "#252526",
@@ -61,11 +77,10 @@
             "editor.background": "#313034",
             "editorGutter.background": "#2f2e32",
             "panel.background": "#2f2e32",
-            "terminal.background": "#2f2e32",
             "tab.inactiveBackground": "#2f2e32",
-            "tab.activeBackground": "#45424e",
-            "tab.activeBorderTop": "#d38b2c",
-            "tab.activeBorder": "#313034",
+            "tab.activeBackground": "#494456",
+            "tab.activeForeground": "#ffffff",
+            "tab.activeBorder": "#d38b2c",
             "statusBar.border": "#454545",
             "statusBar.background": "#3b3b3b",
             "editorHoverWidget.background": "#1d1f21",
@@ -88,7 +103,7 @@
     // editor customisations
     // ------------------------------
     "editor.formatOnSave": true,
-    "editor.fontFamily": " 'JetBrainsMono Nerd Font', 'Lekton Nerd Font Mono'",
+    "editor.fontFamily": " 'Lekton Nerd Font Mono', 'Operator Mono Nerd Font'",
     "editor.autoIndent": "advanced",
     "editor.linkedEditing": true,
     "editor.tabSize": 4,
@@ -96,7 +111,7 @@
     "editor.minimap.autohide": true,
     "editor.minimap.scale": 1,
     "editor.lineHeight": 23,
-    "editor.fontSize": 14,
+    "editor.fontSize": 15,
     "editor.fontWeight": "100",
     "editor.cursorStyle": "block",
     "editor.occurrencesHighlight": "singleFile",
@@ -129,9 +144,8 @@
             ]
         }
     },
-    "catppuccin.accentColor": "blue",
     "terminal.integrated.fontFamily": "Lekton Nerd Font Mono",
-    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontSize": 14,
     "terminal.integrated.tabs.enabled": false,
     "terminal.integrated.inheritEnv": false,
     "emmet.showSuggestionsAsSnippets": true,
@@ -240,5 +254,13 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "liveServer.settings.CustomBrowser": "chrome",
     "liveServer.settings.donotVerifyTags": true,
-    "liveServer.settings.donotShowInfoMsg": true
+    "liveServer.settings.donotShowInfoMsg": true,
+    "mssql.connectionGroups": [
+        {
+            "name": "ROOT",
+            "id": "1E901D47-D3BD-400C-B27F-91ED080BB3C9"
+        }
+    ],
+    "mssql.connections": [],
+    "workbench.colorTheme": "Visual Studio 2019 Dark"
 }
