@@ -1,4 +1,5 @@
 {
+    // theming
     "window.zoomLevel": -0.6,
     "editor.fontSize": 15,
     "editor.fontFamily": " 'Lekton Nerd Font Mono', 'Operator Mono Nerd Font'",
@@ -7,7 +8,19 @@
     "workbench.tree.indent": 36,
     "workbench.colorCustomizations": {
         "[Default Dark Azure Data Studio]": {
-            "editorCursor.foreground": "#ffb70e"
+            // "titleBar.activeBackground": "#484f55",
+            "titleBar.activeBackground": "#272b2e",
+            "activityBar.background": "#272b2e",
+            "sideBar.background": "#2e3236",
+            "statusBar.background": "#177c50",
+            "statusBar.noFolderBackground": "#177c50",
+            "editor.background": "#34393d",
+            "editor.lineHighlightBackground": "#393e42",
+            "editorCursor.foreground": "#ffb70e",
+            "tab.activeBackground": "#646b7c",
+            "tab.inactiveBackground": "#34393d",
+            "editorGroupHeader.noTabsBackground": "#2e3236",
+            "editorGroupHeader.tabsBackground": "#272b2e"
         }
     },
     "workbench.editorAssociations": {
