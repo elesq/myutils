@@ -52,13 +52,20 @@
         },
 
         "[Visual Studio 2019 Dark]": {
-            "titleBar.activeBackground": "#252526",
+            // "titleBar.activeBackground": "#252526",
+            "titleBar.activeBackground": "#3d3d42",
+            "activityBar.background": "#252526",
             "sideBar.background": "#2b2b2c",
+            "sideBar.border": "#4b4b4b",
             "editor.background": "#38393d",
             "editor.lineHighlightBackground": "#3e3e46",
             "editor.lineHighlightBorder": "#404046",
             "editorLineNumber.foreground": "#6b7275d3",
-            "statusBar.background": "#0061a2"
+            "editorGroupHeader.tabsBackground": "#2a2a2b",
+            "statusBar.background": "#106f73",
+            "tab.inactiveBackground": "#202020",
+            "tab.activeBorderTop": "#d85c0f",
+            "tab.inactiveModifiedBorder": "#3399cc80"
         },
 
         "[habamix]": {
@@ -214,7 +221,7 @@
     },
     "[sql]": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "mtxr.sqltools"
+        "editor.defaultFormatter": "ms-mssql.mssql"
     },
     // ------------------------------
     // misc
@@ -261,6 +268,19 @@
             "id": "1E901D47-D3BD-400C-B27F-91ED080BB3C9"
         }
     ],
-    "mssql.connections": [],
+    "mssql.connections": [
+        {
+            "authenticationType": "SqlLogin",
+            "connectTimeout": 30,
+            "applicationName": "vscode-mssql",
+            "server": "localhost",
+            "user": "sa",
+            "password": "",
+            "savePassword": true,
+            "trustServerCertificate": true,
+            "groupId": "1E901D47-D3BD-400C-B27F-91ED080BB3C9",
+            "id": "DC623990-05AB-4F7E-9FF4-AE81953B00EC"
+        }
+    ],
     "workbench.colorTheme": "Visual Studio 2019 Dark"
 }
