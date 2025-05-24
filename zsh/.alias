@@ -22,15 +22,17 @@ alias jl='jupyter lab'
 # --------------------------------------------------------------
 # place aliases
 # --------------------------------------------------------------
-alias uuu='cd ~/elesq/myutils'
-alias ccc='cd ~/elesq/code'
 alias aaa='cd ~/elesq/code/ai'
+alias ccc='cd ~/elesq/code/cprog'
+alias dev='cd ~/elesq/code'
+alias ggg='cd ~/elesq/code/golang'
 alias mmm='cd ~/elesq/code/dotnet'
 alias ppp='cd ~/elesq/code/py'
 alias qa='cd ~/elesq/code/qa'
-alias rrr='cd ~/elesq/code/rust'
+#alias rrr='cd ~/elesq/code/rust'
+alias uuu='cd ~/elesq/myutils'
+#alias web='cd /Applications/XAMPP/xamppfiles/htdocs/sites'
 alias www='cd ~/elesq/code/www'
-alias web='cd /Applications/XAMPP/xamppfiles/htdocs/sites'
 
 # --------------------------------------------------------------
 # services aliases
