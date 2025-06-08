@@ -29,6 +29,7 @@ alias ggg='cd ~/elesq/code/golang'
 alias mmm='cd ~/elesq/code/dotnet'
 alias ppp='cd ~/elesq/code/py'
 alias qa='cd ~/elesq/code/qa'
+alias sss='cd ~/elesq/code/sql'
 #alias rrr='cd ~/elesq/code/rust'
 alias uuu='cd ~/elesq/myutils'
 #alias web='cd /Applications/XAMPP/xamppfiles/htdocs/sites'
@@ -69,7 +70,7 @@ alias ss='git status'
 # --------------------------------------------------------------
 # CLI tools
 # --------------------------------------------------------------
-alias testrep='go test -coverprofile=coverage.out && go tool cover -html=coverage.out'
+alias gotestrep='go test -coverprofile=coverage.out && go tool cover -html=coverage.out'
 
 # javascript web apps
 alias nwa='~/elesq/myutils/scripts/create-new-vanilla-web-app.sh'
